@@ -1,0 +1,9 @@
+<Solution>
+	<Folder Name="/Solution Items/">
+		<File Path=".editorconfig" />
+		<File Path="Directory.Build.props" />
+	</Folder>
+	<Project Path="src/PanasonicComfortCloudClient/PanasonicComfortCloudClient.csproj" />
+	<Project Path="src/PanasonicComfortCloudClient.Console/PanasonicComfortCloudClient.Console.csproj" />
+	<Project Path="tests/PanasonicComfortCloudClient.Tests/PanasonicComfortCloudClient.Tests.csproj" />
+</Solution>

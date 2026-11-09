@@ -1,0 +1,22 @@
+{
+  "schema": 1,
+  "xmlDocumentation": { "projects": ["src/PanasonicComfortCloudClient/PanasonicComfortCloudClient.csproj"] },
+  "tasks": {
+    "xml-documentation": { "commands": [{"executable":"dotnet","arguments":["--version"]}] },
+    "build": { "commands": [{"executable":"dotnet","arguments":["build","PanasonicComfortCloudClient.slnx","-c","Release"]}] },
+    "unit-tests": {
+      "commands": [{"executable":"dotnet","arguments":["test","tests/PanasonicComfortCloudClient.Tests/PanasonicComfortCloudClient.Tests.csproj","-c","Release","-f","${env:BUILD_FRAMEWORK}","--filter","TestCategory!=Live","--logger","trx;LogFileName=tests.trx","--results-directory","artifacts/recipe-tests/${env:BUILD_FRAMEWORK}"]}],
+      "results": ["artifacts/recipe-tests/${env:BUILD_FRAMEWORK}/*.trx"]
+    },
+    "package": { "commands": [{"executable":"dotnet","arguments":["pack","src/PanasonicComfortCloudClient/PanasonicComfortCloudClient.csproj","-c","Release","-o","artifacts/packages"]}] },
+    "documentation": {
+      "commands": [
+        {"executable":"dotnet","arguments":["build","src/PanasonicComfortCloudClient/PanasonicComfortCloudClient.csproj","-c","Release"]},
+        {"executable":"dotnet","arguments":["tool","restore"]},
+        {"executable":"dotnet","arguments":["tool","run","docfx","metadata","docfx/docfx.json"]},
+        {"executable":"dotnet","arguments":["tool","run","docfx","build","docfx/docfx.json","--output","docfx-site","--warningsAsErrors"]}
+      ],
+      "documentation": {"config":"docfx/docfx.json","site":"docfx-site","title":"PanasonicComfortCloudClient"}
+    }
+  }
+}

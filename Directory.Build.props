@@ -1,0 +1,45 @@
+<Project>
+	<PropertyGroup>
+		<LangVersion>14.0</LangVersion>
+		<Nullable>enable</Nullable>
+		<ImplicitUsings>enable</ImplicitUsings>
+		<Deterministic>true</Deterministic>
+		<RestorePackagesWithLockFile>true</RestorePackagesWithLockFile>
+		<Authors>Neil Colvin</Authors>
+		<Company>Neil Colvin</Company>
+		<Copyright>Copyright © 2026 Neil Colvin</Copyright>
+		<GenerateAssemblyInfo>true</GenerateAssemblyInfo>
+		<!-- The SDK derives assembly, file and informational versions from Version. -->
+		<Version>1.0.0</Version>
+		<PackageLicenseExpression>MIT</PackageLicenseExpression>
+		<RepositoryUrl>https://github.com/oznetmaster/PanasonicComfortCloudClient</RepositoryUrl>
+		<RepositoryType>git</RepositoryType>
+		<PackageProjectUrl>$(RepositoryUrl)</PackageProjectUrl>
+		<PublishRepositoryUrl>true</PublishRepositoryUrl>
+		<ComVisible>false</ComVisible>
+	</PropertyGroup>
+	<PropertyGroup Condition="'$(Configuration)' == 'Debug'">
+		<TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+		<CodeAnalysisTreatWarningsAsErrors>true</CodeAnalysisTreatWarningsAsErrors>
+		<EnableNETAnalyzers>true</EnableNETAnalyzers>
+		<AnalysisLevel>latest-recommended</AnalysisLevel>
+		<EnforceCodeStyleInBuild>true</EnforceCodeStyleInBuild>
+		<DebugType>portable</DebugType>
+		<DebugSymbols>true</DebugSymbols>
+	</PropertyGroup>
+	<PropertyGroup Condition="'$(Configuration)' == 'Release'">
+		<TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+		<CodeAnalysisTreatWarningsAsErrors>false</CodeAnalysisTreatWarningsAsErrors>
+		<EnableNETAnalyzers>true</EnableNETAnalyzers>
+		<AnalysisLevel>latest-recommended</AnalysisLevel>
+		<EnforceCodeStyleInBuild>true</EnforceCodeStyleInBuild>
+	</PropertyGroup>
+	<ItemGroup Condition="'$(TargetFramework)' == 'net472'">
+		<PackageReference Include="Hafner.Compatibility.CallerInformationAttributes.G2" Version="1.0.0" />
+		<PackageReference Include="Hafner.Compatibility.NullableReferenceTypeAttributes.G1" Version="1.0.3" />
+		<PackageReference Include="Hafner.Compatibility.NullableReferenceTypeAttributes.G3" Version="1.0.3" />
+		<PackageReference Include="RequiredMemberAttribute" Version="1.0.0" PrivateAssets="all" />
+		<PackageReference Include="System.Memory" Version="4.6.3" />
+		<PackageReference Include="System.Threading.Tasks.Extensions" Version="4.6.3" />
+	</ItemGroup>
+</Project>

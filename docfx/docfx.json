@@ -1,0 +1,9 @@
+{
+  "metadata":[{"src":[{"files":["src/PanasonicComfortCloudClient/PanasonicComfortCloudClient.csproj"],"src":".."}],"properties":{"TargetFramework":"net10.0","Configuration":"Release"},"dest":"api"}],
+  "build":{
+    "resource":[{"files":["docs/upstream-coverage.json"],"src":".."}],
+    "content":[{"files":["api/**.yml","api/**.md","index.md","toc.yml","guides/**.md","guides/**.yml","reference/**.md","reference/**.yml"]}],
+    "globalMetadata":{"_appTitle":"PanasonicComfortCloudClient","_appName":"PanasonicComfortCloudClient","_appFooter":"Copyright (c) 2026 Neil Colvin.","_enableSearch":true},
+    "template":["default","modern"]
+  }
+}

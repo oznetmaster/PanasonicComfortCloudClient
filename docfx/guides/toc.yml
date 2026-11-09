@@ -1,0 +1,20 @@
+- name: Guides
+  href: index.md
+- name: Authentication
+  href: AUTHENTICATION.md
+- name: Protocol coverage
+  href: PROTOCOL.md
+- name: Upstream method and field audit
+  href: UPSTREAM-COVERAGE.md
+- name: Thread safety and Mono
+  href: THREAD-SAFETY.md
+- name: Windows console
+  href: CONSOLE.md
+- name: Validation status
+  href: VALIDATION.md
+
+- name: Bounded live control tests
+  href: LIVE-CONTROL-TESTS.md
+
+- name: Framework compatibility packages
+  href: COMPATIBILITY.md

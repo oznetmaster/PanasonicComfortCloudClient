@@ -1,0 +1,22 @@
+# PanasonicComfortCloudClient 1.0.0
+
+This initial public release establishes a portable typed client for the Panasonic Comfort Cloud protocols, with Aquarea as the first intended live-test target.
+
+The [thread-safety audit](docfx/guides/THREAD-SAFETY.md) corrects disposal/publication races, buffered-preference merging and unsynchronized tracker values. Compound schedule and policy operations now retain the same client gate. Lifecycle cleanup waits for admitted work and cancellation callbacks to finish, without synchronously blocking disposal on remote I/O. Focused fake-credential races run alongside the full tests on workstation runtimes and processor Mono.
+
+Authentication supports Panasonic's browser OAuth/PKCE flow and the reference's legacy CSRF/password, classic OTP and hosted Guardian paths. Legacy agreement and isolated Aquarea cookie helpers are available explicitly. Password/MFA paths have fake-credential tests; the real account continues to use its preserved browser-authorized session. The console offers masked legacy prompts and explicit app-version lookup without secret command-line arguments.
+
+Different Aquarea status and control mode encodings are represented by different enums. State reads distinguish live from explicitly cached status. Controls do not optimistically change a state model or retry uncertain writes. Zone/tank changes preserve other known branches; an unavailable baseline blocks that write.
+
+Plain AC updates submit explicit settings. The optional AcCommandBuilder/AcController helpers offer the reference's automatic-power and queued-preference policy under application control. Application-owned observation and energy trackers, typed capability evaluation and schedule editing helpers complete the modeled convenience APIs. No background polling, disk storage or browser UI is introduced into the library.
+
+The pinned [coverage audit](docfx/guides/UPSTREAM-COVERAGE.md) maps 201 wire fields, 166 public callables and 300 property definitions. Missing metadata/capabilities, AC zone fields, HWS numeric schedule hours and history fields are implemented. Aquarea tank schedules now write the correct tankTemperature wire key. Frozen field tests reject extension-data-only coverage, and fake-server schedule tests cover creation, modification and deletion. Deliberate .NET lifecycle and retry-policy adaptations are documented separately.
+
+Consult [validation status](docfx/guides/VALIDATION.md) before relying on hardware coverage. Offline and processor-runtime tests do not constitute a live Panasonic account or heat-pump test.
+
+Live testing corrected the Aquarea header casing and numeric UTC-offset format, and verified the Framework bodyless-GET compatibility shim. Browser authorization and all four read-only device checks now pass on both workstation targets. See the validation record for processor evidence and remaining physical-control coverage.
+
+
+The source now matches the maintained-client conventions: shared EditorConfig, three-column tabs, copyright/MIT headers, full project metadata and nullable/compiler/analyzer/style checks in Debug and Release. Shared conditional groups in Directory.Build.props promote warnings to errors in Debug and leave them as warnings in Release. The Framework target uses compatibility packages and C# 14 extension members to retain modern .NET API calls. Strict XML and generated Pages validation are part of the shared build.
+
+On 9 November, the expanded offline suites passed on both workstation targets and the processor. Separate manually selected physical tests confirmed quiet-mode and tank-target changes and their restoration on the workstation and processor. These tests do not extend the hardware claim to other settings or device families; see the validation record and live-control protocol.

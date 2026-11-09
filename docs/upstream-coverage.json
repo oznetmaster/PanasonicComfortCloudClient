@@ -1,0 +1,5002 @@
+{
+  "UpstreamCommit": "80d7784fa6b35d6f71a7b1f842062e2929d2d653",
+  "Fields": [
+    {
+      "Source": "panasonicdevice.py",
+      "SourceClass": "PanasonicDeviceInfo",
+      "Key": "autoMode",
+      "Model": "DeviceInfo",
+      "Property": "SupportsAuto",
+      "Kind": "bool"
+    },
+    {
+      "Source": "panasonicdevice.py",
+      "SourceClass": "PanasonicDeviceInfo",
+      "Key": "coordinableFlg",
+      "Model": "DeviceInfo",
+      "Property": "Coordinable",
+      "Kind": "bool"
+    },
+    {
+      "Source": "panasonicdevice.py",
+      "SourceClass": "PanasonicDeviceInfo",
+      "Key": "deviceGuid",
+      "Model": "DeviceInfo",
+      "Property": "DeviceGuid",
+      "Kind": "string"
+    },
+    {
+      "Source": "panasonicdevice.py",
+      "SourceClass": "PanasonicDeviceInfo",
+      "Key": "deviceHashGuid",
+      "Model": "DeviceInfo",
+      "Property": "HashId",
+      "Kind": "string"
+    },
+    {
+      "Source": "panasonicdevice.py",
+      "SourceClass": "PanasonicDeviceInfo",
+      "Key": "deviceModuleNumber",
+      "Model": "DeviceInfo",
+      "Property": "Model",
+      "Kind": "string"
+    },
+    {
+      "Source": "panasonicdevice.py",
+      "SourceClass": "PanasonicDeviceInfo",
+      "Key": "deviceName",
+      "Model": "DeviceInfo",
+      "Property": "Name",
+      "Kind": "string"
+    },
+    {
+      "Source": "panasonicdevice.py",
+      "SourceClass": "PanasonicDeviceInfo",
+      "Key": "deviceType",
+      "Model": "DeviceInfo",
+      "Property": "DeviceType",
+      "Kind": "string"
+    },
+    {
+      "Source": "panasonicdevice.py",
+      "SourceClass": "PanasonicDeviceInfo",
+      "Key": "groupName",
+      "Model": "DeviceInfo",
+      "Property": "GroupName",
+      "Kind": "string"
+    },
+    {
+      "Source": "panasonicdevice.py",
+      "SourceClass": "PanasonicDeviceInfo",
+      "Key": "modeAvlList",
+      "Model": "DeviceInfo",
+      "Property": "ModeAvailability",
+      "Kind": "object"
+    },
+    {
+      "Source": "panasonicdevice.py",
+      "SourceClass": "PanasonicDeviceInfo",
+      "Key": "modelVersion",
+      "Model": "DeviceInfo",
+      "Property": "ModelVersion",
+      "Kind": "number"
+    },
+    {
+      "Source": "panasonicdevice.py",
+      "SourceClass": "PanasonicDeviceInfo",
+      "Key": "nanoeStandAlone",
+      "Model": "DeviceInfo",
+      "Property": "NanoeStandalone",
+      "Kind": "bool"
+    },
+    {
+      "Source": "panasonicdevice.py",
+      "SourceClass": "PanasonicDeviceInfo",
+      "Key": "permission",
+      "Model": "DeviceInfo",
+      "Property": "Permission",
+      "Kind": "number"
+    },
+    {
+      "Source": "panasonicdevice.py",
+      "SourceClass": "PanasonicDeviceInfo",
+      "Key": "powerConsumptionFlg",
+      "Model": "DeviceInfo",
+      "Property": "SupportsEnergy",
+      "Kind": "bool"
+    },
+    {
+      "Source": "panasonicdevice.py",
+      "SourceClass": "PanasonicDeviceInfo",
+      "Key": "summerHouse",
+      "Model": "DeviceInfo",
+      "Property": "SummerHouse",
+      "Kind": "number"
+    },
+    {
+      "Source": "panasonicdevice.py",
+      "SourceClass": "PanasonicDeviceInfo",
+      "Key": "temperatureUnit",
+      "Model": "DeviceInfo",
+      "Property": "TemperatureUnit",
+      "Kind": "number"
+    },
+    {
+      "Source": "panasonicdevice.py",
+      "SourceClass": "PanasonicDeviceParameters",
+      "Key": "airDirection",
+      "Model": "AcParameters",
+      "Property": "AirDirection",
+      "Kind": "number"
+    },
+    {
+      "Source": "panasonicdevice.py",
+      "SourceClass": "PanasonicDeviceParameters",
+      "Key": "airQuality",
+      "Model": "AcParameters",
+      "Property": "AirQuality",
+      "Kind": "number"
+    },
+    {
+      "Source": "panasonicdevice.py",
+      "SourceClass": "PanasonicDeviceParameters",
+      "Key": "airSwingLR",
+      "Model": "AcParameters",
+      "Property": "HorizontalSwing",
+      "Kind": "number"
+    },
+    {
+      "Source": "panasonicdevice.py",
+      "SourceClass": "PanasonicDeviceParameters",
+      "Key": "airSwingUD",
+      "Model": "AcParameters",
+      "Property": "VerticalSwing",
+      "Kind": "number"
+    },
+    {
+      "Source": "panasonicdevice.py",
+      "SourceClass": "PanasonicDeviceParameters",
+      "Key": "ecoFunctionData",
+      "Model": "AcParameters",
+      "Property": "EcoFunction",
+      "Kind": "number"
+    },
+    {
+      "Source": "panasonicdevice.py",
+      "SourceClass": "PanasonicDeviceParameters",
+      "Key": "ecoMode",
+      "Model": "AcParameters",
+      "Property": "Eco",
+      "Kind": "number"
+    },
+    {
+      "Source": "panasonicdevice.py",
+      "SourceClass": "PanasonicDeviceParameters",
+      "Key": "ecoNavi",
+      "Model": "AcParameters",
+      "Property": "EcoNavi",
+      "Kind": "number"
+    },
+    {
+      "Source": "panasonicdevice.py",
+      "SourceClass": "PanasonicDeviceParameters",
+      "Key": "fanAutoMode",
+      "Model": "AcParameters",
+      "Property": "FanAutoMode",
+      "Kind": "number"
+    },
+    {
+      "Source": "panasonicdevice.py",
+      "SourceClass": "PanasonicDeviceParameters",
+      "Key": "fanSpeed",
+      "Model": "AcParameters",
+      "Property": "Fan",
+      "Kind": "number"
+    },
+    {
+      "Source": "panasonicdevice.py",
+      "SourceClass": "PanasonicDeviceParameters",
+      "Key": "fireplace",
+      "Model": "AcParameters",
+      "Property": "Fireplace",
+      "Kind": "number"
+    },
+    {
+      "Source": "panasonicdevice.py",
+      "SourceClass": "PanasonicDeviceParameters",
+      "Key": "iAuto",
+      "Model": "AcParameters",
+      "Property": "IAutoX",
+      "Kind": "number"
+    },
+    {
+      "Source": "panasonicdevice.py",
+      "SourceClass": "PanasonicDeviceParameters",
+      "Key": "insideCleaning",
+      "Model": "AcParameters",
+      "Property": "InsideCleaning",
+      "Kind": "number"
+    },
+    {
+      "Source": "panasonicdevice.py",
+      "SourceClass": "PanasonicDeviceParameters",
+      "Key": "insideTemperature",
+      "Model": "AcParameters",
+      "Property": "IndoorTemperature",
+      "Kind": "number"
+    },
+    {
+      "Source": "panasonicdevice.py",
+      "SourceClass": "PanasonicDeviceParameters",
+      "Key": "lastSettingMode",
+      "Model": "AcParameters",
+      "Property": "LastSettingMode",
+      "Kind": "number"
+    },
+    {
+      "Source": "panasonicdevice.py",
+      "SourceClass": "PanasonicDeviceParameters",
+      "Key": "nanoe",
+      "Model": "AcParameters",
+      "Property": "Nanoe",
+      "Kind": "number"
+    },
+    {
+      "Source": "panasonicdevice.py",
+      "SourceClass": "PanasonicDeviceParameters",
+      "Key": "operate",
+      "Model": "AcParameters",
+      "Property": "Power",
+      "Kind": "number"
+    },
+    {
+      "Source": "panasonicdevice.py",
+      "SourceClass": "PanasonicDeviceParameters",
+      "Key": "operationMode",
+      "Model": "AcParameters",
+      "Property": "Mode",
+      "Kind": "number"
+    },
+    {
+      "Source": "panasonicdevice.py",
+      "SourceClass": "PanasonicDeviceParameters",
+      "Key": "outTemperature",
+      "Model": "AcParameters",
+      "Property": "OutdoorTemperature",
+      "Kind": "number"
+    },
+    {
+      "Source": "panasonicdevice.py",
+      "SourceClass": "PanasonicDeviceParameters",
+      "Key": "temperatureSet",
+      "Model": "AcParameters",
+      "Property": "TargetTemperature",
+      "Kind": "number"
+    },
+    {
+      "Source": "panasonicdevice.py",
+      "SourceClass": "PanasonicDeviceParameters",
+      "Key": "zoneParameters",
+      "Model": "AcParameters",
+      "Property": "Zones",
+      "Kind": "array"
+    },
+    {
+      "Source": "panasonicdevice.py",
+      "SourceClass": "PanasonicDevice",
+      "Key": "parameters",
+      "Model": "AcSnapshot",
+      "Property": "Parameters",
+      "Kind": "object"
+    },
+    {
+      "Source": "panasonicdevice.py",
+      "SourceClass": "PanasonicDevice",
+      "Key": "timestamp",
+      "Model": "AcSnapshot",
+      "Property": "Timestamp",
+      "Kind": "number"
+    },
+    {
+      "Source": "panasonicdevice.py",
+      "SourceClass": "PanasonicDeviceFeatures",
+      "Key": "airSwingLR",
+      "Model": "AcSnapshot",
+      "Property": "SupportsHorizontalSwing",
+      "Kind": "bool"
+    },
+    {
+      "Source": "panasonicdevice.py",
+      "SourceClass": "PanasonicDeviceFeatures",
+      "Key": "autoMode",
+      "Model": "AcSnapshot",
+      "Property": "SupportsAuto",
+      "Kind": "bool"
+    },
+    {
+      "Source": "panasonicdevice.py",
+      "SourceClass": "PanasonicDeviceFeatures",
+      "Key": "autoSwingUD",
+      "Model": "AcSnapshot",
+      "Property": "SupportsAutoVerticalSwing",
+      "Kind": "bool"
+    },
+    {
+      "Source": "panasonicdevice.py",
+      "SourceClass": "PanasonicDeviceFeatures",
+      "Key": "clothesDrying",
+      "Model": "AcSnapshot",
+      "Property": "SupportsClothesDrying",
+      "Kind": "bool"
+    },
+    {
+      "Source": "panasonicdevice.py",
+      "SourceClass": "PanasonicDeviceFeatures",
+      "Key": "coolMode",
+      "Model": "AcSnapshot",
+      "Property": "SupportsCool",
+      "Kind": "bool"
+    },
+    {
+      "Source": "panasonicdevice.py",
+      "SourceClass": "PanasonicDeviceFeatures",
+      "Key": "deviceNanoe",
+      "Model": "AcSnapshot",
+      "Property": "DeviceNanoe",
+      "Kind": "number"
+    },
+    {
+      "Source": "panasonicdevice.py",
+      "SourceClass": "PanasonicDeviceFeatures",
+      "Key": "dryMode",
+      "Model": "AcSnapshot",
+      "Property": "SupportsDry",
+      "Kind": "bool"
+    },
+    {
+      "Source": "panasonicdevice.py",
+      "SourceClass": "PanasonicDeviceFeatures",
+      "Key": "ecoFunction",
+      "Model": "AcSnapshot",
+      "Property": "EcoFunctionCapability",
+      "Kind": "number"
+    },
+    {
+      "Source": "panasonicdevice.py",
+      "SourceClass": "PanasonicDeviceFeatures",
+      "Key": "ecoNavi",
+      "Model": "AcSnapshot",
+      "Property": "SupportsEcoNavi",
+      "Kind": "bool"
+    },
+    {
+      "Source": "panasonicdevice.py",
+      "SourceClass": "PanasonicDeviceFeatures",
+      "Key": "fanDirectionMode",
+      "Model": "AcSnapshot",
+      "Property": "FanDirectionMode",
+      "Kind": "number"
+    },
+    {
+      "Source": "panasonicdevice.py",
+      "SourceClass": "PanasonicDeviceFeatures",
+      "Key": "fanMode",
+      "Model": "AcSnapshot",
+      "Property": "SupportsFan",
+      "Kind": "bool"
+    },
+    {
+      "Source": "panasonicdevice.py",
+      "SourceClass": "PanasonicDeviceFeatures",
+      "Key": "fanSpeedMode",
+      "Model": "AcSnapshot",
+      "Property": "FanSpeedSteps",
+      "Kind": "number"
+    },
+    {
+      "Source": "panasonicdevice.py",
+      "SourceClass": "PanasonicDeviceFeatures",
+      "Key": "fireplace",
+      "Model": "AcSnapshot",
+      "Property": "SupportsFireplace",
+      "Kind": "bool"
+    },
+    {
+      "Source": "panasonicdevice.py",
+      "SourceClass": "PanasonicDeviceFeatures",
+      "Key": "heatMode",
+      "Model": "AcSnapshot",
+      "Property": "SupportsHeat",
+      "Kind": "bool"
+    },
+    {
+      "Source": "panasonicdevice.py",
+      "SourceClass": "PanasonicDeviceFeatures",
+      "Key": "iAutoX",
+      "Model": "AcSnapshot",
+      "Property": "SupportsIAutoX",
+      "Kind": "bool"
+    },
+    {
+      "Source": "panasonicdevice.py",
+      "SourceClass": "PanasonicDeviceFeatures",
+      "Key": "insideCleaning",
+      "Model": "AcSnapshot",
+      "Property": "SupportsInsideCleaning",
+      "Kind": "bool"
+    },
+    {
+      "Source": "panasonicdevice.py",
+      "SourceClass": "PanasonicDeviceFeatures",
+      "Key": "modeAvlList",
+      "Model": "AcSnapshot",
+      "Property": "ModeAvailability",
+      "Kind": "object"
+    },
+    {
+      "Source": "panasonicdevice.py",
+      "SourceClass": "PanasonicDeviceFeatures",
+      "Key": "nanoe",
+      "Model": "AcSnapshot",
+      "Property": "SupportsNanoe",
+      "Kind": "bool"
+    },
+    {
+      "Source": "panasonicdevice.py",
+      "SourceClass": "PanasonicDeviceFeatures",
+      "Key": "nanoeStandAlone",
+      "Model": "AcSnapshot",
+      "Property": "SupportsNanoeStandalone",
+      "Kind": "bool"
+    },
+    {
+      "Source": "panasonicdevice.py",
+      "SourceClass": "PanasonicDeviceFeatures",
+      "Key": "offTimer",
+      "Model": "AcSnapshot",
+      "Property": "SupportsOffTimer",
+      "Kind": "bool"
+    },
+    {
+      "Source": "panasonicdevice.py",
+      "SourceClass": "PanasonicDeviceFeatures",
+      "Key": "pairedFlg",
+      "Model": "AcSnapshot",
+      "Property": "Paired",
+      "Kind": "bool"
+    },
+    {
+      "Source": "panasonicdevice.py",
+      "SourceClass": "PanasonicDeviceFeatures",
+      "Key": "permission",
+      "Model": "AcSnapshot",
+      "Property": "Permission",
+      "Kind": "number"
+    },
+    {
+      "Source": "panasonicdevice.py",
+      "SourceClass": "PanasonicDeviceFeatures",
+      "Key": "powerConsumptionFlg",
+      "Model": "AcSnapshot",
+      "Property": "SupportsEnergy",
+      "Kind": "bool"
+    },
+    {
+      "Source": "panasonicdevice.py",
+      "SourceClass": "PanasonicDeviceFeatures",
+      "Key": "powerfulMode",
+      "Model": "AcSnapshot",
+      "Property": "SupportsPowerful",
+      "Kind": "bool"
+    },
+    {
+      "Source": "panasonicdevice.py",
+      "SourceClass": "PanasonicDeviceFeatures",
+      "Key": "quietMode",
+      "Model": "AcSnapshot",
+      "Property": "SupportsQuiet",
+      "Kind": "bool"
+    },
+    {
+      "Source": "panasonicdevice.py",
+      "SourceClass": "PanasonicDeviceFeatures",
+      "Key": "summerHouse",
+      "Model": "AcSnapshot",
+      "Property": "SummerHouse",
+      "Kind": "number"
+    },
+    {
+      "Source": "panasonicdevice.py",
+      "SourceClass": "PanasonicDeviceFeatures",
+      "Key": "temperatureUnit",
+      "Model": "AcSnapshot",
+      "Property": "TemperatureUnit",
+      "Kind": "number"
+    },
+    {
+      "Source": "panasonicdevice.py",
+      "SourceClass": "PanasonicDeviceZone",
+      "Key": "zoneId",
+      "Model": "AcZone",
+      "Property": "Id",
+      "Kind": "number"
+    },
+    {
+      "Source": "panasonicdevice.py",
+      "SourceClass": "PanasonicDeviceZone",
+      "Key": "zoneLevel",
+      "Model": "AcZone",
+      "Property": "DamperLevel",
+      "Kind": "number"
+    },
+    {
+      "Source": "panasonicdevice.py",
+      "SourceClass": "PanasonicDeviceZone",
+      "Key": "zoneName",
+      "Model": "AcZone",
+      "Property": "Name",
+      "Kind": "string"
+    },
+    {
+      "Source": "panasonicdevice.py",
+      "SourceClass": "PanasonicDeviceZone",
+      "Key": "zoneOnOff",
+      "Model": "AcZone",
+      "Property": "Power",
+      "Kind": "number"
+    },
+    {
+      "Source": "panasonicdevice.py",
+      "SourceClass": "PanasonicDeviceZone",
+      "Key": "zoneSpill",
+      "Model": "AcZone",
+      "Property": "Spill",
+      "Kind": "number"
+    },
+    {
+      "Source": "panasonicdevice.py",
+      "SourceClass": "PanasonicDeviceZone",
+      "Key": "zoneTemperature",
+      "Model": "AcZone",
+      "Property": "Temperature",
+      "Kind": "number"
+    },
+    {
+      "Source": "panasonicdevice.py",
+      "SourceClass": "PanasonicDeviceEnergy",
+      "Key": "consumption",
+      "Model": "AcEnergyHistoryEntry",
+      "Property": "Consumption",
+      "Kind": "number"
+    },
+    {
+      "Source": "panasonicdevice.py",
+      "SourceClass": "PanasonicDeviceEnergy",
+      "Key": "coolConsumptionRate",
+      "Model": "AcEnergyHistoryEntry",
+      "Property": "CoolingRatio",
+      "Kind": "number"
+    },
+    {
+      "Source": "panasonicdevice.py",
+      "SourceClass": "PanasonicDeviceEnergy",
+      "Key": "heatConsumptionRate",
+      "Model": "AcEnergyHistoryEntry",
+      "Property": "HeatingRatio",
+      "Kind": "number"
+    },
+    {
+      "Source": "aquareadevice.py",
+      "SourceClass": "AquareaDevice",
+      "Key": "a2wName",
+      "Model": "AquareaSnapshot",
+      "Property": "Name",
+      "Kind": "string"
+    },
+    {
+      "Source": "aquareadevice.py",
+      "SourceClass": "AquareaDevice",
+      "Key": "operation",
+      "Model": "AquareaSnapshot",
+      "Property": "Operation",
+      "Kind": "string"
+    },
+    {
+      "Source": "aquareadevice.py",
+      "SourceClass": "AquareaDevice",
+      "Key": "ownerFlg",
+      "Model": "AquareaSnapshot",
+      "Property": "IsOwner",
+      "Kind": "bool"
+    },
+    {
+      "Source": "aquareadevice.py",
+      "SourceClass": "AquareaDevice",
+      "Key": "status",
+      "Model": "AquareaSnapshot",
+      "Property": "Status",
+      "Kind": "object"
+    },
+    {
+      "Source": "hwsdevice.py",
+      "SourceClass": "HwsDevice",
+      "Key": "parameters",
+      "Model": "HotWaterSnapshot",
+      "Property": "Parameters",
+      "Kind": "object"
+    },
+    {
+      "Source": "models/aquarea.py",
+      "SourceClass": "AquareaZoneStatus",
+      "Key": "comfortCool",
+      "Model": "AquareaZone",
+      "Property": "ComfortCool",
+      "Kind": "number"
+    },
+    {
+      "Source": "models/aquarea.py",
+      "SourceClass": "AquareaZoneStatus",
+      "Key": "comfortHeat",
+      "Model": "AquareaZone",
+      "Property": "ComfortHeat",
+      "Kind": "number"
+    },
+    {
+      "Source": "models/aquarea.py",
+      "SourceClass": "AquareaZoneStatus",
+      "Key": "coolMax",
+      "Model": "AquareaZone",
+      "Property": "CoolMaximum",
+      "Kind": "number"
+    },
+    {
+      "Source": "models/aquarea.py",
+      "SourceClass": "AquareaZoneStatus",
+      "Key": "coolMin",
+      "Model": "AquareaZone",
+      "Property": "CoolMinimum",
+      "Kind": "number"
+    },
+    {
+      "Source": "models/aquarea.py",
+      "SourceClass": "AquareaZoneStatus",
+      "Key": "coolSet",
+      "Model": "AquareaZone",
+      "Property": "CoolSetpoint",
+      "Kind": "number"
+    },
+    {
+      "Source": "models/aquarea.py",
+      "SourceClass": "AquareaZoneStatus",
+      "Key": "ecoCool",
+      "Model": "AquareaZone",
+      "Property": "EcoCool",
+      "Kind": "number"
+    },
+    {
+      "Source": "models/aquarea.py",
+      "SourceClass": "AquareaZoneStatus",
+      "Key": "ecoHeat",
+      "Model": "AquareaZone",
+      "Property": "EcoHeat",
+      "Kind": "number"
+    },
+    {
+      "Source": "models/aquarea.py",
+      "SourceClass": "AquareaZoneStatus",
+      "Key": "heatMax",
+      "Model": "AquareaZone",
+      "Property": "HeatMaximum",
+      "Kind": "number"
+    },
+    {
+      "Source": "models/aquarea.py",
+      "SourceClass": "AquareaZoneStatus",
+      "Key": "heatMin",
+      "Model": "AquareaZone",
+      "Property": "HeatMinimum",
+      "Kind": "number"
+    },
+    {
+      "Source": "models/aquarea.py",
+      "SourceClass": "AquareaZoneStatus",
+      "Key": "heatSet",
+      "Model": "AquareaZone",
+      "Property": "HeatSetpoint",
+      "Kind": "number"
+    },
+    {
+      "Source": "models/aquarea.py",
+      "SourceClass": "AquareaZoneStatus",
+      "Key": "operationStatus",
+      "Model": "AquareaZone",
+      "Property": "Power",
+      "Kind": "number"
+    },
+    {
+      "Source": "models/aquarea.py",
+      "SourceClass": "AquareaZoneStatus",
+      "Key": "temperatureNow",
+      "Model": "AquareaZone",
+      "Property": "Temperature",
+      "Kind": "number"
+    },
+    {
+      "Source": "models/aquarea.py",
+      "SourceClass": "AquareaZoneStatus",
+      "Key": "zoneId",
+      "Model": "AquareaZone",
+      "Property": "Id",
+      "Kind": "number"
+    },
+    {
+      "Source": "models/aquarea.py",
+      "SourceClass": "AquareaZoneStatus",
+      "Key": "zoneName",
+      "Model": "AquareaZone",
+      "Property": "Name",
+      "Kind": "string"
+    },
+    {
+      "Source": "models/aquarea.py",
+      "SourceClass": "AquareaTankStatus",
+      "Key": "heatMax",
+      "Model": "AquareaTank",
+      "Property": "HeatMaximum",
+      "Kind": "number"
+    },
+    {
+      "Source": "models/aquarea.py",
+      "SourceClass": "AquareaTankStatus",
+      "Key": "heatMin",
+      "Model": "AquareaTank",
+      "Property": "HeatMinimum",
+      "Kind": "number"
+    },
+    {
+      "Source": "models/aquarea.py",
+      "SourceClass": "AquareaTankStatus",
+      "Key": "heatSet",
+      "Model": "AquareaTank",
+      "Property": "HeatSetpoint",
+      "Kind": "number"
+    },
+    {
+      "Source": "models/aquarea.py",
+      "SourceClass": "AquareaTankStatus",
+      "Key": "operationStatus",
+      "Model": "AquareaTank",
+      "Property": "Power",
+      "Kind": "number"
+    },
+    {
+      "Source": "models/aquarea.py",
+      "SourceClass": "AquareaTankStatus",
+      "Key": "temperatureNow",
+      "Model": "AquareaTank",
+      "Property": "Temperature",
+      "Kind": "number"
+    },
+    {
+      "Source": "models/aquarea.py",
+      "SourceClass": "AquareaDeviceParameters",
+      "Key": "bivalent",
+      "Model": "AquareaStatus",
+      "Property": "Bivalent",
+      "Kind": "number"
+    },
+    {
+      "Source": "models/aquarea.py",
+      "SourceClass": "AquareaDeviceParameters",
+      "Key": "bivalentActual",
+      "Model": "AquareaStatus",
+      "Property": "BivalentActual",
+      "Kind": "number"
+    },
+    {
+      "Source": "models/aquarea.py",
+      "SourceClass": "AquareaDeviceParameters",
+      "Key": "controlBox",
+      "Model": "AquareaStatus",
+      "Property": "ControlBox",
+      "Kind": "number"
+    },
+    {
+      "Source": "models/aquarea.py",
+      "SourceClass": "AquareaDeviceParameters",
+      "Key": "coolMode",
+      "Model": "AquareaStatus",
+      "Property": "CoolingCapability",
+      "Kind": "number"
+    },
+    {
+      "Source": "models/aquarea.py",
+      "SourceClass": "AquareaDeviceParameters",
+      "Key": "deiceStatus",
+      "Model": "AquareaStatus",
+      "Property": "DeviceStatus",
+      "Kind": "number"
+    },
+    {
+      "Source": "models/aquarea.py",
+      "SourceClass": "AquareaDeviceParameters",
+      "Key": "direction",
+      "Model": "AquareaStatus",
+      "Property": "Direction",
+      "Kind": "number"
+    },
+    {
+      "Source": "models/aquarea.py",
+      "SourceClass": "AquareaDeviceParameters",
+      "Key": "externalHeater",
+      "Model": "AquareaStatus",
+      "Property": "ExternalHeater",
+      "Kind": "number"
+    },
+    {
+      "Source": "models/aquarea.py",
+      "SourceClass": "AquareaDeviceParameters",
+      "Key": "faultStatus",
+      "Model": "AquareaStatus",
+      "Property": "Faults",
+      "Kind": "array"
+    },
+    {
+      "Source": "models/aquarea.py",
+      "SourceClass": "AquareaDeviceParameters",
+      "Key": "forceDHW",
+      "Model": "AquareaStatus",
+      "Property": "ForceHotWater",
+      "Kind": "number"
+    },
+    {
+      "Source": "models/aquarea.py",
+      "SourceClass": "AquareaDeviceParameters",
+      "Key": "forceHeater",
+      "Model": "AquareaStatus",
+      "Property": "ForceHeater",
+      "Kind": "number"
+    },
+    {
+      "Source": "models/aquarea.py",
+      "SourceClass": "AquareaDeviceParameters",
+      "Key": "holidayTimer",
+      "Model": "AquareaStatus",
+      "Property": "HolidayTimer",
+      "Kind": "number"
+    },
+    {
+      "Source": "models/aquarea.py",
+      "SourceClass": "AquareaDeviceParameters",
+      "Key": "modelSeriesSelection",
+      "Model": "AquareaStatus",
+      "Property": "ModelSeries",
+      "Kind": "number"
+    },
+    {
+      "Source": "models/aquarea.py",
+      "SourceClass": "AquareaDeviceParameters",
+      "Key": "multiOdConnection",
+      "Model": "AquareaStatus",
+      "Property": "MultiOutdoorConnection",
+      "Kind": "number"
+    },
+    {
+      "Source": "models/aquarea.py",
+      "SourceClass": "AquareaDeviceParameters",
+      "Key": "operationMode",
+      "Model": "AquareaStatus",
+      "Property": "Mode",
+      "Kind": "number"
+    },
+    {
+      "Source": "models/aquarea.py",
+      "SourceClass": "AquareaDeviceParameters",
+      "Key": "operationStatus",
+      "Model": "AquareaStatus",
+      "Property": "Power",
+      "Kind": "number"
+    },
+    {
+      "Source": "models/aquarea.py",
+      "SourceClass": "AquareaDeviceParameters",
+      "Key": "outdoorNow",
+      "Model": "AquareaStatus",
+      "Property": "OutdoorTemperature",
+      "Kind": "number"
+    },
+    {
+      "Source": "models/aquarea.py",
+      "SourceClass": "AquareaDeviceParameters",
+      "Key": "powerful",
+      "Model": "AquareaStatus",
+      "Property": "Powerful",
+      "Kind": "number"
+    },
+    {
+      "Source": "models/aquarea.py",
+      "SourceClass": "AquareaDeviceParameters",
+      "Key": "pumpDuty",
+      "Model": "AquareaStatus",
+      "Property": "PumpDuty",
+      "Kind": "number"
+    },
+    {
+      "Source": "models/aquarea.py",
+      "SourceClass": "AquareaDeviceParameters",
+      "Key": "quietMode",
+      "Model": "AquareaStatus",
+      "Property": "Quiet",
+      "Kind": "number"
+    },
+    {
+      "Source": "models/aquarea.py",
+      "SourceClass": "AquareaDeviceParameters",
+      "Key": "serviceType",
+      "Model": "AquareaStatus",
+      "Property": "ServiceType",
+      "Kind": "string"
+    },
+    {
+      "Source": "models/aquarea.py",
+      "SourceClass": "AquareaDeviceParameters",
+      "Key": "specialStatus",
+      "Model": "AquareaStatus",
+      "Property": "Special",
+      "Kind": "number"
+    },
+    {
+      "Source": "models/aquarea.py",
+      "SourceClass": "AquareaDeviceParameters",
+      "Key": "standAlone",
+      "Model": "AquareaStatus",
+      "Property": "Standalone",
+      "Kind": "number"
+    },
+    {
+      "Source": "models/aquarea.py",
+      "SourceClass": "AquareaDeviceParameters",
+      "Key": "tankStatus",
+      "Model": "AquareaStatus",
+      "Property": "Tank",
+      "Kind": "object"
+    },
+    {
+      "Source": "models/aquarea.py",
+      "SourceClass": "AquareaDeviceParameters",
+      "Key": "uncontrollableTaw1Flg",
+      "Model": "AquareaStatus",
+      "Property": "UncontrollableGateway",
+      "Kind": "bool"
+    },
+    {
+      "Source": "models/aquarea.py",
+      "SourceClass": "AquareaDeviceParameters",
+      "Key": "waterPressure",
+      "Model": "AquareaStatus",
+      "Property": "WaterPressure",
+      "Kind": "number"
+    },
+    {
+      "Source": "models/aquarea.py",
+      "SourceClass": "AquareaDeviceParameters",
+      "Key": "zoneStatus",
+      "Model": "AquareaStatus",
+      "Property": "Zones",
+      "Kind": "array"
+    },
+    {
+      "Source": "models/aquarea.py",
+      "SourceClass": "AquareaConsumption",
+      "Key": "coolConsumption",
+      "Model": "EnergyHistoryEntry",
+      "Property": "CoolingEnergy",
+      "Kind": "number"
+    },
+    {
+      "Source": "models/aquarea.py",
+      "SourceClass": "AquareaConsumption",
+      "Key": "coolCost",
+      "Model": "EnergyHistoryEntry",
+      "Property": "CoolingCost",
+      "Kind": "number"
+    },
+    {
+      "Source": "models/aquarea.py",
+      "SourceClass": "AquareaConsumption",
+      "Key": "dataTime",
+      "Model": "EnergyHistoryEntry",
+      "Property": "DateTime",
+      "Kind": "string"
+    },
+    {
+      "Source": "models/aquarea.py",
+      "SourceClass": "AquareaConsumption",
+      "Key": "heatConsumption",
+      "Model": "EnergyHistoryEntry",
+      "Property": "HeatingEnergy",
+      "Kind": "number"
+    },
+    {
+      "Source": "models/aquarea.py",
+      "SourceClass": "AquareaConsumption",
+      "Key": "heatCost",
+      "Model": "EnergyHistoryEntry",
+      "Property": "HeatingCost",
+      "Kind": "number"
+    },
+    {
+      "Source": "models/aquarea.py",
+      "SourceClass": "AquareaConsumption",
+      "Key": "outdoorTemp",
+      "Model": "EnergyHistoryEntry",
+      "Property": "OutdoorTemperature",
+      "Kind": "number"
+    },
+    {
+      "Source": "models/aquarea.py",
+      "SourceClass": "AquareaConsumption",
+      "Key": "tankConsumption",
+      "Model": "EnergyHistoryEntry",
+      "Property": "HotWaterEnergy",
+      "Kind": "number"
+    },
+    {
+      "Source": "models/aquarea.py",
+      "SourceClass": "AquareaConsumption",
+      "Key": "tankCost",
+      "Model": "EnergyHistoryEntry",
+      "Property": "HotWaterCost",
+      "Kind": "number"
+    },
+    {
+      "Source": "models/hws.py",
+      "SourceClass": "HwsTemperatureSettingLimits",
+      "Key": "set1EndTemperature",
+      "Model": "HotWaterTemperatureLimits",
+      "Property": "FirstEndTemperature",
+      "Kind": "number"
+    },
+    {
+      "Source": "models/hws.py",
+      "SourceClass": "HwsTemperatureSettingLimits",
+      "Key": "set2EndTemperatureMax",
+      "Model": "HotWaterTemperatureLimits",
+      "Property": "SecondEndMaximum",
+      "Kind": "number"
+    },
+    {
+      "Source": "models/hws.py",
+      "SourceClass": "HwsTemperatureSettingLimits",
+      "Key": "set2EndTemperatureMin",
+      "Model": "HotWaterTemperatureLimits",
+      "Property": "SecondEndMinimum",
+      "Kind": "number"
+    },
+    {
+      "Source": "models/hws.py",
+      "SourceClass": "HwsTemperatureSettingLimits",
+      "Key": "set2StartTemperatureMax",
+      "Model": "HotWaterTemperatureLimits",
+      "Property": "SecondStartMaximum",
+      "Kind": "number"
+    },
+    {
+      "Source": "models/hws.py",
+      "SourceClass": "HwsTemperatureSettingLimits",
+      "Key": "set2StartTemperatureMin",
+      "Model": "HotWaterTemperatureLimits",
+      "Property": "SecondStartMinimum",
+      "Kind": "number"
+    },
+    {
+      "Source": "models/hws.py",
+      "SourceClass": "HwsDeviceParameters",
+      "Key": "holidayMode",
+      "Model": "HotWaterSnapshot",
+      "Property": "SupportsHolidayMode",
+      "Kind": "bool"
+    },
+    {
+      "Source": "models/hws.py",
+      "SourceClass": "HwsDeviceParameters",
+      "Key": "permission",
+      "Model": "HotWaterSnapshot",
+      "Property": "Permission",
+      "Kind": "number"
+    },
+    {
+      "Source": "models/hws.py",
+      "SourceClass": "HwsDeviceParameters",
+      "Key": "pvMode",
+      "Model": "HotWaterSnapshot",
+      "Property": "SupportsPhotovoltaicMode",
+      "Kind": "bool"
+    },
+    {
+      "Source": "models/hws.py",
+      "SourceClass": "HwsDeviceParameters",
+      "Key": "temperatureSettingLimits",
+      "Model": "HotWaterSnapshot",
+      "Property": "TemperatureLimits",
+      "Kind": "object"
+    },
+    {
+      "Source": "models/hws.py",
+      "SourceClass": "HwsDeviceParameters",
+      "Key": "weeklyMode",
+      "Model": "HotWaterSnapshot",
+      "Property": "SupportsWeeklyMode",
+      "Kind": "bool"
+    },
+    {
+      "Source": "models/hws.py",
+      "SourceClass": "HwsInhibitTimeSettings",
+      "Key": "endTime",
+      "Model": "HotWaterInterval",
+      "Property": "EndTime",
+      "Kind": "number"
+    },
+    {
+      "Source": "models/hws.py",
+      "SourceClass": "HwsInhibitTimeSettings",
+      "Key": "inhibitTimeAvailable",
+      "Model": "HotWaterInterval",
+      "Property": "InhibitAvailable",
+      "Kind": "number"
+    },
+    {
+      "Source": "models/hws.py",
+      "SourceClass": "HwsInhibitTimeSettings",
+      "Key": "startTime",
+      "Model": "HotWaterInterval",
+      "Property": "StartTime",
+      "Kind": "number"
+    },
+    {
+      "Source": "models/hws.py",
+      "SourceClass": "HwsSet1Settings",
+      "Key": "endTime",
+      "Model": "HotWaterInterval",
+      "Property": "EndTime",
+      "Kind": "number"
+    },
+    {
+      "Source": "models/hws.py",
+      "SourceClass": "HwsSet1Settings",
+      "Key": "startTime",
+      "Model": "HotWaterInterval",
+      "Property": "StartTime",
+      "Kind": "number"
+    },
+    {
+      "Source": "models/hws.py",
+      "SourceClass": "HwsSet2Settings",
+      "Key": "endTemperature",
+      "Model": "HotWaterInterval",
+      "Property": "EndTemperature",
+      "Kind": "number"
+    },
+    {
+      "Source": "models/hws.py",
+      "SourceClass": "HwsSet2Settings",
+      "Key": "endTime",
+      "Model": "HotWaterInterval",
+      "Property": "EndTime",
+      "Kind": "number"
+    },
+    {
+      "Source": "models/hws.py",
+      "SourceClass": "HwsSet2Settings",
+      "Key": "set2Available",
+      "Model": "HotWaterInterval",
+      "Property": "SecondPeriodAvailable",
+      "Kind": "number"
+    },
+    {
+      "Source": "models/hws.py",
+      "SourceClass": "HwsSet2Settings",
+      "Key": "startTemperature",
+      "Model": "HotWaterInterval",
+      "Property": "StartTemperature",
+      "Kind": "number"
+    },
+    {
+      "Source": "models/hws.py",
+      "SourceClass": "HwsSet2Settings",
+      "Key": "startTime",
+      "Model": "HotWaterInterval",
+      "Property": "StartTime",
+      "Kind": "number"
+    },
+    {
+      "Source": "models/hws.py",
+      "SourceClass": "HwsDailySettings",
+      "Key": "inhibitTime",
+      "Model": "HotWaterDay",
+      "Property": "InhibitTime",
+      "Kind": "object"
+    },
+    {
+      "Source": "models/hws.py",
+      "SourceClass": "HwsDailySettings",
+      "Key": "mode",
+      "Model": "HotWaterDay",
+      "Property": "Mode",
+      "Kind": "number"
+    },
+    {
+      "Source": "models/hws.py",
+      "SourceClass": "HwsDailySettings",
+      "Key": "set1",
+      "Model": "HotWaterDay",
+      "Property": "FirstPeriod",
+      "Kind": "object"
+    },
+    {
+      "Source": "models/hws.py",
+      "SourceClass": "HwsDailySettings",
+      "Key": "set2",
+      "Model": "HotWaterDay",
+      "Property": "SecondPeriod",
+      "Kind": "object"
+    },
+    {
+      "Source": "models/hws.py",
+      "SourceClass": "HwsDailySettings",
+      "Key": "weekday",
+      "Model": "HotWaterDay",
+      "Property": "Weekday",
+      "Kind": "number"
+    },
+    {
+      "Source": "models/hws.py",
+      "SourceClass": "HwsParameters",
+      "Key": "boostMode",
+      "Model": "HotWaterParameters",
+      "Property": "Boost",
+      "Kind": "number"
+    },
+    {
+      "Source": "models/hws.py",
+      "SourceClass": "HwsParameters",
+      "Key": "hpuOperationStatus",
+      "Model": "HotWaterParameters",
+      "Property": "Power",
+      "Kind": "number"
+    },
+    {
+      "Source": "models/hws.py",
+      "SourceClass": "HwsParameters",
+      "Key": "operationMode",
+      "Model": "HotWaterParameters",
+      "Property": "Mode",
+      "Kind": "number"
+    },
+    {
+      "Source": "models/hws.py",
+      "SourceClass": "HwsParameters",
+      "Key": "outdoorTemperature",
+      "Model": "HotWaterParameters",
+      "Property": "OutdoorTemperature",
+      "Kind": "number"
+    },
+    {
+      "Source": "models/hws.py",
+      "SourceClass": "HwsParameters",
+      "Key": "tankTemperature",
+      "Model": "HotWaterParameters",
+      "Property": "TankTemperature",
+      "Kind": "number"
+    },
+    {
+      "Source": "models/hws.py",
+      "SourceClass": "HwsParameters",
+      "Key": "weeklySettingInfo",
+      "Model": "HotWaterParameters",
+      "Property": "WeeklySettings",
+      "Kind": "array"
+    },
+    {
+      "Source": "models/hws.py",
+      "SourceClass": "HwsConsumption",
+      "Key": "consumption",
+      "Model": "HotWaterEnergyHistoryEntry",
+      "Property": "Consumption",
+      "Kind": "number"
+    },
+    {
+      "Source": "models/hws.py",
+      "SourceClass": "HwsConsumption",
+      "Key": "cost",
+      "Model": "HotWaterEnergyHistoryEntry",
+      "Property": "Cost",
+      "Kind": "number"
+    },
+    {
+      "Source": "models/hws.py",
+      "SourceClass": "HwsConsumption",
+      "Key": "dataTime",
+      "Model": "HotWaterEnergyHistoryEntry",
+      "Property": "DateTime",
+      "Kind": "string"
+    },
+    {
+      "Source": "models/hws.py",
+      "SourceClass": "HwsConsumption",
+      "Key": "outdoorTemperature",
+      "Model": "HotWaterEnergyHistoryEntry",
+      "Property": "OutdoorTemperature",
+      "Kind": "number"
+    },
+    {
+      "Source": "models/hws.py",
+      "SourceClass": "HwsConsumption",
+      "Key": "tankTemperature",
+      "Model": "HotWaterEnergyHistoryEntry",
+      "Property": "TankTemperature",
+      "Kind": "number"
+    },
+    {
+      "Source": "models/weeklytimer.py",
+      "SourceClass": "WeeklyTimerZone",
+      "Key": "zoneId",
+      "Model": "AcZone",
+      "Property": "Id",
+      "Kind": "number"
+    },
+    {
+      "Source": "models/weeklytimer.py",
+      "SourceClass": "WeeklyTimerZone",
+      "Key": "zoneName",
+      "Model": "AcZone",
+      "Property": "Name",
+      "Kind": "string"
+    },
+    {
+      "Source": "models/weeklytimer.py",
+      "SourceClass": "WeeklyTimerZone",
+      "Key": "zoneOnOff",
+      "Model": "AcZone",
+      "Property": "Power",
+      "Kind": "number"
+    },
+    {
+      "Source": "models/weeklytimer.py",
+      "SourceClass": "WeeklyTimerPattern",
+      "Key": "airSwingLR",
+      "Model": "AcTimerPattern",
+      "Property": "HorizontalSwing",
+      "Kind": "number"
+    },
+    {
+      "Source": "models/weeklytimer.py",
+      "SourceClass": "WeeklyTimerPattern",
+      "Key": "airSwingUD",
+      "Model": "AcTimerPattern",
+      "Property": "VerticalSwing",
+      "Kind": "number"
+    },
+    {
+      "Source": "models/weeklytimer.py",
+      "SourceClass": "WeeklyTimerPattern",
+      "Key": "ecoMode",
+      "Model": "AcTimerPattern",
+      "Property": "Eco",
+      "Kind": "number"
+    },
+    {
+      "Source": "models/weeklytimer.py",
+      "SourceClass": "WeeklyTimerPattern",
+      "Key": "ecoNavi",
+      "Model": "AcTimerPattern",
+      "Property": "EcoNavi",
+      "Kind": "number"
+    },
+    {
+      "Source": "models/weeklytimer.py",
+      "SourceClass": "WeeklyTimerPattern",
+      "Key": "fanAutoMode",
+      "Model": "AcTimerPattern",
+      "Property": "FanAutoMode",
+      "Kind": "number"
+    },
+    {
+      "Source": "models/weeklytimer.py",
+      "SourceClass": "WeeklyTimerPattern",
+      "Key": "fanSpeed",
+      "Model": "AcTimerPattern",
+      "Property": "Fan",
+      "Kind": "number"
+    },
+    {
+      "Source": "models/weeklytimer.py",
+      "SourceClass": "WeeklyTimerPattern",
+      "Key": "iAuto",
+      "Model": "AcTimerPattern",
+      "Property": "IAuto",
+      "Kind": "number"
+    },
+    {
+      "Source": "models/weeklytimer.py",
+      "SourceClass": "WeeklyTimerPattern",
+      "Key": "mode",
+      "Model": "AcTimerPattern",
+      "Property": "Mode",
+      "Kind": "number"
+    },
+    {
+      "Source": "models/weeklytimer.py",
+      "SourceClass": "WeeklyTimerPattern",
+      "Key": "nanoe",
+      "Model": "AcTimerPattern",
+      "Property": "Nanoe",
+      "Kind": "number"
+    },
+    {
+      "Source": "models/weeklytimer.py",
+      "SourceClass": "WeeklyTimerPattern",
+      "Key": "onOff",
+      "Model": "AcTimerPattern",
+      "Property": "Power",
+      "Kind": "number"
+    },
+    {
+      "Source": "models/weeklytimer.py",
+      "SourceClass": "WeeklyTimerPattern",
+      "Key": "startTime",
+      "Model": "AcTimerPattern",
+      "Property": "StartTime",
+      "Kind": "string"
+    },
+    {
+      "Source": "models/weeklytimer.py",
+      "SourceClass": "WeeklyTimerPattern",
+      "Key": "temperature",
+      "Model": "AcTimerPattern",
+      "Property": "Temperature",
+      "Kind": "number"
+    },
+    {
+      "Source": "models/weeklytimer.py",
+      "SourceClass": "WeeklyTimerPattern",
+      "Key": "zoneParameters",
+      "Model": "AcTimerPattern",
+      "Property": "Zones",
+      "Kind": "array"
+    },
+    {
+      "Source": "models/weeklytimer.py",
+      "SourceClass": "WeeklyTimerDay",
+      "Key": "patternList",
+      "Model": "WeeklyTimerDay`1",
+      "Property": "Patterns",
+      "Kind": "array"
+    },
+    {
+      "Source": "models/weeklytimer.py",
+      "SourceClass": "WeeklyTimer",
+      "Key": "avlFlg",
+      "Model": "AcSchedule",
+      "Property": "Enabled",
+      "Kind": "bool"
+    },
+    {
+      "Source": "models/weeklytimer.py",
+      "SourceClass": "WeeklyTimer",
+      "Key": "modeAvlList",
+      "Model": "AcSchedule",
+      "Property": "ModeAvailability",
+      "Kind": "object"
+    },
+    {
+      "Source": "models/weeklytimer.py",
+      "SourceClass": "WeeklyTimer",
+      "Key": "permission",
+      "Model": "AcSchedule",
+      "Property": "Permission",
+      "Kind": "number"
+    },
+    {
+      "Source": "models/weeklytimer.py",
+      "SourceClass": "WeeklyTimer",
+      "Key": "temperatureUnit",
+      "Model": "AcSchedule",
+      "Property": "TemperatureUnit",
+      "Kind": "number"
+    },
+    {
+      "Source": "models/weeklytimer.py",
+      "SourceClass": "WeeklyTimer",
+      "Key": "weeklyTimerList",
+      "Model": "AcSchedule",
+      "Property": "Days",
+      "Kind": "array"
+    },
+    {
+      "Source": "models/aquareaweeklytimer.py",
+      "SourceClass": "AquareaWeeklyTimerPattern",
+      "Key": "mode",
+      "Model": "AquareaTimerPattern",
+      "Property": "Mode",
+      "Kind": "number"
+    },
+    {
+      "Source": "models/aquareaweeklytimer.py",
+      "SourceClass": "AquareaWeeklyTimerPattern",
+      "Key": "startTime",
+      "Model": "AquareaTimerPattern",
+      "Property": "StartTime",
+      "Kind": "string"
+    },
+    {
+      "Source": "models/aquareaweeklytimer.py",
+      "SourceClass": "AquareaWeeklyTimerPattern",
+      "Key": "tankOnOff",
+      "Model": "AquareaTimerPattern",
+      "Property": "TankPower",
+      "Kind": "number"
+    },
+    {
+      "Source": "models/aquareaweeklytimer.py",
+      "SourceClass": "AquareaWeeklyTimerPattern",
+      "Key": "tankTemperature",
+      "Model": "AquareaTimerPattern",
+      "Property": "TankHeat",
+      "Kind": "number"
+    },
+    {
+      "Source": "models/aquareaweeklytimer.py",
+      "SourceClass": "AquareaWeeklyTimerPattern",
+      "Key": "zone1Cool",
+      "Model": "AquareaTimerPattern",
+      "Property": "Zone1Cool",
+      "Kind": "number"
+    },
+    {
+      "Source": "models/aquareaweeklytimer.py",
+      "SourceClass": "AquareaWeeklyTimerPattern",
+      "Key": "zone1Heat",
+      "Model": "AquareaTimerPattern",
+      "Property": "Zone1Heat",
+      "Kind": "number"
+    },
+    {
+      "Source": "models/aquareaweeklytimer.py",
+      "SourceClass": "AquareaWeeklyTimerPattern",
+      "Key": "zone1OnOff",
+      "Model": "AquareaTimerPattern",
+      "Property": "Zone1Power",
+      "Kind": "number"
+    },
+    {
+      "Source": "models/aquareaweeklytimer.py",
+      "SourceClass": "AquareaWeeklyTimerPattern",
+      "Key": "zone2Cool",
+      "Model": "AquareaTimerPattern",
+      "Property": "Zone2Cool",
+      "Kind": "number"
+    },
+    {
+      "Source": "models/aquareaweeklytimer.py",
+      "SourceClass": "AquareaWeeklyTimerPattern",
+      "Key": "zone2Heat",
+      "Model": "AquareaTimerPattern",
+      "Property": "Zone2Heat",
+      "Kind": "number"
+    },
+    {
+      "Source": "models/aquareaweeklytimer.py",
+      "SourceClass": "AquareaWeeklyTimerPattern",
+      "Key": "zone2OnOff",
+      "Model": "AquareaTimerPattern",
+      "Property": "Zone2Power",
+      "Kind": "number"
+    },
+    {
+      "Source": "models/aquareaweeklytimer.py",
+      "SourceClass": "AquareaWeeklyTimer",
+      "Key": "status",
+      "Model": "AquareaSchedule",
+      "Property": "Limits",
+      "Kind": "object"
+    },
+    {
+      "Source": "models/aquareaweeklytimer.py",
+      "SourceClass": "AquareaWeeklyTimer",
+      "Key": "weeklyTimer",
+      "Model": "AquareaSchedule",
+      "Property": "Timer",
+      "Kind": "object"
+    }
+  ],
+  "Missing": [],
+  "SourceFiles": [
+    {
+      "Path": "aio_panasonic_comfort_cloud/__init__.py",
+      "Sha256": "3f28c0587478ace5fb88f01b747c5df75e09c347679891687cf3b83e7e47de65"
+    },
+    {
+      "Path": "aio_panasonic_comfort_cloud/aquareadevice.py",
+      "Sha256": "e55e5fe22084a9047755fcc6fba27632b4d102bc7ea37e67b8976005a28f434f"
+    },
+    {
+      "Path": "aio_panasonic_comfort_cloud/ccappversion.py",
+      "Sha256": "eb257ef19737624b2d1da87daf403a7161fc9e2a4c9523925c09fddc97f31c78"
+    },
+    {
+      "Path": "aio_panasonic_comfort_cloud/changerequestbuilder.py",
+      "Sha256": "9661a4204789a02779a51be2533252c76e46fa9e8ded993766581b311c1cdfe9"
+    },
+    {
+      "Path": "aio_panasonic_comfort_cloud/constants.py",
+      "Sha256": "e6a537e972f28d93fe991ebc6ebaf454daf1795c2589a5fa867426f76399d345"
+    },
+    {
+      "Path": "aio_panasonic_comfort_cloud/exceptions.py",
+      "Sha256": "99ffac08e2f4f834ead5f01fa97238909e11cdafda522703fed88ebe3af455f6"
+    },
+    {
+      "Path": "aio_panasonic_comfort_cloud/helpers.py",
+      "Sha256": "a0f46351ba643473310e12360fc858cc29f7bd4dc6bfee372de16acc5dbc3769"
+    },
+    {
+      "Path": "aio_panasonic_comfort_cloud/hwsdevice.py",
+      "Sha256": "654ca830cc496776bd27c93e6d9a7221aac60b229b2f57ee97cd4fa91348915e"
+    },
+    {
+      "Path": "aio_panasonic_comfort_cloud/panasonicauthentication.py",
+      "Sha256": "c170dde8c5206a7f9f6b472953f16ffcb01e2139e2d2ca15c2b99c2413362e93"
+    },
+    {
+      "Path": "aio_panasonic_comfort_cloud/panasonicdevice.py",
+      "Sha256": "467adadb50fe6572124257440b131262d32bb9c99197a44bca6859d63c260d8d"
+    },
+    {
+      "Path": "aio_panasonic_comfort_cloud/panasonicrequestheader.py",
+      "Sha256": "a18d43b43310b66f3fe90620067cafb0235f7e158c6cbb2386669aebf1358bdf"
+    },
+    {
+      "Path": "aio_panasonic_comfort_cloud/panasonicsession.py",
+      "Sha256": "8c7be9963f1609695e47ab4e22d74e8b1908c914395c5a501571d3c2987d3c00"
+    },
+    {
+      "Path": "aio_panasonic_comfort_cloud/panasonicsettings.py",
+      "Sha256": "312658d7693afd430005829e308e8b26757958f068269cf47eb3558fd1b42be7"
+    },
+    {
+      "Path": "aio_panasonic_comfort_cloud/testdata.py",
+      "Sha256": "f6b4d4331ebb9e3c94995d638947d58ccd38b6bacb9bcac09af56813659d455a"
+    },
+    {
+      "Path": "aio_panasonic_comfort_cloud/apiclient/__init__.py",
+      "Sha256": "9845d07f3770992883218680f29e14013a64c02449f00a3b446eea0efa556a4b"
+    },
+    {
+      "Path": "aio_panasonic_comfort_cloud/apiclient/_ac.py",
+      "Sha256": "9aa84084b53bdd4411ffbb346e2ca0d77150b4af14fecc5e035af9bc250edded"
+    },
+    {
+      "Path": "aio_panasonic_comfort_cloud/apiclient/_agreements.py",
+      "Sha256": "fbd8c6309bd7880e810797af8e988826c926ae1269674f2d5a1c41631b7ee225"
+    },
+    {
+      "Path": "aio_panasonic_comfort_cloud/apiclient/_aquarea.py",
+      "Sha256": "334f01715fb127c85414649df777d765eb8b1eb48ecec0ed754df5fc978dedce"
+    },
+    {
+      "Path": "aio_panasonic_comfort_cloud/apiclient/_devices.py",
+      "Sha256": "36c561c2abb8719b2fb4c5151e2a1daa37ded36fca062da02fc7787e0f4aaae7"
+    },
+    {
+      "Path": "aio_panasonic_comfort_cloud/apiclient/_energy.py",
+      "Sha256": "e079fd29f48a745e5bb085d30cc6c59a015f561685e88e27da039600f27d2d0f"
+    },
+    {
+      "Path": "aio_panasonic_comfort_cloud/apiclient/_hws.py",
+      "Sha256": "ffb2f02841fbbe426931053efd23c8c455c154e0af274bb4c5c59fbb40822f9f"
+    },
+    {
+      "Path": "aio_panasonic_comfort_cloud/apiclient/_protocol.py",
+      "Sha256": "dcd3ab68facdf718d6e00bd8e84d5e73cf2fefa35e0443f42e925d6ac1abfba0"
+    },
+    {
+      "Path": "aio_panasonic_comfort_cloud/apiclient/_timezone.py",
+      "Sha256": "90a2666384b80a2e0d2dad269dc97e50c54c10657f1ec124982f14b8a7b8cdd5"
+    },
+    {
+      "Path": "aio_panasonic_comfort_cloud/apiclient/_urls.py",
+      "Sha256": "8af2f2a5ba67038009386f110f04db447286a97ddf3557acb9088f29558b7438"
+    },
+    {
+      "Path": "aio_panasonic_comfort_cloud/apiclient/_weeklytimer.py",
+      "Sha256": "2c0b1c985ad6c0c70eb3f69391ecad77ddbb9bad7c8d92f4c97f753dcd14bb83"
+    },
+    {
+      "Path": "aio_panasonic_comfort_cloud/models/__init__.py",
+      "Sha256": "3b633b54f7ff5b940528b715f2e07a517300adf95f17032d208a0b6e4081f217"
+    },
+    {
+      "Path": "aio_panasonic_comfort_cloud/models/aquarea.py",
+      "Sha256": "838308fad5ada6a8eedff8190312016ab21b796a29fd27ea1ca41992d19bab8a"
+    },
+    {
+      "Path": "aio_panasonic_comfort_cloud/models/aquareaweeklytimer.py",
+      "Sha256": "0c94bad77f56698efcc36ff7fd05e2f17b62f96245c5f854b632d5ef0e4cb004"
+    },
+    {
+      "Path": "aio_panasonic_comfort_cloud/models/hws.py",
+      "Sha256": "5fc1e43e6605f429307de438187fe0c03be43dab62baf4865cd29856e9e453b1"
+    },
+    {
+      "Path": "aio_panasonic_comfort_cloud/models/weeklytimer.py",
+      "Sha256": "b11110e3084dac80a127d7d0d6a22c47010fbae9f3eadb780ede144a1a020cb8"
+    }
+  ],
+  "Methods": [
+    {
+      "Source": "apiclient/__init__.py",
+      "Class": "ApiClient",
+      "Member": "complete_browser_authentication",
+      "Target": "CompleteAuthorizationAsync",
+      "Status": "Implemented equivalent"
+    },
+    {
+      "Source": "apiclient/__init__.py",
+      "Class": "ApiClient",
+      "Member": "get_browser_authorization_url",
+      "Target": "CreateAuthorizationRequest",
+      "Status": "Implemented equivalent"
+    },
+    {
+      "Source": "apiclient/__init__.py",
+      "Class": "ApiClient",
+      "Member": "reauthenticate",
+      "Target": "AuthenticateWithPasswordAsync or a new browser authorization",
+      "Status": "Typed/explicit-policy adaptation"
+    },
+    {
+      "Source": "apiclient/__init__.py",
+      "Class": "ApiClient",
+      "Member": "refresh_token",
+      "Target": "RefreshSessionAsync",
+      "Status": "Implemented equivalent"
+    },
+    {
+      "Source": "apiclient/__init__.py",
+      "Class": "ApiClient",
+      "Member": "start_session",
+      "Target": "RestoreSessionAsync / AuthenticateWithPasswordAsync, followed by GetGroupsAsync",
+      "Status": "Typed/explicit-policy adaptation"
+    },
+    {
+      "Source": "apiclient/_ac.py",
+      "Class": "AirConditionerMixin",
+      "Member": "get_device",
+      "Target": "GetAcStatusAsync",
+      "Status": "Implemented equivalent"
+    },
+    {
+      "Source": "apiclient/_ac.py",
+      "Class": "AirConditionerMixin",
+      "Member": "has_pending_changes",
+      "Target": "AcController.HasPendingChanges",
+      "Status": "Implemented equivalent"
+    },
+    {
+      "Source": "apiclient/_ac.py",
+      "Class": "AirConditionerMixin",
+      "Member": "history",
+      "Target": "GetAcEnergyAsync",
+      "Status": "Implemented equivalent"
+    },
+    {
+      "Source": "apiclient/_ac.py",
+      "Class": "AirConditionerMixin",
+      "Member": "new_change_request",
+      "Target": "AcController.CreateChangeRequest / AcCommandBuilder",
+      "Status": "Implemented equivalent"
+    },
+    {
+      "Source": "apiclient/_ac.py",
+      "Class": "AirConditionerMixin",
+      "Member": "set_device",
+      "Target": "UpdateAcAsync",
+      "Status": "Implemented equivalent"
+    },
+    {
+      "Source": "apiclient/_ac.py",
+      "Class": "AirConditionerMixin",
+      "Member": "set_device_raw",
+      "Target": "UpdateAcAsync with typed AcUpdate",
+      "Status": "Typed/explicit-policy adaptation"
+    },
+    {
+      "Source": "apiclient/_ac.py",
+      "Class": "AirConditionerMixin",
+      "Member": "set_eco_function_mode",
+      "Target": "AcCommandBuilder.SetEcoFunction / AcUpdate.EcoFunction",
+      "Status": "Implemented equivalent"
+    },
+    {
+      "Source": "apiclient/_ac.py",
+      "Class": "AirConditionerMixin",
+      "Member": "set_eco_navi_mode",
+      "Target": "AcCommandBuilder.SetEcoNavi / AcUpdate.EcoNavi",
+      "Status": "Implemented equivalent"
+    },
+    {
+      "Source": "apiclient/_ac.py",
+      "Class": "AirConditionerMixin",
+      "Member": "set_horizontal_swing",
+      "Target": "AcCommandBuilder.SetHorizontalSwing / AcUpdate.HorizontalSwing",
+      "Status": "Implemented equivalent"
+    },
+    {
+      "Source": "apiclient/_ac.py",
+      "Class": "AirConditionerMixin",
+      "Member": "set_inside_cleaning",
+      "Target": "AcCommandBuilder.SetInsideCleaning / AcUpdate.InsideCleaning",
+      "Status": "Implemented equivalent"
+    },
+    {
+      "Source": "apiclient/_ac.py",
+      "Class": "AirConditionerMixin",
+      "Member": "set_nanoe_mode",
+      "Target": "AcCommandBuilder.SetNanoe / AcUpdate.Nanoe",
+      "Status": "Implemented equivalent"
+    },
+    {
+      "Source": "apiclient/_ac.py",
+      "Class": "AirConditionerMixin",
+      "Member": "set_vertical_swing",
+      "Target": "AcCommandBuilder.SetVerticalSwing / AcUpdate.VerticalSwing",
+      "Status": "Implemented equivalent"
+    },
+    {
+      "Source": "apiclient/_ac.py",
+      "Class": "AirConditionerMixin",
+      "Member": "try_update_device",
+      "Target": "RefreshAsync(DeviceObservation<AcSnapshot>)",
+      "Status": "Implemented equivalent"
+    },
+    {
+      "Source": "apiclient/_agreements.py",
+      "Class": "AgreementsMixin",
+      "Member": "accept_agreement",
+      "Target": "AcceptLegacyAgreementAsync",
+      "Status": "Implemented equivalent"
+    },
+    {
+      "Source": "apiclient/_agreements.py",
+      "Class": "AgreementsMixin",
+      "Member": "accept_agreements",
+      "Target": "AcceptAgreementsAsync",
+      "Status": "Implemented equivalent"
+    },
+    {
+      "Source": "apiclient/_agreements.py",
+      "Class": "AgreementsMixin",
+      "Member": "check_agreement_status",
+      "Target": "GetLegacyAgreementStatusAsync",
+      "Status": "Implemented equivalent"
+    },
+    {
+      "Source": "apiclient/_agreements.py",
+      "Class": "AgreementsMixin",
+      "Member": "ensure_all_agreements_accepted",
+      "Target": "EnsureAgreementsAcceptedAsync (explicit only)",
+      "Status": "Implemented equivalent"
+    },
+    {
+      "Source": "apiclient/_agreements.py",
+      "Class": "AgreementsMixin",
+      "Member": "get_agreement_documents",
+      "Target": "GetAgreementDocumentsAsync, including type-filter overload",
+      "Status": "Implemented equivalent"
+    },
+    {
+      "Source": "apiclient/_agreements.py",
+      "Class": "AgreementsMixin",
+      "Member": "get_agreement_status",
+      "Target": "GetAgreementStatusAsync, including type-filter overload",
+      "Status": "Implemented equivalent"
+    },
+    {
+      "Source": "apiclient/_agreements.py",
+      "Class": "AgreementsMixin",
+      "Member": "get_pending_agreements",
+      "Target": "GetPendingAgreementsAsync",
+      "Status": "Implemented equivalent"
+    },
+    {
+      "Source": "apiclient/_aquarea.py",
+      "Class": "AquareaMixin",
+      "Member": "async_get_aquarea_consumption",
+      "Target": "GetAquareaEnergyAsync",
+      "Status": "Implemented equivalent"
+    },
+    {
+      "Source": "apiclient/_aquarea.py",
+      "Class": "AquareaMixin",
+      "Member": "get_aquarea_device",
+      "Target": "GetAquareaStatusAsync",
+      "Status": "Implemented equivalent"
+    },
+    {
+      "Source": "apiclient/_aquarea.py",
+      "Class": "AquareaMixin",
+      "Member": "get_aquarea_weekly_timer",
+      "Target": "GetAquareaScheduleAsync",
+      "Status": "Implemented equivalent"
+    },
+    {
+      "Source": "apiclient/_aquarea.py",
+      "Class": "AquareaMixin",
+      "Member": "request_aquarea_defrost",
+      "Target": "UpdateAquareaAsync with ForceDefrost=1",
+      "Status": "Implemented equivalent"
+    },
+    {
+      "Source": "apiclient/_aquarea.py",
+      "Class": "AquareaMixin",
+      "Member": "set_aquarea_force_dhw",
+      "Target": "UpdateAquareaAsync with ForceHotWater",
+      "Status": "Implemented equivalent"
+    },
+    {
+      "Source": "apiclient/_aquarea.py",
+      "Class": "AquareaMixin",
+      "Member": "set_aquarea_force_heater",
+      "Target": "UpdateAquareaAsync with ForceHeater",
+      "Status": "Implemented equivalent"
+    },
+    {
+      "Source": "apiclient/_aquarea.py",
+      "Class": "AquareaMixin",
+      "Member": "set_aquarea_holiday_timer",
+      "Target": "UpdateAquareaAsync with HolidayTimer",
+      "Status": "Implemented equivalent"
+    },
+    {
+      "Source": "apiclient/_aquarea.py",
+      "Class": "AquareaMixin",
+      "Member": "set_aquarea_operation_mode",
+      "Target": "UpdateAquareaAsync with Mode",
+      "Status": "Implemented equivalent"
+    },
+    {
+      "Source": "apiclient/_aquarea.py",
+      "Class": "AquareaMixin",
+      "Member": "set_aquarea_operation_state",
+      "Target": "UpdateAquareaAsync with explicit Mode/Power/Tank/Zones",
+      "Status": "Implemented equivalent"
+    },
+    {
+      "Source": "apiclient/_aquarea.py",
+      "Class": "AquareaMixin",
+      "Member": "set_aquarea_operation_status",
+      "Target": "UpdateAquareaAsync with Power",
+      "Status": "Implemented equivalent"
+    },
+    {
+      "Source": "apiclient/_aquarea.py",
+      "Class": "AquareaMixin",
+      "Member": "set_aquarea_powerful_time",
+      "Target": "UpdateAquareaAsync with Powerful",
+      "Status": "Implemented equivalent"
+    },
+    {
+      "Source": "apiclient/_aquarea.py",
+      "Class": "AquareaMixin",
+      "Member": "set_aquarea_quiet_mode",
+      "Target": "UpdateAquareaAsync with Quiet",
+      "Status": "Implemented equivalent"
+    },
+    {
+      "Source": "apiclient/_aquarea.py",
+      "Class": "AquareaMixin",
+      "Member": "set_aquarea_special_status",
+      "Target": "UpdateAquareaAsync with Special and fresh branch-preserving offsets",
+      "Status": "Implemented equivalent"
+    },
+    {
+      "Source": "apiclient/_aquarea.py",
+      "Class": "AquareaMixin",
+      "Member": "set_aquarea_tank_operation_status",
+      "Target": "UpdateAquareaAsync with Tank.Power",
+      "Status": "Implemented equivalent"
+    },
+    {
+      "Source": "apiclient/_aquarea.py",
+      "Class": "AquareaMixin",
+      "Member": "set_aquarea_tank_temperature",
+      "Target": "UpdateAquareaAsync with Tank.HeatSetpoint",
+      "Status": "Implemented equivalent"
+    },
+    {
+      "Source": "apiclient/_aquarea.py",
+      "Class": "AquareaMixin",
+      "Member": "set_aquarea_weekly_timer",
+      "Target": "SetAquareaScheduleAsync",
+      "Status": "Implemented equivalent"
+    },
+    {
+      "Source": "apiclient/_aquarea.py",
+      "Class": "AquareaMixin",
+      "Member": "set_aquarea_weekly_timer_enabled",
+      "Target": "SetAquareaScheduleEnabledAsync",
+      "Status": "Implemented equivalent"
+    },
+    {
+      "Source": "apiclient/_aquarea.py",
+      "Class": "AquareaMixin",
+      "Member": "set_aquarea_zone_operation_status",
+      "Target": "UpdateAquareaAsync with Zones[].Power",
+      "Status": "Implemented equivalent"
+    },
+    {
+      "Source": "apiclient/_aquarea.py",
+      "Class": "AquareaMixin",
+      "Member": "set_aquarea_zone_temperature",
+      "Target": "UpdateAquareaAsync with Zones[].HeatSetpoint/CoolSetpoint",
+      "Status": "Implemented equivalent"
+    },
+    {
+      "Source": "apiclient/_aquarea.py",
+      "Class": "AquareaMixin",
+      "Member": "try_update_aquarea_device",
+      "Target": "RefreshAsync(DeviceObservation<AquareaSnapshot>)",
+      "Status": "Implemented equivalent"
+    },
+    {
+      "Source": "apiclient/_aquarea.py",
+      "Class": "AquareaMixin",
+      "Member": "try_update_aquarea_weekly_timer",
+      "Target": "GetAquareaScheduleAsync + DeviceObservation<AquareaSchedule>.Update",
+      "Status": "Implemented equivalent"
+    },
+    {
+      "Source": "apiclient/_devices.py",
+      "Class": "DeviceDiscoveryMixin",
+      "Member": "check_aquarea",
+      "Target": "GetDevicesAsync(Unknown), then explicit GetAquareaStatusAsync",
+      "Status": "Typed/explicit-policy adaptation"
+    },
+    {
+      "Source": "apiclient/_devices.py",
+      "Class": "DeviceDiscoveryMixin",
+      "Member": "dump",
+      "Target": "GetAcStatusAsync returning a typed snapshot",
+      "Status": "Typed/explicit-policy adaptation"
+    },
+    {
+      "Source": "apiclient/_devices.py",
+      "Class": "DeviceDiscoveryMixin",
+      "Member": "get_devices",
+      "Target": "GetGroupsAsync / GetDevicesAsync, filtered by DeviceFamily",
+      "Status": "Implemented equivalent"
+    },
+    {
+      "Source": "apiclient/_energy.py",
+      "Class": "EnergyMixin",
+      "Member": "async_get_energy",
+      "Target": "GetAcDailyEnergyAsync",
+      "Status": "Implemented equivalent"
+    },
+    {
+      "Source": "apiclient/_energy.py",
+      "Class": "EnergyMixin",
+      "Member": "async_try_update_energy",
+      "Target": "GetAcDailyEnergyAsync + AcEnergyTracker.Update",
+      "Status": "Implemented equivalent"
+    },
+    {
+      "Source": "apiclient/_hws.py",
+      "Class": "HwsMixin",
+      "Member": "async_get_hws_consumption",
+      "Target": "GetHotWaterDailyEnergyAsync",
+      "Status": "Implemented equivalent"
+    },
+    {
+      "Source": "apiclient/_hws.py",
+      "Class": "HwsMixin",
+      "Member": "async_set_hws_weekly_settings",
+      "Target": "UpdateHotWaterAsync with WeeklySettings",
+      "Status": "Implemented equivalent"
+    },
+    {
+      "Source": "apiclient/_hws.py",
+      "Class": "HwsMixin",
+      "Member": "async_try_update_hws_consumption",
+      "Target": "GetHotWaterDailyEnergyAsync + DeviceObservation<HotWaterEnergyHistoryEntry>.Update",
+      "Status": "Implemented equivalent"
+    },
+    {
+      "Source": "apiclient/_hws.py",
+      "Class": "HwsMixin",
+      "Member": "get_hws_device",
+      "Target": "GetHotWaterStatusAsync",
+      "Status": "Implemented equivalent"
+    },
+    {
+      "Source": "apiclient/_hws.py",
+      "Class": "HwsMixin",
+      "Member": "set_hws_boost_mode",
+      "Target": "UpdateHotWaterAsync with Boost",
+      "Status": "Implemented equivalent"
+    },
+    {
+      "Source": "apiclient/_hws.py",
+      "Class": "HwsMixin",
+      "Member": "set_hws_holiday_mode",
+      "Target": "UpdateHotWaterAsync with Mode=Holiday",
+      "Status": "Implemented equivalent"
+    },
+    {
+      "Source": "apiclient/_hws.py",
+      "Class": "HwsMixin",
+      "Member": "set_hws_operation_mode",
+      "Target": "UpdateHotWaterAsync with Mode",
+      "Status": "Implemented equivalent"
+    },
+    {
+      "Source": "apiclient/_hws.py",
+      "Class": "HwsMixin",
+      "Member": "set_hws_schedule_mode",
+      "Target": "UpdateHotWaterAsync with Mode=Schedule",
+      "Status": "Implemented equivalent"
+    },
+    {
+      "Source": "apiclient/_hws.py",
+      "Class": "HwsMixin",
+      "Member": "try_update_hws_device",
+      "Target": "RefreshAsync(DeviceObservation<HotWaterSnapshot>)",
+      "Status": "Implemented equivalent"
+    },
+    {
+      "Source": "apiclient/_protocol.py",
+      "Class": "ApiClientCore",
+      "Member": "execute_get",
+      "Target": "Typed API methods through serialized ApiCoreAsync<T>/SendCoreAsync<T>",
+      "Status": "Typed/explicit-policy adaptation"
+    },
+    {
+      "Source": "apiclient/_protocol.py",
+      "Class": "ApiClientCore",
+      "Member": "execute_post",
+      "Target": "Typed API methods through serialized ApiCoreAsync<T>/SendCoreAsync<T>",
+      "Status": "Typed/explicit-policy adaptation"
+    },
+    {
+      "Source": "apiclient/_protocol.py",
+      "Class": "ApiClientCore",
+      "Member": "execute_put",
+      "Target": "Typed API methods through serialized ApiCoreAsync<T>/SendCoreAsync<T>",
+      "Status": "Typed/explicit-policy adaptation"
+    },
+    {
+      "Source": "apiclient/_protocol.py",
+      "Class": "ApiClientCore",
+      "Member": "get_aquarea_device",
+      "Target": "GetAquareaStatusAsync",
+      "Status": "Implemented equivalent"
+    },
+    {
+      "Source": "apiclient/_timezone.py",
+      "Class": "(module)",
+      "Member": "get_current_time_zone",
+      "Target": "Explicit date-applicable TimeSpan UTC offset; application may use TimeZoneInfo.GetUtcOffset",
+      "Status": "Typed/explicit-policy adaptation"
+    },
+    {
+      "Source": "apiclient/_weeklytimer.py",
+      "Class": "WeeklyTimerMixin",
+      "Member": "get_weekly_timer",
+      "Target": "GetAcScheduleAsync",
+      "Status": "Implemented equivalent"
+    },
+    {
+      "Source": "apiclient/_weeklytimer.py",
+      "Class": "WeeklyTimerMixin",
+      "Member": "set_weekly_timer",
+      "Target": "SetAcScheduleAsync",
+      "Status": "Implemented equivalent"
+    },
+    {
+      "Source": "apiclient/_weeklytimer.py",
+      "Class": "WeeklyTimerMixin",
+      "Member": "set_weekly_timer_enabled",
+      "Target": "SetAcScheduleEnabledAsync",
+      "Status": "Implemented equivalent"
+    },
+    {
+      "Source": "apiclient/_weeklytimer.py",
+      "Class": "WeeklyTimerMixin",
+      "Member": "try_update_weekly_timer",
+      "Target": "GetAcScheduleAsync + DeviceObservation<AcSchedule>.Update",
+      "Status": "Implemented equivalent"
+    },
+    {
+      "Source": "aquareadevice.py",
+      "Class": "AquareaDevice",
+      "Member": "load",
+      "Target": "Typed deserialization + DeviceObservation<T>.Update",
+      "Status": "Implemented equivalent"
+    },
+    {
+      "Source": "ccappversion.py",
+      "Class": "CCAppVersion",
+      "Member": "get",
+      "Target": "AppVersionDiscovery.GetAsync",
+      "Status": "Implemented equivalent"
+    },
+    {
+      "Source": "ccappversion.py",
+      "Class": "CCAppVersion",
+      "Member": "refresh",
+      "Target": "AppVersionDiscovery.RefreshAsync",
+      "Status": "Implemented equivalent"
+    },
+    {
+      "Source": "changerequestbuilder.py",
+      "Class": "ChangeRequestBuilder",
+      "Member": "build",
+      "Target": "AcCommandBuilder.Build",
+      "Status": "Implemented equivalent"
+    },
+    {
+      "Source": "changerequestbuilder.py",
+      "Class": "ChangeRequestBuilder",
+      "Member": "set_eco_function_mode",
+      "Target": "AcCommandBuilder.SetEcoFunction",
+      "Status": "Implemented equivalent"
+    },
+    {
+      "Source": "changerequestbuilder.py",
+      "Class": "ChangeRequestBuilder",
+      "Member": "set_eco_mode",
+      "Target": "AcCommandBuilder.SetEcoMode",
+      "Status": "Implemented equivalent"
+    },
+    {
+      "Source": "changerequestbuilder.py",
+      "Class": "ChangeRequestBuilder",
+      "Member": "set_eco_navi_mode",
+      "Target": "AcCommandBuilder.SetEcoNavi",
+      "Status": "Implemented equivalent"
+    },
+    {
+      "Source": "changerequestbuilder.py",
+      "Class": "ChangeRequestBuilder",
+      "Member": "set_fan_speed",
+      "Target": "AcCommandBuilder.SetFanSpeed",
+      "Status": "Implemented equivalent"
+    },
+    {
+      "Source": "changerequestbuilder.py",
+      "Class": "ChangeRequestBuilder",
+      "Member": "set_horizontal_swing",
+      "Target": "AcCommandBuilder.SetHorizontalSwing",
+      "Status": "Implemented equivalent"
+    },
+    {
+      "Source": "changerequestbuilder.py",
+      "Class": "ChangeRequestBuilder",
+      "Member": "set_hvac_mode",
+      "Target": "AcCommandBuilder.SetMode",
+      "Status": "Implemented equivalent"
+    },
+    {
+      "Source": "changerequestbuilder.py",
+      "Class": "ChangeRequestBuilder",
+      "Member": "set_iautox_mode",
+      "Target": "AcCommandBuilder.SetIAutoX",
+      "Status": "Implemented equivalent"
+    },
+    {
+      "Source": "changerequestbuilder.py",
+      "Class": "ChangeRequestBuilder",
+      "Member": "set_inside_cleaning_mode",
+      "Target": "AcCommandBuilder.SetInsideCleaning",
+      "Status": "Implemented equivalent"
+    },
+    {
+      "Source": "changerequestbuilder.py",
+      "Class": "ChangeRequestBuilder",
+      "Member": "set_nanoe_mode",
+      "Target": "AcCommandBuilder.SetNanoe",
+      "Status": "Implemented equivalent"
+    },
+    {
+      "Source": "changerequestbuilder.py",
+      "Class": "ChangeRequestBuilder",
+      "Member": "set_power_mode",
+      "Target": "AcCommandBuilder.SetPower",
+      "Status": "Implemented equivalent"
+    },
+    {
+      "Source": "changerequestbuilder.py",
+      "Class": "ChangeRequestBuilder",
+      "Member": "set_target_temperature",
+      "Target": "AcCommandBuilder.SetTargetTemperature",
+      "Status": "Implemented equivalent"
+    },
+    {
+      "Source": "changerequestbuilder.py",
+      "Class": "ChangeRequestBuilder",
+      "Member": "set_vertical_swing",
+      "Target": "AcCommandBuilder.SetVerticalSwing",
+      "Status": "Implemented equivalent"
+    },
+    {
+      "Source": "changerequestbuilder.py",
+      "Class": "ChangeRequestBuilder",
+      "Member": "set_zone_damper",
+      "Target": "AcCommandBuilder.SetZoneDamper",
+      "Status": "Implemented equivalent"
+    },
+    {
+      "Source": "changerequestbuilder.py",
+      "Class": "ChangeRequestBuilder",
+      "Member": "set_zone_mode",
+      "Target": "AcCommandBuilder.SetZonePower",
+      "Status": "Implemented equivalent"
+    },
+    {
+      "Source": "helpers.py",
+      "Class": "(module)",
+      "Member": "check_response",
+      "Target": "Typed response validation and ComfortCloudException",
+      "Status": "Implemented equivalent"
+    },
+    {
+      "Source": "helpers.py",
+      "Class": "(module)",
+      "Member": "has_new_version_been_published",
+      "Target": "ComfortCloudException.ErrorCode == 4106, explicit UpdateAppVersionAsync",
+      "Status": "Typed/explicit-policy adaptation"
+    },
+    {
+      "Source": "hwsdevice.py",
+      "Class": "HwsDevice",
+      "Member": "load",
+      "Target": "Typed deserialization + DeviceObservation<T>.Update",
+      "Status": "Implemented equivalent"
+    },
+    {
+      "Source": "models/aquarea.py",
+      "Class": "(module)",
+      "Member": "read_enum",
+      "Target": "NumericEnumConverter and nullable typed models",
+      "Status": "Implemented equivalent"
+    },
+    {
+      "Source": "models/aquarea.py",
+      "Class": "(module)",
+      "Member": "read_value",
+      "Target": "Attribute-defined nullable typed deserialization",
+      "Status": "Implemented equivalent"
+    },
+    {
+      "Source": "models/aquarea.py",
+      "Class": "AquareaConsumption",
+      "Member": "load",
+      "Target": "Typed deserialization + DeviceObservation<T>.Update",
+      "Status": "Implemented equivalent"
+    },
+    {
+      "Source": "models/aquarea.py",
+      "Class": "AquareaDeviceParameters",
+      "Member": "get_zone",
+      "Target": "AcParameters.GetZone / AquareaStatus.GetZone",
+      "Status": "Implemented equivalent"
+    },
+    {
+      "Source": "models/aquarea.py",
+      "Class": "AquareaDeviceParameters",
+      "Member": "load",
+      "Target": "Typed deserialization + DeviceObservation<T>.Update",
+      "Status": "Implemented equivalent"
+    },
+    {
+      "Source": "models/aquarea.py",
+      "Class": "AquareaTankStatus",
+      "Member": "load",
+      "Target": "Typed deserialization + DeviceObservation<T>.Update",
+      "Status": "Implemented equivalent"
+    },
+    {
+      "Source": "models/aquarea.py",
+      "Class": "AquareaZoneStatus",
+      "Member": "load",
+      "Target": "Typed deserialization + DeviceObservation<T>.Update",
+      "Status": "Implemented equivalent"
+    },
+    {
+      "Source": "models/aquareaweeklytimer.py",
+      "Class": "AquareaWeeklyTimer",
+      "Member": "day",
+      "Target": "ScheduleEditing.Day(DayOfWeek)",
+      "Status": "Implemented equivalent"
+    },
+    {
+      "Source": "models/aquareaweeklytimer.py",
+      "Class": "AquareaWeeklyTimer",
+      "Member": "load",
+      "Target": "Typed deserialization + DeviceObservation<T>.Update",
+      "Status": "Implemented equivalent"
+    },
+    {
+      "Source": "models/aquareaweeklytimer.py",
+      "Class": "AquareaWeeklyTimer",
+      "Member": "to_dict",
+      "Target": "JsonSerializer.Serialize with ComfortCloudJson.CreateOptions; endpoint-specific request wrappers",
+      "Status": "Implemented equivalent"
+    },
+    {
+      "Source": "models/aquareaweeklytimer.py",
+      "Class": "AquareaWeeklyTimer",
+      "Member": "zone_limits",
+      "Target": "AquareaSchedule.ZoneLimits",
+      "Status": "Implemented equivalent"
+    },
+    {
+      "Source": "models/aquareaweeklytimer.py",
+      "Class": "AquareaWeeklyTimerPattern",
+      "Member": "set_zone",
+      "Target": "AquareaTimerPattern.SetZone",
+      "Status": "Implemented equivalent"
+    },
+    {
+      "Source": "models/aquareaweeklytimer.py",
+      "Class": "AquareaWeeklyTimerPattern",
+      "Member": "set_zone_cool",
+      "Target": "AquareaTimerPattern.SetZoneCool",
+      "Status": "Implemented equivalent"
+    },
+    {
+      "Source": "models/aquareaweeklytimer.py",
+      "Class": "AquareaWeeklyTimerPattern",
+      "Member": "set_zone_heat",
+      "Target": "AquareaTimerPattern.SetZoneHeat",
+      "Status": "Implemented equivalent"
+    },
+    {
+      "Source": "models/aquareaweeklytimer.py",
+      "Class": "AquareaWeeklyTimerPattern",
+      "Member": "set_zone_on_off",
+      "Target": "AquareaTimerPattern.SetZonePower",
+      "Status": "Implemented equivalent"
+    },
+    {
+      "Source": "models/aquareaweeklytimer.py",
+      "Class": "AquareaWeeklyTimerPattern",
+      "Member": "to_dict",
+      "Target": "JsonSerializer.Serialize with ComfortCloudJson.CreateOptions; endpoint-specific request wrappers",
+      "Status": "Implemented equivalent"
+    },
+    {
+      "Source": "models/aquareaweeklytimer.py",
+      "Class": "AquareaWeeklyTimerPattern",
+      "Member": "zone_cool",
+      "Target": "AquareaTimerPattern.ZoneCool",
+      "Status": "Implemented equivalent"
+    },
+    {
+      "Source": "models/aquareaweeklytimer.py",
+      "Class": "AquareaWeeklyTimerPattern",
+      "Member": "zone_heat",
+      "Target": "AquareaTimerPattern.ZoneHeat",
+      "Status": "Implemented equivalent"
+    },
+    {
+      "Source": "models/aquareaweeklytimer.py",
+      "Class": "AquareaWeeklyTimerPattern",
+      "Member": "zone_on_off",
+      "Target": "AquareaTimerPattern.ZonePower",
+      "Status": "Implemented equivalent"
+    },
+    {
+      "Source": "models/hws.py",
+      "Class": "(module)",
+      "Member": "read_enum",
+      "Target": "NumericEnumConverter and nullable typed models",
+      "Status": "Implemented equivalent"
+    },
+    {
+      "Source": "models/hws.py",
+      "Class": "(module)",
+      "Member": "read_value",
+      "Target": "Attribute-defined nullable typed deserialization",
+      "Status": "Implemented equivalent"
+    },
+    {
+      "Source": "models/hws.py",
+      "Class": "HwsConsumption",
+      "Member": "copy",
+      "Target": "DeviceObservation<T>.Update copies a typed snapshot",
+      "Status": "Implemented equivalent"
+    },
+    {
+      "Source": "models/hws.py",
+      "Class": "HwsConsumption",
+      "Member": "load",
+      "Target": "Typed deserialization + DeviceObservation<T>.Update",
+      "Status": "Implemented equivalent"
+    },
+    {
+      "Source": "models/hws.py",
+      "Class": "HwsDailySettings",
+      "Member": "load",
+      "Target": "Typed deserialization + DeviceObservation<T>.Update",
+      "Status": "Implemented equivalent"
+    },
+    {
+      "Source": "models/hws.py",
+      "Class": "HwsDailySettings",
+      "Member": "to_dict",
+      "Target": "JsonSerializer.Serialize with ComfortCloudJson.CreateOptions; endpoint-specific request wrappers",
+      "Status": "Implemented equivalent"
+    },
+    {
+      "Source": "models/hws.py",
+      "Class": "HwsDeviceParameters",
+      "Member": "load",
+      "Target": "Typed deserialization + DeviceObservation<T>.Update",
+      "Status": "Implemented equivalent"
+    },
+    {
+      "Source": "models/hws.py",
+      "Class": "HwsInhibitTimeSettings",
+      "Member": "load",
+      "Target": "Typed deserialization + DeviceObservation<T>.Update",
+      "Status": "Implemented equivalent"
+    },
+    {
+      "Source": "models/hws.py",
+      "Class": "HwsInhibitTimeSettings",
+      "Member": "to_dict",
+      "Target": "JsonSerializer.Serialize with ComfortCloudJson.CreateOptions; endpoint-specific request wrappers",
+      "Status": "Implemented equivalent"
+    },
+    {
+      "Source": "models/hws.py",
+      "Class": "HwsParameters",
+      "Member": "load",
+      "Target": "Typed deserialization + DeviceObservation<T>.Update",
+      "Status": "Implemented equivalent"
+    },
+    {
+      "Source": "models/hws.py",
+      "Class": "HwsSet1Settings",
+      "Member": "load",
+      "Target": "Typed deserialization + DeviceObservation<T>.Update",
+      "Status": "Implemented equivalent"
+    },
+    {
+      "Source": "models/hws.py",
+      "Class": "HwsSet1Settings",
+      "Member": "to_dict",
+      "Target": "JsonSerializer.Serialize with ComfortCloudJson.CreateOptions; endpoint-specific request wrappers",
+      "Status": "Implemented equivalent"
+    },
+    {
+      "Source": "models/hws.py",
+      "Class": "HwsSet2Settings",
+      "Member": "load",
+      "Target": "Typed deserialization + DeviceObservation<T>.Update",
+      "Status": "Implemented equivalent"
+    },
+    {
+      "Source": "models/hws.py",
+      "Class": "HwsSet2Settings",
+      "Member": "to_dict",
+      "Target": "JsonSerializer.Serialize with ComfortCloudJson.CreateOptions; endpoint-specific request wrappers",
+      "Status": "Implemented equivalent"
+    },
+    {
+      "Source": "models/hws.py",
+      "Class": "HwsTemperatureSettingLimits",
+      "Member": "load",
+      "Target": "Typed deserialization + DeviceObservation<T>.Update",
+      "Status": "Implemented equivalent"
+    },
+    {
+      "Source": "models/weeklytimer.py",
+      "Class": "WeeklyTimer",
+      "Member": "day",
+      "Target": "ScheduleEditing.Day(DayOfWeek)",
+      "Status": "Implemented equivalent"
+    },
+    {
+      "Source": "models/weeklytimer.py",
+      "Class": "WeeklyTimer",
+      "Member": "load",
+      "Target": "Typed deserialization + DeviceObservation<T>.Update",
+      "Status": "Implemented equivalent"
+    },
+    {
+      "Source": "models/weeklytimer.py",
+      "Class": "WeeklyTimer",
+      "Member": "to_dict",
+      "Target": "JsonSerializer.Serialize with ComfortCloudJson.CreateOptions; endpoint-specific request wrappers",
+      "Status": "Implemented equivalent"
+    },
+    {
+      "Source": "models/weeklytimer.py",
+      "Class": "WeeklyTimerDay",
+      "Member": "add_pattern",
+      "Target": "ScheduleEditing.AddPattern",
+      "Status": "Implemented equivalent"
+    },
+    {
+      "Source": "models/weeklytimer.py",
+      "Class": "WeeklyTimerDay",
+      "Member": "clear",
+      "Target": "ScheduleEditing.Clear",
+      "Status": "Implemented equivalent"
+    },
+    {
+      "Source": "models/weeklytimer.py",
+      "Class": "WeeklyTimerDay",
+      "Member": "remove_pattern",
+      "Target": "ScheduleEditing.RemovePattern, time or identity overload",
+      "Status": "Implemented equivalent"
+    },
+    {
+      "Source": "models/weeklytimer.py",
+      "Class": "WeeklyTimerDay",
+      "Member": "set_patterns",
+      "Target": "ScheduleEditing.SetPatterns",
+      "Status": "Implemented equivalent"
+    },
+    {
+      "Source": "models/weeklytimer.py",
+      "Class": "WeeklyTimerDay",
+      "Member": "to_dict",
+      "Target": "JsonSerializer.Serialize with ComfortCloudJson.CreateOptions; endpoint-specific request wrappers",
+      "Status": "Implemented equivalent"
+    },
+    {
+      "Source": "models/weeklytimer.py",
+      "Class": "WeeklyTimerPattern",
+      "Member": "to_dict",
+      "Target": "JsonSerializer.Serialize with ComfortCloudJson.CreateOptions; endpoint-specific request wrappers",
+      "Status": "Implemented equivalent"
+    },
+    {
+      "Source": "models/weeklytimer.py",
+      "Class": "WeeklyTimerZone",
+      "Member": "to_dict",
+      "Target": "JsonSerializer.Serialize with ComfortCloudJson.CreateOptions; endpoint-specific request wrappers",
+      "Status": "Implemented equivalent"
+    },
+    {
+      "Source": "panasonicauthentication.py",
+      "Class": "(module)",
+      "Member": "generate_random_string",
+      "Target": "OAuthProtocol.RandomToken (cryptographic randomness)",
+      "Status": "Implemented equivalent"
+    },
+    {
+      "Source": "panasonicauthentication.py",
+      "Class": "(module)",
+      "Member": "get_querystring_parameter_from_header_entry_url",
+      "Target": "OAuthProtocol.Query applied to validated Location",
+      "Status": "Implemented equivalent"
+    },
+    {
+      "Source": "panasonicauthentication.py",
+      "Class": "(module)",
+      "Member": "get_querystring_parameter_from_url",
+      "Target": "OAuthProtocol.Query",
+      "Status": "Implemented equivalent"
+    },
+    {
+      "Source": "panasonicauthentication.py",
+      "Class": "PanasonicAuthentication",
+      "Member": "authenticate",
+      "Target": "AuthenticateWithPasswordAsync",
+      "Status": "Implemented equivalent"
+    },
+    {
+      "Source": "panasonicauthentication.py",
+      "Class": "PanasonicAuthentication",
+      "Member": "build_authorization_url",
+      "Target": "CreateAuthorizationRequest",
+      "Status": "Implemented equivalent"
+    },
+    {
+      "Source": "panasonicauthentication.py",
+      "Class": "PanasonicAuthentication",
+      "Member": "complete_browser_authentication",
+      "Target": "CompleteAuthorizationAsync",
+      "Status": "Implemented equivalent"
+    },
+    {
+      "Source": "panasonicauthentication.py",
+      "Class": "PanasonicAuthentication",
+      "Member": "refresh_token",
+      "Target": "RefreshSessionAsync",
+      "Status": "Implemented equivalent"
+    },
+    {
+      "Source": "panasonicauthentication.py",
+      "Class": "PanasonicAuthentication",
+      "Member": "verify_mfa",
+      "Target": "CompletePasswordMfaAsync",
+      "Status": "Implemented equivalent"
+    },
+    {
+      "Source": "panasonicdevice.py",
+      "Class": "(module)",
+      "Member": "calculate_energy_diff",
+      "Target": "AcEnergyTracker reset-aware delta calculation",
+      "Status": "Implemented equivalent"
+    },
+    {
+      "Source": "panasonicdevice.py",
+      "Class": "(module)",
+      "Member": "read_enum",
+      "Target": "NumericEnumConverter and nullable typed models",
+      "Status": "Implemented equivalent"
+    },
+    {
+      "Source": "panasonicdevice.py",
+      "Class": "(module)",
+      "Member": "read_value",
+      "Target": "Attribute-defined nullable typed deserialization",
+      "Status": "Implemented equivalent"
+    },
+    {
+      "Source": "panasonicdevice.py",
+      "Class": "PanasonicDevice",
+      "Member": "load",
+      "Target": "Typed deserialization + DeviceObservation<T>.Update",
+      "Status": "Implemented equivalent"
+    },
+    {
+      "Source": "panasonicdevice.py",
+      "Class": "PanasonicDeviceEnergy",
+      "Member": "load",
+      "Target": "Typed deserialization + DeviceObservation<T>.Update",
+      "Status": "Implemented equivalent"
+    },
+    {
+      "Source": "panasonicdevice.py",
+      "Class": "PanasonicDeviceFeatures",
+      "Member": "load",
+      "Target": "Typed deserialization + DeviceObservation<T>.Update",
+      "Status": "Implemented equivalent"
+    },
+    {
+      "Source": "panasonicdevice.py",
+      "Class": "PanasonicDeviceInfo",
+      "Member": "load",
+      "Target": "Typed deserialization + DeviceObservation<T>.Update",
+      "Status": "Implemented equivalent"
+    },
+    {
+      "Source": "panasonicdevice.py",
+      "Class": "PanasonicDeviceParameters",
+      "Member": "get_zone",
+      "Target": "AcParameters.GetZone / AquareaStatus.GetZone",
+      "Status": "Implemented equivalent"
+    },
+    {
+      "Source": "panasonicdevice.py",
+      "Class": "PanasonicDeviceParameters",
+      "Member": "load",
+      "Target": "Typed deserialization + DeviceObservation<T>.Update",
+      "Status": "Implemented equivalent"
+    },
+    {
+      "Source": "panasonicdevice.py",
+      "Class": "PanasonicDeviceZone",
+      "Member": "load",
+      "Target": "Typed deserialization + DeviceObservation<T>.Update",
+      "Status": "Implemented equivalent"
+    },
+    {
+      "Source": "panasonicrequestheader.py",
+      "Class": "PanasonicRequestHeader",
+      "Member": "get",
+      "Target": "RequestSigning + cloud transport headers",
+      "Status": "Implemented equivalent"
+    },
+    {
+      "Source": "panasonicrequestheader.py",
+      "Class": "PanasonicRequestHeader",
+      "Member": "get_aqua_headers",
+      "Target": "SendAquareaWebCoreAsync, isolated cookies and web headers",
+      "Status": "Implemented equivalent"
+    },
+    {
+      "Source": "panasonicsession.py",
+      "Class": "PanasonicSession",
+      "Member": "execute_aqua_get",
+      "Target": "GetLegacyAquareaAsync<T> / GetLegacyAquareaPageAsync",
+      "Status": "Implemented equivalent"
+    },
+    {
+      "Source": "panasonicsession.py",
+      "Class": "PanasonicSession",
+      "Member": "execute_aqua_post",
+      "Target": "PostLegacyAquareaAsync<T>",
+      "Status": "Implemented equivalent"
+    },
+    {
+      "Source": "panasonicsession.py",
+      "Class": "PanasonicSession",
+      "Member": "execute_get",
+      "Target": "Typed API methods through serialized ApiCoreAsync<T>/SendCoreAsync<T>",
+      "Status": "Typed/explicit-policy adaptation"
+    },
+    {
+      "Source": "panasonicsession.py",
+      "Class": "PanasonicSession",
+      "Member": "execute_post",
+      "Target": "Typed API methods through serialized ApiCoreAsync<T>/SendCoreAsync<T>",
+      "Status": "Typed/explicit-policy adaptation"
+    },
+    {
+      "Source": "panasonicsession.py",
+      "Class": "PanasonicSession",
+      "Member": "execute_put",
+      "Target": "Typed API methods through serialized ApiCoreAsync<T>/SendCoreAsync<T>",
+      "Status": "Typed/explicit-policy adaptation"
+    },
+    {
+      "Source": "panasonicsession.py",
+      "Class": "PanasonicSession",
+      "Member": "reauthenticate",
+      "Target": "AuthenticateWithPasswordAsync or a new browser authorization",
+      "Status": "Typed/explicit-policy adaptation"
+    },
+    {
+      "Source": "panasonicsession.py",
+      "Class": "PanasonicSession",
+      "Member": "start_session",
+      "Target": "RestoreSessionAsync / AuthenticateWithPasswordAsync, followed by GetGroupsAsync",
+      "Status": "Typed/explicit-policy adaptation"
+    },
+    {
+      "Source": "panasonicsession.py",
+      "Class": "PanasonicSession",
+      "Member": "stop_session",
+      "Target": "LogoutAsync",
+      "Status": "Implemented equivalent"
+    },
+    {
+      "Source": "panasonicsession.py",
+      "Class": "PanasonicSession",
+      "Member": "update_app_version",
+      "Target": "UpdateAppVersionAsync",
+      "Status": "Implemented equivalent"
+    },
+    {
+      "Source": "panasonicsettings.py",
+      "Class": "PanasonicSettings",
+      "Member": "clear",
+      "Target": "Explicit LogoutAsync + application SessionStore.Delete",
+      "Status": "Application-owned persistence"
+    },
+    {
+      "Source": "panasonicsettings.py",
+      "Class": "PanasonicSettings",
+      "Member": "is_ready",
+      "Target": "Application-owned secure storage (console SessionStore.Load)",
+      "Status": "Implemented equivalent"
+    },
+    {
+      "Source": "panasonicsettings.py",
+      "Class": "PanasonicSettings",
+      "Member": "set_token",
+      "Target": "RestoreSessionAsync / validated token responses",
+      "Status": "Implemented equivalent"
+    }
+  ],
+  "Properties": [
+    {
+      "Source": "panasonicdevice.py",
+      "SourceClass": "PanasonicDeviceInfo",
+      "Member": "id",
+      "Target": "DeviceInfo.StableId",
+      "Status": "Typed equivalent"
+    },
+    {
+      "Source": "panasonicdevice.py",
+      "SourceClass": "PanasonicDeviceInfo",
+      "Member": "guid",
+      "Target": "DeviceInfo.DeviceGuid",
+      "Status": "Typed equivalent"
+    },
+    {
+      "Source": "panasonicdevice.py",
+      "SourceClass": "PanasonicDeviceInfo",
+      "Member": "name",
+      "Target": "DeviceInfo.Name",
+      "Status": "Typed equivalent"
+    },
+    {
+      "Source": "panasonicdevice.py",
+      "SourceClass": "PanasonicDeviceInfo",
+      "Member": "group",
+      "Target": "DeviceInfo.GroupName",
+      "Status": "Typed equivalent"
+    },
+    {
+      "Source": "panasonicdevice.py",
+      "SourceClass": "PanasonicDeviceInfo",
+      "Member": "model",
+      "Target": "DeviceInfo.Model",
+      "Status": "Typed equivalent"
+    },
+    {
+      "Source": "panasonicdevice.py",
+      "SourceClass": "PanasonicDeviceInfo",
+      "Member": "is_valid",
+      "Target": "DeviceInfo.IsValidAirConditioner",
+      "Status": "Typed equivalent"
+    },
+    {
+      "Source": "panasonicdevice.py",
+      "SourceClass": "PanasonicDeviceInfo",
+      "Member": "is_aquarea",
+      "Target": "DeviceInfo.Family == DeviceFamily.Aquarea",
+      "Status": "Typed equivalent"
+    },
+    {
+      "Source": "panasonicdevice.py",
+      "SourceClass": "PanasonicDeviceInfo",
+      "Member": "is_hws",
+      "Target": "DeviceInfo.Family == DeviceFamily.HotWater",
+      "Status": "Typed equivalent"
+    },
+    {
+      "Source": "panasonicdevice.py",
+      "SourceClass": "PanasonicDeviceInfo",
+      "Member": "is_cac",
+      "Target": "DeviceInfo.IsCommercial",
+      "Status": "Typed equivalent"
+    },
+    {
+      "Source": "panasonicdevice.py",
+      "SourceClass": "PanasonicDeviceInfo",
+      "Member": "raw",
+      "Target": "Attribute-defined typed model + unknown-field round trips using ComfortCloudJson",
+      "Status": "Typed adaptation; no public raw JSON"
+    },
+    {
+      "Source": "panasonicdevice.py",
+      "SourceClass": "PanasonicDeviceInfo",
+      "Member": "status_data_mode",
+      "Target": "StatusSource argument on GetAcStatusAsync/GetAquareaStatusAsync",
+      "Status": "Typed equivalent"
+    },
+    {
+      "Source": "panasonicdevice.py",
+      "SourceClass": "PanasonicDeviceInfo",
+      "Member": "device_type",
+      "Target": "DeviceInfo.DeviceType",
+      "Status": "Typed equivalent"
+    },
+    {
+      "Source": "panasonicdevice.py",
+      "SourceClass": "PanasonicDeviceInfo",
+      "Member": "permission",
+      "Target": "DeviceInfo.Permission",
+      "Status": "Typed equivalent"
+    },
+    {
+      "Source": "panasonicdevice.py",
+      "SourceClass": "PanasonicDeviceInfo",
+      "Member": "temperature_unit",
+      "Target": "DeviceInfo.TemperatureUnit",
+      "Status": "Typed equivalent"
+    },
+    {
+      "Source": "panasonicdevice.py",
+      "SourceClass": "PanasonicDeviceInfo",
+      "Member": "summer_house",
+      "Target": "DeviceInfo.SummerHouse",
+      "Status": "Typed equivalent"
+    },
+    {
+      "Source": "panasonicdevice.py",
+      "SourceClass": "PanasonicDeviceInfo",
+      "Member": "nanoe_stand_alone",
+      "Target": "DeviceInfo.NanoeStandalone",
+      "Status": "Typed equivalent"
+    },
+    {
+      "Source": "panasonicdevice.py",
+      "SourceClass": "PanasonicDeviceInfo",
+      "Member": "auto_mode",
+      "Target": "DeviceInfo.SupportsAuto",
+      "Status": "Typed equivalent"
+    },
+    {
+      "Source": "panasonicdevice.py",
+      "SourceClass": "PanasonicDeviceInfo",
+      "Member": "power_consumption_flag",
+      "Target": "DeviceInfo.SupportsEnergy",
+      "Status": "Typed equivalent"
+    },
+    {
+      "Source": "panasonicdevice.py",
+      "SourceClass": "PanasonicDeviceInfo",
+      "Member": "mode_avl_list",
+      "Target": "DeviceInfo.ModeAvailability",
+      "Status": "Typed equivalent"
+    },
+    {
+      "Source": "panasonicdevice.py",
+      "SourceClass": "PanasonicDeviceInfo",
+      "Member": "model_version",
+      "Target": "DeviceInfo.ModelVersion",
+      "Status": "Typed equivalent"
+    },
+    {
+      "Source": "panasonicdevice.py",
+      "SourceClass": "PanasonicDeviceInfo",
+      "Member": "coordinable_flag",
+      "Target": "DeviceInfo.Coordinable",
+      "Status": "Typed equivalent"
+    },
+    {
+      "Source": "panasonicdevice.py",
+      "SourceClass": "PanasonicDeviceParameters",
+      "Member": "has_changed",
+      "Target": "DeviceObservation<T>.HasChanged / Update result",
+      "Status": "Explicit application-owned tracking"
+    },
+    {
+      "Source": "panasonicdevice.py",
+      "SourceClass": "PanasonicDeviceParameters",
+      "Member": "power",
+      "Target": "AcParameters.Power",
+      "Status": "Typed equivalent"
+    },
+    {
+      "Source": "panasonicdevice.py",
+      "SourceClass": "PanasonicDeviceParameters",
+      "Member": "mode",
+      "Target": "AcParameters.Mode",
+      "Status": "Typed equivalent"
+    },
+    {
+      "Source": "panasonicdevice.py",
+      "SourceClass": "PanasonicDeviceParameters",
+      "Member": "fan_speed",
+      "Target": "AcParameters.Fan",
+      "Status": "Typed equivalent"
+    },
+    {
+      "Source": "panasonicdevice.py",
+      "SourceClass": "PanasonicDeviceParameters",
+      "Member": "horizontal_swing_mode",
+      "Target": "AcParameters.HorizontalSwingMode",
+      "Status": "Typed equivalent"
+    },
+    {
+      "Source": "panasonicdevice.py",
+      "SourceClass": "PanasonicDeviceParameters",
+      "Member": "vertical_swing_mode",
+      "Target": "AcParameters.VerticalSwingMode",
+      "Status": "Typed equivalent"
+    },
+    {
+      "Source": "panasonicdevice.py",
+      "SourceClass": "PanasonicDeviceParameters",
+      "Member": "eco_mode",
+      "Target": "AcParameters.Eco",
+      "Status": "Typed equivalent"
+    },
+    {
+      "Source": "panasonicdevice.py",
+      "SourceClass": "PanasonicDeviceParameters",
+      "Member": "nanoe_mode",
+      "Target": "AcParameters.Nanoe",
+      "Status": "Typed equivalent"
+    },
+    {
+      "Source": "panasonicdevice.py",
+      "SourceClass": "PanasonicDeviceParameters",
+      "Member": "eco_navi_mode",
+      "Target": "AcParameters.EcoNavi",
+      "Status": "Typed equivalent"
+    },
+    {
+      "Source": "panasonicdevice.py",
+      "SourceClass": "PanasonicDeviceParameters",
+      "Member": "eco_function_mode",
+      "Target": "AcParameters.EcoFunction",
+      "Status": "Typed equivalent"
+    },
+    {
+      "Source": "panasonicdevice.py",
+      "SourceClass": "PanasonicDeviceParameters",
+      "Member": "target_temperature",
+      "Target": "AcParameters.TargetTemperature",
+      "Status": "Typed equivalent"
+    },
+    {
+      "Source": "panasonicdevice.py",
+      "SourceClass": "PanasonicDeviceParameters",
+      "Member": "inside_temperature",
+      "Target": "AcParameters.IndoorTemperature",
+      "Status": "Typed equivalent"
+    },
+    {
+      "Source": "panasonicdevice.py",
+      "SourceClass": "PanasonicDeviceParameters",
+      "Member": "outside_temperature",
+      "Target": "AcParameters.OutdoorTemperature",
+      "Status": "Typed equivalent"
+    },
+    {
+      "Source": "panasonicdevice.py",
+      "SourceClass": "PanasonicDeviceParameters",
+      "Member": "iautox_mode",
+      "Target": "AcParameters.IAutoX",
+      "Status": "Typed equivalent"
+    },
+    {
+      "Source": "panasonicdevice.py",
+      "SourceClass": "PanasonicDeviceParameters",
+      "Member": "zones",
+      "Target": "AcParameters.Zones",
+      "Status": "Typed equivalent"
+    },
+    {
+      "Source": "panasonicdevice.py",
+      "SourceClass": "PanasonicDeviceParameters",
+      "Member": "air_direction",
+      "Target": "AcParameters.AirDirection",
+      "Status": "Typed equivalent"
+    },
+    {
+      "Source": "panasonicdevice.py",
+      "SourceClass": "PanasonicDeviceParameters",
+      "Member": "air_quality",
+      "Target": "AcParameters.AirQuality",
+      "Status": "Typed equivalent"
+    },
+    {
+      "Source": "panasonicdevice.py",
+      "SourceClass": "PanasonicDeviceParameters",
+      "Member": "last_setting_mode",
+      "Target": "AcParameters.LastSettingMode",
+      "Status": "Typed equivalent"
+    },
+    {
+      "Source": "panasonicdevice.py",
+      "SourceClass": "PanasonicDeviceParameters",
+      "Member": "inside_cleaning",
+      "Target": "AcParameters.InsideCleaning",
+      "Status": "Typed equivalent"
+    },
+    {
+      "Source": "panasonicdevice.py",
+      "SourceClass": "PanasonicDeviceParameters",
+      "Member": "fireplace",
+      "Target": "AcParameters.Fireplace",
+      "Status": "Typed equivalent"
+    },
+    {
+      "Source": "panasonicdevice.py",
+      "SourceClass": "PanasonicDevice",
+      "Member": "id",
+      "Target": "DeviceObservation<T>.Device.StableId",
+      "Status": "Typed equivalent"
+    },
+    {
+      "Source": "panasonicdevice.py",
+      "SourceClass": "PanasonicDevice",
+      "Member": "timestamp",
+      "Target": "AcSnapshot.DeviceTimestamp",
+      "Status": "Typed equivalent"
+    },
+    {
+      "Source": "panasonicdevice.py",
+      "SourceClass": "PanasonicDevice",
+      "Member": "info",
+      "Target": "DeviceObservation<T>.Device",
+      "Status": "Typed equivalent"
+    },
+    {
+      "Source": "panasonicdevice.py",
+      "SourceClass": "PanasonicDevice",
+      "Member": "features",
+      "Target": "AcSnapshot",
+      "Status": "Typed equivalent"
+    },
+    {
+      "Source": "panasonicdevice.py",
+      "SourceClass": "PanasonicDevice",
+      "Member": "parameters",
+      "Target": "AcSnapshot.Parameters",
+      "Status": "Typed equivalent"
+    },
+    {
+      "Source": "panasonicdevice.py",
+      "SourceClass": "PanasonicDevice",
+      "Member": "last_update",
+      "Target": "DeviceObservation<T>.LastChanged",
+      "Status": "Typed equivalent"
+    },
+    {
+      "Source": "panasonicdevice.py",
+      "SourceClass": "PanasonicDevice",
+      "Member": "has_eco_navi",
+      "Target": "AcCapabilities.HasEcoNavi",
+      "Status": "Typed equivalent"
+    },
+    {
+      "Source": "panasonicdevice.py",
+      "SourceClass": "PanasonicDevice",
+      "Member": "has_eco_function",
+      "Target": "AcCapabilities.HasEcoFunction",
+      "Status": "Typed equivalent"
+    },
+    {
+      "Source": "panasonicdevice.py",
+      "SourceClass": "PanasonicDevice",
+      "Member": "has_nanoe",
+      "Target": "AcCapabilities.HasNanoe",
+      "Status": "Typed equivalent"
+    },
+    {
+      "Source": "panasonicdevice.py",
+      "SourceClass": "PanasonicDevice",
+      "Member": "has_zones",
+      "Target": "AcCapabilities.HasZones",
+      "Status": "Typed equivalent"
+    },
+    {
+      "Source": "panasonicdevice.py",
+      "SourceClass": "PanasonicDevice",
+      "Member": "has_inside_cleaning",
+      "Target": "AcCapabilities.HasInsideCleaning",
+      "Status": "Typed equivalent"
+    },
+    {
+      "Source": "panasonicdevice.py",
+      "SourceClass": "PanasonicDevice",
+      "Member": "has_horizontal_swing",
+      "Target": "AcCapabilities.HasHorizontalSwing",
+      "Status": "Typed equivalent"
+    },
+    {
+      "Source": "panasonicdevice.py",
+      "SourceClass": "PanasonicDevice",
+      "Member": "supports_fan_auto",
+      "Target": "AcCapabilities.SupportsFanAuto",
+      "Status": "Typed equivalent"
+    },
+    {
+      "Source": "panasonicdevice.py",
+      "SourceClass": "PanasonicDevice",
+      "Member": "supported_fan_speeds",
+      "Target": "AcCapabilities.SupportedFanSpeeds",
+      "Status": "Typed equivalent"
+    },
+    {
+      "Source": "panasonicdevice.py",
+      "SourceClass": "PanasonicDevice",
+      "Member": "supports_quiet_mode",
+      "Target": "AcCapabilities.SupportsQuiet",
+      "Status": "Typed equivalent"
+    },
+    {
+      "Source": "panasonicdevice.py",
+      "SourceClass": "PanasonicDevice",
+      "Member": "supports_powerful_mode",
+      "Target": "AcCapabilities.SupportsPowerful",
+      "Status": "Typed equivalent"
+    },
+    {
+      "Source": "panasonicdevice.py",
+      "SourceClass": "PanasonicDevice",
+      "Member": "supported_eco_modes",
+      "Target": "AcCapabilities.SupportedEcoModes",
+      "Status": "Typed equivalent"
+    },
+    {
+      "Source": "panasonicdevice.py",
+      "SourceClass": "PanasonicDevice",
+      "Member": "has_inside_temperature",
+      "Target": "AcCapabilities.HasIndoorTemperature",
+      "Status": "Typed equivalent"
+    },
+    {
+      "Source": "panasonicdevice.py",
+      "SourceClass": "PanasonicDevice",
+      "Member": "has_outside_temperature",
+      "Target": "AcCapabilities.HasOutdoorTemperature",
+      "Status": "Typed equivalent"
+    },
+    {
+      "Source": "panasonicdevice.py",
+      "SourceClass": "PanasonicDevice",
+      "Member": "has_iauto_x",
+      "Target": "AcCapabilities.HasIAutoX",
+      "Status": "Typed equivalent"
+    },
+    {
+      "Source": "panasonicdevice.py",
+      "SourceClass": "PanasonicDevice",
+      "Member": "in_summer_house_mode",
+      "Target": "AcCapabilities.InSummerHouseMode",
+      "Status": "Typed equivalent"
+    },
+    {
+      "Source": "panasonicdevice.py",
+      "SourceClass": "PanasonicDeviceFeatures",
+      "Member": "has_changed",
+      "Target": "DeviceObservation<T>.HasChanged / Update result",
+      "Status": "Explicit application-owned tracking"
+    },
+    {
+      "Source": "panasonicdevice.py",
+      "SourceClass": "PanasonicDeviceFeatures",
+      "Member": "permission",
+      "Target": "AcSnapshot.Permission",
+      "Status": "Typed equivalent"
+    },
+    {
+      "Source": "panasonicdevice.py",
+      "SourceClass": "PanasonicDeviceFeatures",
+      "Member": "summer_house",
+      "Target": "AcSnapshot.SummerHouse",
+      "Status": "Typed equivalent"
+    },
+    {
+      "Source": "panasonicdevice.py",
+      "SourceClass": "PanasonicDeviceFeatures",
+      "Member": "iauto_x_mode",
+      "Target": "AcSnapshot.SupportsIAutoX",
+      "Status": "Typed equivalent"
+    },
+    {
+      "Source": "panasonicdevice.py",
+      "SourceClass": "PanasonicDeviceFeatures",
+      "Member": "nanoe",
+      "Target": "AcSnapshot.SupportsNanoe",
+      "Status": "Typed equivalent"
+    },
+    {
+      "Source": "panasonicdevice.py",
+      "SourceClass": "PanasonicDeviceFeatures",
+      "Member": "nanoe_stand_alone",
+      "Target": "AcSnapshot.SupportsNanoeStandalone",
+      "Status": "Typed equivalent"
+    },
+    {
+      "Source": "panasonicdevice.py",
+      "SourceClass": "PanasonicDeviceFeatures",
+      "Member": "auto_mode",
+      "Target": "AcSnapshot.SupportsAuto",
+      "Status": "Typed equivalent"
+    },
+    {
+      "Source": "panasonicdevice.py",
+      "SourceClass": "PanasonicDeviceFeatures",
+      "Member": "heat_mode",
+      "Target": "AcSnapshot.SupportsHeat",
+      "Status": "Typed equivalent"
+    },
+    {
+      "Source": "panasonicdevice.py",
+      "SourceClass": "PanasonicDeviceFeatures",
+      "Member": "fan_mode",
+      "Target": "AcSnapshot.SupportsFan",
+      "Status": "Typed equivalent"
+    },
+    {
+      "Source": "panasonicdevice.py",
+      "SourceClass": "PanasonicDeviceFeatures",
+      "Member": "dry_mode",
+      "Target": "AcSnapshot.SupportsDry",
+      "Status": "Typed equivalent"
+    },
+    {
+      "Source": "panasonicdevice.py",
+      "SourceClass": "PanasonicDeviceFeatures",
+      "Member": "cool_mode",
+      "Target": "AcSnapshot.SupportsCool",
+      "Status": "Typed equivalent"
+    },
+    {
+      "Source": "panasonicdevice.py",
+      "SourceClass": "PanasonicDeviceFeatures",
+      "Member": "eco_navi",
+      "Target": "AcSnapshot.SupportsEcoNavi",
+      "Status": "Typed equivalent"
+    },
+    {
+      "Source": "panasonicdevice.py",
+      "SourceClass": "PanasonicDeviceFeatures",
+      "Member": "powerful_mode",
+      "Target": "AcSnapshot.SupportsPowerful",
+      "Status": "Typed equivalent"
+    },
+    {
+      "Source": "panasonicdevice.py",
+      "SourceClass": "PanasonicDeviceFeatures",
+      "Member": "quiet_mode",
+      "Target": "AcSnapshot.SupportsQuiet",
+      "Status": "Typed equivalent"
+    },
+    {
+      "Source": "panasonicdevice.py",
+      "SourceClass": "PanasonicDeviceFeatures",
+      "Member": "air_swing_lr",
+      "Target": "AcSnapshot.SupportsHorizontalSwing",
+      "Status": "Typed equivalent"
+    },
+    {
+      "Source": "panasonicdevice.py",
+      "SourceClass": "PanasonicDeviceFeatures",
+      "Member": "auto_swing_ud",
+      "Target": "AcSnapshot.SupportsAutoVerticalSwing",
+      "Status": "Typed equivalent"
+    },
+    {
+      "Source": "panasonicdevice.py",
+      "SourceClass": "PanasonicDeviceFeatures",
+      "Member": "eco_function",
+      "Target": "AcSnapshot.EcoFunctionCapability",
+      "Status": "Typed equivalent"
+    },
+    {
+      "Source": "panasonicdevice.py",
+      "SourceClass": "PanasonicDeviceFeatures",
+      "Member": "temperature_unit",
+      "Target": "AcSnapshot.TemperatureUnit",
+      "Status": "Typed equivalent"
+    },
+    {
+      "Source": "panasonicdevice.py",
+      "SourceClass": "PanasonicDeviceFeatures",
+      "Member": "clothes_drying",
+      "Target": "AcSnapshot.SupportsClothesDrying",
+      "Status": "Typed equivalent"
+    },
+    {
+      "Source": "panasonicdevice.py",
+      "SourceClass": "PanasonicDeviceFeatures",
+      "Member": "inside_cleaning",
+      "Target": "AcSnapshot.SupportsInsideCleaning",
+      "Status": "Typed equivalent"
+    },
+    {
+      "Source": "panasonicdevice.py",
+      "SourceClass": "PanasonicDeviceFeatures",
+      "Member": "fireplace",
+      "Target": "AcSnapshot.SupportsFireplace",
+      "Status": "Typed equivalent"
+    },
+    {
+      "Source": "panasonicdevice.py",
+      "SourceClass": "PanasonicDeviceFeatures",
+      "Member": "off_timer",
+      "Target": "AcSnapshot.SupportsOffTimer",
+      "Status": "Typed equivalent"
+    },
+    {
+      "Source": "panasonicdevice.py",
+      "SourceClass": "PanasonicDeviceFeatures",
+      "Member": "power_consumption_flag",
+      "Target": "AcSnapshot.SupportsEnergy",
+      "Status": "Typed equivalent"
+    },
+    {
+      "Source": "panasonicdevice.py",
+      "SourceClass": "PanasonicDeviceFeatures",
+      "Member": "paired_flag",
+      "Target": "AcSnapshot.Paired",
+      "Status": "Typed equivalent"
+    },
+    {
+      "Source": "panasonicdevice.py",
+      "SourceClass": "PanasonicDeviceFeatures",
+      "Member": "device_nanoe",
+      "Target": "AcSnapshot.DeviceNanoe",
+      "Status": "Typed equivalent"
+    },
+    {
+      "Source": "panasonicdevice.py",
+      "SourceClass": "PanasonicDeviceFeatures",
+      "Member": "mode_avl_list",
+      "Target": "AcSnapshot.ModeAvailability",
+      "Status": "Typed equivalent"
+    },
+    {
+      "Source": "panasonicdevice.py",
+      "SourceClass": "PanasonicDeviceFeatures",
+      "Member": "fan_speed_mode",
+      "Target": "AcSnapshot.FanSpeedSteps",
+      "Status": "Typed equivalent"
+    },
+    {
+      "Source": "panasonicdevice.py",
+      "SourceClass": "PanasonicDeviceFeatures",
+      "Member": "fan_direction_mode",
+      "Target": "AcSnapshot.FanDirectionMode",
+      "Status": "Typed equivalent"
+    },
+    {
+      "Source": "panasonicdevice.py",
+      "SourceClass": "PanasonicDeviceZone",
+      "Member": "id",
+      "Target": "DeviceObservation<T>.Device.StableId",
+      "Status": "Typed equivalent"
+    },
+    {
+      "Source": "panasonicdevice.py",
+      "SourceClass": "PanasonicDeviceZone",
+      "Member": "has_changed",
+      "Target": "DeviceObservation<T>.HasChanged / Update result",
+      "Status": "Explicit application-owned tracking"
+    },
+    {
+      "Source": "panasonicdevice.py",
+      "SourceClass": "PanasonicDeviceZone",
+      "Member": "name",
+      "Target": "AcZone.Name",
+      "Status": "Typed equivalent"
+    },
+    {
+      "Source": "panasonicdevice.py",
+      "SourceClass": "PanasonicDeviceZone",
+      "Member": "mode",
+      "Target": "AcZone.Power",
+      "Status": "Typed equivalent"
+    },
+    {
+      "Source": "panasonicdevice.py",
+      "SourceClass": "PanasonicDeviceZone",
+      "Member": "level",
+      "Target": "AcZone.DamperLevel",
+      "Status": "Typed equivalent"
+    },
+    {
+      "Source": "panasonicdevice.py",
+      "SourceClass": "PanasonicDeviceZone",
+      "Member": "spill",
+      "Target": "AcZone.Spill",
+      "Status": "Typed equivalent"
+    },
+    {
+      "Source": "panasonicdevice.py",
+      "SourceClass": "PanasonicDeviceZone",
+      "Member": "temperature",
+      "Target": "AcZone.Temperature",
+      "Status": "Typed equivalent"
+    },
+    {
+      "Source": "panasonicdevice.py",
+      "SourceClass": "PanasonicDeviceZone",
+      "Member": "has_temperature",
+      "Target": "AcZone.Temperature.HasValue",
+      "Status": "Typed equivalent"
+    },
+    {
+      "Source": "panasonicdevice.py",
+      "SourceClass": "PanasonicDeviceEnergy",
+      "Member": "id",
+      "Target": "DeviceObservation<T>.Device.StableId",
+      "Status": "Typed equivalent"
+    },
+    {
+      "Source": "panasonicdevice.py",
+      "SourceClass": "PanasonicDeviceEnergy",
+      "Member": "info",
+      "Target": "DeviceObservation<T>.Device",
+      "Status": "Typed equivalent"
+    },
+    {
+      "Source": "panasonicdevice.py",
+      "SourceClass": "PanasonicDeviceEnergy",
+      "Member": "consumption",
+      "Target": "AcEnergyTracker.Consumption",
+      "Status": "Typed equivalent"
+    },
+    {
+      "Source": "panasonicdevice.py",
+      "SourceClass": "PanasonicDeviceEnergy",
+      "Member": "heating_rate",
+      "Target": "AcEnergyTracker.HeatingRatio",
+      "Status": "Typed equivalent"
+    },
+    {
+      "Source": "panasonicdevice.py",
+      "SourceClass": "PanasonicDeviceEnergy",
+      "Member": "heating_consumption",
+      "Target": "AcEnergyTracker.HeatingConsumption",
+      "Status": "Typed equivalent"
+    },
+    {
+      "Source": "panasonicdevice.py",
+      "SourceClass": "PanasonicDeviceEnergy",
+      "Member": "cooling_rate",
+      "Target": "AcEnergyTracker.CoolingRatio",
+      "Status": "Typed equivalent"
+    },
+    {
+      "Source": "panasonicdevice.py",
+      "SourceClass": "PanasonicDeviceEnergy",
+      "Member": "cooling_consumption",
+      "Target": "AcEnergyTracker.CoolingConsumption",
+      "Status": "Typed equivalent"
+    },
+    {
+      "Source": "panasonicdevice.py",
+      "SourceClass": "PanasonicDeviceEnergy",
+      "Member": "current_power",
+      "Target": "AcEnergyTracker.PowerWatts",
+      "Status": "Typed equivalent"
+    },
+    {
+      "Source": "panasonicdevice.py",
+      "SourceClass": "PanasonicDeviceEnergy",
+      "Member": "cooling_power",
+      "Target": "AcEnergyTracker.CoolingPowerWatts",
+      "Status": "Typed equivalent"
+    },
+    {
+      "Source": "panasonicdevice.py",
+      "SourceClass": "PanasonicDeviceEnergy",
+      "Member": "heating_power",
+      "Target": "AcEnergyTracker.HeatingPowerWatts",
+      "Status": "Typed equivalent"
+    },
+    {
+      "Source": "aquareadevice.py",
+      "SourceClass": "AquareaDevice",
+      "Member": "id",
+      "Target": "DeviceObservation<T>.Device.StableId",
+      "Status": "Typed equivalent"
+    },
+    {
+      "Source": "aquareadevice.py",
+      "SourceClass": "AquareaDevice",
+      "Member": "info",
+      "Target": "DeviceObservation<T>.Device",
+      "Status": "Typed equivalent"
+    },
+    {
+      "Source": "aquareadevice.py",
+      "SourceClass": "AquareaDevice",
+      "Member": "parameters",
+      "Target": "AquareaSnapshot.Status",
+      "Status": "Typed equivalent"
+    },
+    {
+      "Source": "aquareadevice.py",
+      "SourceClass": "AquareaDevice",
+      "Member": "last_update",
+      "Target": "DeviceObservation<T>.LastChanged",
+      "Status": "Typed equivalent"
+    },
+    {
+      "Source": "aquareadevice.py",
+      "SourceClass": "AquareaDevice",
+      "Member": "operation",
+      "Target": "AquareaSnapshot.Operation",
+      "Status": "Typed equivalent"
+    },
+    {
+      "Source": "aquareadevice.py",
+      "SourceClass": "AquareaDevice",
+      "Member": "owner_flag",
+      "Target": "AquareaSnapshot.IsOwner",
+      "Status": "Typed equivalent"
+    },
+    {
+      "Source": "aquareadevice.py",
+      "SourceClass": "AquareaDevice",
+      "Member": "a2w_name",
+      "Target": "AquareaSnapshot.Name",
+      "Status": "Typed equivalent"
+    },
+    {
+      "Source": "hwsdevice.py",
+      "SourceClass": "HwsDevice",
+      "Member": "id",
+      "Target": "DeviceObservation<T>.Device.StableId",
+      "Status": "Typed equivalent"
+    },
+    {
+      "Source": "hwsdevice.py",
+      "SourceClass": "HwsDevice",
+      "Member": "info",
+      "Target": "DeviceObservation<T>.Device",
+      "Status": "Typed equivalent"
+    },
+    {
+      "Source": "hwsdevice.py",
+      "SourceClass": "HwsDevice",
+      "Member": "device_parameters",
+      "Target": "HotWaterSnapshot",
+      "Status": "Typed equivalent"
+    },
+    {
+      "Source": "hwsdevice.py",
+      "SourceClass": "HwsDevice",
+      "Member": "parameters",
+      "Target": "HotWaterSnapshot.Parameters",
+      "Status": "Typed equivalent"
+    },
+    {
+      "Source": "hwsdevice.py",
+      "SourceClass": "HwsDevice",
+      "Member": "last_update",
+      "Target": "DeviceObservation<T>.LastChanged",
+      "Status": "Typed equivalent"
+    },
+    {
+      "Source": "models/aquarea.py",
+      "SourceClass": "AquareaZoneStatus",
+      "Member": "has_changed",
+      "Target": "DeviceObservation<T>.HasChanged / Update result",
+      "Status": "Explicit application-owned tracking"
+    },
+    {
+      "Source": "models/aquarea.py",
+      "SourceClass": "AquareaZoneStatus",
+      "Member": "id",
+      "Target": "DeviceObservation<T>.Device.StableId",
+      "Status": "Typed equivalent"
+    },
+    {
+      "Source": "models/aquarea.py",
+      "SourceClass": "AquareaZoneStatus",
+      "Member": "name",
+      "Target": "AquareaZone.Name",
+      "Status": "Typed equivalent"
+    },
+    {
+      "Source": "models/aquarea.py",
+      "SourceClass": "AquareaZoneStatus",
+      "Member": "operation_status",
+      "Target": "AquareaZone.Power",
+      "Status": "Typed equivalent"
+    },
+    {
+      "Source": "models/aquarea.py",
+      "SourceClass": "AquareaZoneStatus",
+      "Member": "temperature",
+      "Target": "AquareaZone.Temperature",
+      "Status": "Typed equivalent"
+    },
+    {
+      "Source": "models/aquarea.py",
+      "SourceClass": "AquareaZoneStatus",
+      "Member": "heat_min",
+      "Target": "AquareaZone.HeatMinimum",
+      "Status": "Typed equivalent"
+    },
+    {
+      "Source": "models/aquarea.py",
+      "SourceClass": "AquareaZoneStatus",
+      "Member": "heat_max",
+      "Target": "AquareaZone.HeatMaximum",
+      "Status": "Typed equivalent"
+    },
+    {
+      "Source": "models/aquarea.py",
+      "SourceClass": "AquareaZoneStatus",
+      "Member": "heat_set",
+      "Target": "AquareaZone.HeatSetpoint",
+      "Status": "Typed equivalent"
+    },
+    {
+      "Source": "models/aquarea.py",
+      "SourceClass": "AquareaZoneStatus",
+      "Member": "cool_min",
+      "Target": "AquareaZone.CoolMinimum",
+      "Status": "Typed equivalent"
+    },
+    {
+      "Source": "models/aquarea.py",
+      "SourceClass": "AquareaZoneStatus",
+      "Member": "cool_max",
+      "Target": "AquareaZone.CoolMaximum",
+      "Status": "Typed equivalent"
+    },
+    {
+      "Source": "models/aquarea.py",
+      "SourceClass": "AquareaZoneStatus",
+      "Member": "cool_set",
+      "Target": "AquareaZone.CoolSetpoint",
+      "Status": "Typed equivalent"
+    },
+    {
+      "Source": "models/aquarea.py",
+      "SourceClass": "AquareaZoneStatus",
+      "Member": "supports_cooling",
+      "Target": "AquareaZone.SupportsCooling",
+      "Status": "Typed equivalent"
+    },
+    {
+      "Source": "models/aquarea.py",
+      "SourceClass": "AquareaZoneStatus",
+      "Member": "eco_heat",
+      "Target": "AquareaZone.EcoHeat",
+      "Status": "Typed equivalent"
+    },
+    {
+      "Source": "models/aquarea.py",
+      "SourceClass": "AquareaZoneStatus",
+      "Member": "eco_cool",
+      "Target": "AquareaZone.EcoCool",
+      "Status": "Typed equivalent"
+    },
+    {
+      "Source": "models/aquarea.py",
+      "SourceClass": "AquareaZoneStatus",
+      "Member": "comfort_heat",
+      "Target": "AquareaZone.ComfortHeat",
+      "Status": "Typed equivalent"
+    },
+    {
+      "Source": "models/aquarea.py",
+      "SourceClass": "AquareaZoneStatus",
+      "Member": "comfort_cool",
+      "Target": "AquareaZone.ComfortCool",
+      "Status": "Typed equivalent"
+    },
+    {
+      "Source": "models/aquarea.py",
+      "SourceClass": "AquareaTankStatus",
+      "Member": "has_changed",
+      "Target": "DeviceObservation<T>.HasChanged / Update result",
+      "Status": "Explicit application-owned tracking"
+    },
+    {
+      "Source": "models/aquarea.py",
+      "SourceClass": "AquareaTankStatus",
+      "Member": "operation_status",
+      "Target": "AquareaTank.Power",
+      "Status": "Typed equivalent"
+    },
+    {
+      "Source": "models/aquarea.py",
+      "SourceClass": "AquareaTankStatus",
+      "Member": "temperature",
+      "Target": "AquareaTank.Temperature",
+      "Status": "Typed equivalent"
+    },
+    {
+      "Source": "models/aquarea.py",
+      "SourceClass": "AquareaTankStatus",
+      "Member": "heat_min",
+      "Target": "AquareaTank.HeatMinimum",
+      "Status": "Typed equivalent"
+    },
+    {
+      "Source": "models/aquarea.py",
+      "SourceClass": "AquareaTankStatus",
+      "Member": "heat_max",
+      "Target": "AquareaTank.HeatMaximum",
+      "Status": "Typed equivalent"
+    },
+    {
+      "Source": "models/aquarea.py",
+      "SourceClass": "AquareaTankStatus",
+      "Member": "heat_set",
+      "Target": "AquareaTank.HeatSetpoint",
+      "Status": "Typed equivalent"
+    },
+    {
+      "Source": "models/aquarea.py",
+      "SourceClass": "AquareaDeviceParameters",
+      "Member": "has_changed",
+      "Target": "DeviceObservation<T>.HasChanged / Update result",
+      "Status": "Explicit application-owned tracking"
+    },
+    {
+      "Source": "models/aquarea.py",
+      "SourceClass": "AquareaDeviceParameters",
+      "Member": "operation_status",
+      "Target": "AquareaStatus.Power",
+      "Status": "Typed equivalent"
+    },
+    {
+      "Source": "models/aquarea.py",
+      "SourceClass": "AquareaDeviceParameters",
+      "Member": "operation_mode",
+      "Target": "AquareaStatus.Mode",
+      "Status": "Typed equivalent"
+    },
+    {
+      "Source": "models/aquarea.py",
+      "SourceClass": "AquareaDeviceParameters",
+      "Member": "device_mode_status",
+      "Target": "AquareaStatus.DeviceStatus",
+      "Status": "Typed equivalent"
+    },
+    {
+      "Source": "models/aquarea.py",
+      "SourceClass": "AquareaDeviceParameters",
+      "Member": "temperature_outdoor",
+      "Target": "AquareaStatus.OutdoorTemperature",
+      "Status": "Typed equivalent"
+    },
+    {
+      "Source": "models/aquarea.py",
+      "SourceClass": "AquareaDeviceParameters",
+      "Member": "direction",
+      "Target": "AquareaStatus.Direction",
+      "Status": "Typed equivalent"
+    },
+    {
+      "Source": "models/aquarea.py",
+      "SourceClass": "AquareaDeviceParameters",
+      "Member": "pump_duty",
+      "Target": "AquareaStatus.PumpDuty",
+      "Status": "Typed equivalent"
+    },
+    {
+      "Source": "models/aquarea.py",
+      "SourceClass": "AquareaDeviceParameters",
+      "Member": "quiet_mode",
+      "Target": "AquareaStatus.Quiet",
+      "Status": "Typed equivalent"
+    },
+    {
+      "Source": "models/aquarea.py",
+      "SourceClass": "AquareaDeviceParameters",
+      "Member": "force_dhw",
+      "Target": "AquareaStatus.ForceHotWater",
+      "Status": "Typed equivalent"
+    },
+    {
+      "Source": "models/aquarea.py",
+      "SourceClass": "AquareaDeviceParameters",
+      "Member": "force_heater",
+      "Target": "AquareaStatus.ForceHeater",
+      "Status": "Typed equivalent"
+    },
+    {
+      "Source": "models/aquarea.py",
+      "SourceClass": "AquareaDeviceParameters",
+      "Member": "holiday_timer",
+      "Target": "AquareaStatus.HolidayTimer",
+      "Status": "Typed equivalent"
+    },
+    {
+      "Source": "models/aquarea.py",
+      "SourceClass": "AquareaDeviceParameters",
+      "Member": "powerful_time",
+      "Target": "AquareaStatus.Powerful",
+      "Status": "Typed equivalent"
+    },
+    {
+      "Source": "models/aquarea.py",
+      "SourceClass": "AquareaDeviceParameters",
+      "Member": "special_status",
+      "Target": "AquareaStatus.Special",
+      "Status": "Typed equivalent"
+    },
+    {
+      "Source": "models/aquarea.py",
+      "SourceClass": "AquareaDeviceParameters",
+      "Member": "supports_cooling",
+      "Target": "AquareaStatus.SupportsCooling",
+      "Status": "Typed equivalent"
+    },
+    {
+      "Source": "models/aquarea.py",
+      "SourceClass": "AquareaDeviceParameters",
+      "Member": "has_tank",
+      "Target": "AquareaStatus.HasTank",
+      "Status": "Typed equivalent"
+    },
+    {
+      "Source": "models/aquarea.py",
+      "SourceClass": "AquareaDeviceParameters",
+      "Member": "tank",
+      "Target": "AquareaStatus.Tank",
+      "Status": "Typed equivalent"
+    },
+    {
+      "Source": "models/aquarea.py",
+      "SourceClass": "AquareaDeviceParameters",
+      "Member": "water_pressure",
+      "Target": "AquareaStatus.WaterPressure",
+      "Status": "Typed equivalent"
+    },
+    {
+      "Source": "models/aquarea.py",
+      "SourceClass": "AquareaDeviceParameters",
+      "Member": "bivalent",
+      "Target": "AquareaStatus.Bivalent",
+      "Status": "Typed equivalent"
+    },
+    {
+      "Source": "models/aquarea.py",
+      "SourceClass": "AquareaDeviceParameters",
+      "Member": "bivalent_actual",
+      "Target": "AquareaStatus.BivalentActual",
+      "Status": "Typed equivalent"
+    },
+    {
+      "Source": "models/aquarea.py",
+      "SourceClass": "AquareaDeviceParameters",
+      "Member": "multi_od_connection",
+      "Target": "AquareaStatus.MultiOutdoorConnection",
+      "Status": "Typed equivalent"
+    },
+    {
+      "Source": "models/aquarea.py",
+      "SourceClass": "AquareaDeviceParameters",
+      "Member": "control_box",
+      "Target": "AquareaStatus.ControlBox",
+      "Status": "Typed equivalent"
+    },
+    {
+      "Source": "models/aquarea.py",
+      "SourceClass": "AquareaDeviceParameters",
+      "Member": "external_heater",
+      "Target": "AquareaStatus.ExternalHeater",
+      "Status": "Typed equivalent"
+    },
+    {
+      "Source": "models/aquarea.py",
+      "SourceClass": "AquareaDeviceParameters",
+      "Member": "model_series_selection",
+      "Target": "AquareaStatus.ModelSeries",
+      "Status": "Typed equivalent"
+    },
+    {
+      "Source": "models/aquarea.py",
+      "SourceClass": "AquareaDeviceParameters",
+      "Member": "stand_alone",
+      "Target": "AquareaStatus.Standalone",
+      "Status": "Typed equivalent"
+    },
+    {
+      "Source": "models/aquarea.py",
+      "SourceClass": "AquareaDeviceParameters",
+      "Member": "uncontrollable_taw1_flag",
+      "Target": "AquareaStatus.UncontrollableGateway",
+      "Status": "Typed equivalent"
+    },
+    {
+      "Source": "models/aquarea.py",
+      "SourceClass": "AquareaDeviceParameters",
+      "Member": "service_type",
+      "Target": "AquareaStatus.ServiceType",
+      "Status": "Typed equivalent"
+    },
+    {
+      "Source": "models/aquarea.py",
+      "SourceClass": "AquareaDeviceParameters",
+      "Member": "fault_status",
+      "Target": "AquareaStatus.Faults",
+      "Status": "Typed equivalent"
+    },
+    {
+      "Source": "models/aquarea.py",
+      "SourceClass": "AquareaDeviceParameters",
+      "Member": "is_on_error",
+      "Target": "AquareaStatus.IsOnError",
+      "Status": "Typed equivalent"
+    },
+    {
+      "Source": "models/aquarea.py",
+      "SourceClass": "AquareaDeviceParameters",
+      "Member": "zones",
+      "Target": "AquareaStatus.Zones",
+      "Status": "Typed equivalent"
+    },
+    {
+      "Source": "models/aquarea.py",
+      "SourceClass": "AquareaConsumption",
+      "Member": "heat_consumption",
+      "Target": "EnergyHistoryEntry.HeatingEnergy",
+      "Status": "Typed equivalent"
+    },
+    {
+      "Source": "models/aquarea.py",
+      "SourceClass": "AquareaConsumption",
+      "Member": "cool_consumption",
+      "Target": "EnergyHistoryEntry.CoolingEnergy",
+      "Status": "Typed equivalent"
+    },
+    {
+      "Source": "models/aquarea.py",
+      "SourceClass": "AquareaConsumption",
+      "Member": "tank_consumption",
+      "Target": "EnergyHistoryEntry.HotWaterEnergy",
+      "Status": "Typed equivalent"
+    },
+    {
+      "Source": "models/aquarea.py",
+      "SourceClass": "AquareaConsumption",
+      "Member": "heat_cost",
+      "Target": "EnergyHistoryEntry.HeatingCost",
+      "Status": "Typed equivalent"
+    },
+    {
+      "Source": "models/aquarea.py",
+      "SourceClass": "AquareaConsumption",
+      "Member": "cool_cost",
+      "Target": "EnergyHistoryEntry.CoolingCost",
+      "Status": "Typed equivalent"
+    },
+    {
+      "Source": "models/aquarea.py",
+      "SourceClass": "AquareaConsumption",
+      "Member": "tank_cost",
+      "Target": "EnergyHistoryEntry.HotWaterCost",
+      "Status": "Typed equivalent"
+    },
+    {
+      "Source": "models/aquarea.py",
+      "SourceClass": "AquareaConsumption",
+      "Member": "data_time",
+      "Target": "EnergyHistoryEntry.DateTime",
+      "Status": "Typed equivalent"
+    },
+    {
+      "Source": "models/aquarea.py",
+      "SourceClass": "AquareaConsumption",
+      "Member": "outdoor_temp",
+      "Target": "EnergyHistoryEntry.OutdoorTemperature",
+      "Status": "Typed equivalent"
+    },
+    {
+      "Source": "models/aquarea.py",
+      "SourceClass": "AquareaConsumption",
+      "Member": "total_consumption",
+      "Target": "EnergyHistoryEntry.ReportedTotal",
+      "Status": "Typed equivalent"
+    },
+    {
+      "Source": "models/hws.py",
+      "SourceClass": "HwsTemperatureSettingLimits",
+      "Member": "has_changed",
+      "Target": "DeviceObservation<T>.HasChanged / Update result",
+      "Status": "Explicit application-owned tracking"
+    },
+    {
+      "Source": "models/hws.py",
+      "SourceClass": "HwsTemperatureSettingLimits",
+      "Member": "set1_end_temperature",
+      "Target": "HotWaterTemperatureLimits.FirstEndTemperature",
+      "Status": "Typed equivalent"
+    },
+    {
+      "Source": "models/hws.py",
+      "SourceClass": "HwsTemperatureSettingLimits",
+      "Member": "set2_start_temperature_min",
+      "Target": "HotWaterTemperatureLimits.SecondStartMinimum",
+      "Status": "Typed equivalent"
+    },
+    {
+      "Source": "models/hws.py",
+      "SourceClass": "HwsTemperatureSettingLimits",
+      "Member": "set2_start_temperature_max",
+      "Target": "HotWaterTemperatureLimits.SecondStartMaximum",
+      "Status": "Typed equivalent"
+    },
+    {
+      "Source": "models/hws.py",
+      "SourceClass": "HwsTemperatureSettingLimits",
+      "Member": "set2_end_temperature_min",
+      "Target": "HotWaterTemperatureLimits.SecondEndMinimum",
+      "Status": "Typed equivalent"
+    },
+    {
+      "Source": "models/hws.py",
+      "SourceClass": "HwsTemperatureSettingLimits",
+      "Member": "set2_end_temperature_max",
+      "Target": "HotWaterTemperatureLimits.SecondEndMaximum",
+      "Status": "Typed equivalent"
+    },
+    {
+      "Source": "models/hws.py",
+      "SourceClass": "HwsDeviceParameters",
+      "Member": "has_changed",
+      "Target": "DeviceObservation<T>.HasChanged / Update result",
+      "Status": "Explicit application-owned tracking"
+    },
+    {
+      "Source": "models/hws.py",
+      "SourceClass": "HwsDeviceParameters",
+      "Member": "limits",
+      "Target": "HotWaterSnapshot.TemperatureLimits",
+      "Status": "Typed equivalent"
+    },
+    {
+      "Source": "models/hws.py",
+      "SourceClass": "HwsDeviceParameters",
+      "Member": "permission",
+      "Target": "HotWaterSnapshot.Permission",
+      "Status": "Typed equivalent"
+    },
+    {
+      "Source": "models/hws.py",
+      "SourceClass": "HwsDeviceParameters",
+      "Member": "weekly_mode",
+      "Target": "HotWaterSnapshot.SupportsWeeklyMode",
+      "Status": "Typed equivalent"
+    },
+    {
+      "Source": "models/hws.py",
+      "SourceClass": "HwsDeviceParameters",
+      "Member": "pv_mode",
+      "Target": "HotWaterSnapshot.SupportsPhotovoltaicMode",
+      "Status": "Typed equivalent"
+    },
+    {
+      "Source": "models/hws.py",
+      "SourceClass": "HwsDeviceParameters",
+      "Member": "holiday_mode",
+      "Target": "HotWaterSnapshot.SupportsHolidayMode",
+      "Status": "Typed equivalent"
+    },
+    {
+      "Source": "models/hws.py",
+      "SourceClass": "HwsInhibitTimeSettings",
+      "Member": "has_changed",
+      "Target": "DeviceObservation<T>.HasChanged / Update result",
+      "Status": "Explicit application-owned tracking"
+    },
+    {
+      "Source": "models/hws.py",
+      "SourceClass": "HwsInhibitTimeSettings",
+      "Member": "inhibit_time_available",
+      "Target": "HotWaterInterval.InhibitAvailable",
+      "Status": "Typed equivalent"
+    },
+    {
+      "Source": "models/hws.py",
+      "SourceClass": "HwsInhibitTimeSettings",
+      "Member": "start_time",
+      "Target": "HotWaterInterval.StartTime",
+      "Status": "Typed equivalent"
+    },
+    {
+      "Source": "models/hws.py",
+      "SourceClass": "HwsInhibitTimeSettings",
+      "Member": "end_time",
+      "Target": "HotWaterInterval.EndTime",
+      "Status": "Typed equivalent"
+    },
+    {
+      "Source": "models/hws.py",
+      "SourceClass": "HwsSet1Settings",
+      "Member": "has_changed",
+      "Target": "DeviceObservation<T>.HasChanged / Update result",
+      "Status": "Explicit application-owned tracking"
+    },
+    {
+      "Source": "models/hws.py",
+      "SourceClass": "HwsSet1Settings",
+      "Member": "start_time",
+      "Target": "HotWaterInterval.StartTime",
+      "Status": "Typed equivalent"
+    },
+    {
+      "Source": "models/hws.py",
+      "SourceClass": "HwsSet1Settings",
+      "Member": "end_time",
+      "Target": "HotWaterInterval.EndTime",
+      "Status": "Typed equivalent"
+    },
+    {
+      "Source": "models/hws.py",
+      "SourceClass": "HwsSet2Settings",
+      "Member": "has_changed",
+      "Target": "DeviceObservation<T>.HasChanged / Update result",
+      "Status": "Explicit application-owned tracking"
+    },
+    {
+      "Source": "models/hws.py",
+      "SourceClass": "HwsSet2Settings",
+      "Member": "set2_available",
+      "Target": "HotWaterInterval.SecondPeriodAvailable",
+      "Status": "Typed equivalent"
+    },
+    {
+      "Source": "models/hws.py",
+      "SourceClass": "HwsSet2Settings",
+      "Member": "start_time",
+      "Target": "HotWaterInterval.StartTime",
+      "Status": "Typed equivalent"
+    },
+    {
+      "Source": "models/hws.py",
+      "SourceClass": "HwsSet2Settings",
+      "Member": "end_time",
+      "Target": "HotWaterInterval.EndTime",
+      "Status": "Typed equivalent"
+    },
+    {
+      "Source": "models/hws.py",
+      "SourceClass": "HwsSet2Settings",
+      "Member": "start_temperature",
+      "Target": "HotWaterInterval.StartTemperature",
+      "Status": "Typed equivalent"
+    },
+    {
+      "Source": "models/hws.py",
+      "SourceClass": "HwsSet2Settings",
+      "Member": "end_temperature",
+      "Target": "HotWaterInterval.EndTemperature",
+      "Status": "Typed equivalent"
+    },
+    {
+      "Source": "models/hws.py",
+      "SourceClass": "HwsDailySettings",
+      "Member": "has_changed",
+      "Target": "DeviceObservation<T>.HasChanged / Update result",
+      "Status": "Explicit application-owned tracking"
+    },
+    {
+      "Source": "models/hws.py",
+      "SourceClass": "HwsDailySettings",
+      "Member": "weekday",
+      "Target": "HotWaterDay.Weekday",
+      "Status": "Typed equivalent"
+    },
+    {
+      "Source": "models/hws.py",
+      "SourceClass": "HwsDailySettings",
+      "Member": "mode",
+      "Target": "HotWaterDay.Mode",
+      "Status": "Typed equivalent"
+    },
+    {
+      "Source": "models/hws.py",
+      "SourceClass": "HwsDailySettings",
+      "Member": "inhibit_time",
+      "Target": "HotWaterDay.InhibitTime",
+      "Status": "Typed equivalent"
+    },
+    {
+      "Source": "models/hws.py",
+      "SourceClass": "HwsDailySettings",
+      "Member": "set1",
+      "Target": "HotWaterDay.FirstPeriod",
+      "Status": "Typed equivalent"
+    },
+    {
+      "Source": "models/hws.py",
+      "SourceClass": "HwsDailySettings",
+      "Member": "set2",
+      "Target": "HotWaterDay.SecondPeriod",
+      "Status": "Typed equivalent"
+    },
+    {
+      "Source": "models/hws.py",
+      "SourceClass": "HwsParameters",
+      "Member": "has_changed",
+      "Target": "DeviceObservation<T>.HasChanged / Update result",
+      "Status": "Explicit application-owned tracking"
+    },
+    {
+      "Source": "models/hws.py",
+      "SourceClass": "HwsParameters",
+      "Member": "hpu_operation_status",
+      "Target": "HotWaterParameters.Power",
+      "Status": "Typed equivalent"
+    },
+    {
+      "Source": "models/hws.py",
+      "SourceClass": "HwsParameters",
+      "Member": "operation_mode",
+      "Target": "HotWaterParameters.Mode",
+      "Status": "Typed equivalent"
+    },
+    {
+      "Source": "models/hws.py",
+      "SourceClass": "HwsParameters",
+      "Member": "boost_mode",
+      "Target": "HotWaterParameters.Boost",
+      "Status": "Typed equivalent"
+    },
+    {
+      "Source": "models/hws.py",
+      "SourceClass": "HwsParameters",
+      "Member": "tank_temperature",
+      "Target": "HotWaterParameters.TankTemperature",
+      "Status": "Typed equivalent"
+    },
+    {
+      "Source": "models/hws.py",
+      "SourceClass": "HwsParameters",
+      "Member": "outdoor_temperature",
+      "Target": "HotWaterParameters.OutdoorTemperature",
+      "Status": "Typed equivalent"
+    },
+    {
+      "Source": "models/hws.py",
+      "SourceClass": "HwsParameters",
+      "Member": "weekly_settings",
+      "Target": "HotWaterParameters.WeeklySettings",
+      "Status": "Typed equivalent"
+    },
+    {
+      "Source": "models/hws.py",
+      "SourceClass": "HwsConsumption",
+      "Member": "tank_consumption",
+      "Target": "HotWaterEnergyHistoryEntry.Consumption",
+      "Status": "Typed equivalent"
+    },
+    {
+      "Source": "models/hws.py",
+      "SourceClass": "HwsConsumption",
+      "Member": "tank_cost",
+      "Target": "HotWaterEnergyHistoryEntry.Cost",
+      "Status": "Typed equivalent"
+    },
+    {
+      "Source": "models/hws.py",
+      "SourceClass": "HwsConsumption",
+      "Member": "data_time",
+      "Target": "HotWaterEnergyHistoryEntry.DateTime",
+      "Status": "Typed equivalent"
+    },
+    {
+      "Source": "models/hws.py",
+      "SourceClass": "HwsConsumption",
+      "Member": "outdoor_temp",
+      "Target": "HotWaterEnergyHistoryEntry.OutdoorTemperature",
+      "Status": "Typed equivalent"
+    },
+    {
+      "Source": "models/hws.py",
+      "SourceClass": "HwsConsumption",
+      "Member": "tank_temp",
+      "Target": "HotWaterEnergyHistoryEntry.TankTemperature",
+      "Status": "Typed equivalent"
+    },
+    {
+      "Source": "models/hws.py",
+      "SourceClass": "HwsConsumption",
+      "Member": "total_consumption",
+      "Target": "HotWaterEnergyHistoryEntry.ReportedTotal",
+      "Status": "Typed equivalent"
+    },
+    {
+      "Source": "models/weeklytimer.py",
+      "SourceClass": "WeeklyTimerZone",
+      "Member": "zone_id",
+      "Target": "AcZone.Id",
+      "Status": "Typed equivalent"
+    },
+    {
+      "Source": "models/weeklytimer.py",
+      "SourceClass": "WeeklyTimerZone",
+      "Member": "zone_name",
+      "Target": "AcZone.Name",
+      "Status": "Typed equivalent"
+    },
+    {
+      "Source": "models/weeklytimer.py",
+      "SourceClass": "WeeklyTimerZone",
+      "Member": "zone_on_off",
+      "Target": "AcZone.Power",
+      "Status": "Typed equivalent"
+    },
+    {
+      "Source": "models/weeklytimer.py",
+      "SourceClass": "WeeklyTimerPattern",
+      "Member": "is_empty",
+      "Target": "TimerPattern.IsEmpty",
+      "Status": "Typed equivalent"
+    },
+    {
+      "Source": "models/weeklytimer.py",
+      "SourceClass": "WeeklyTimerPattern",
+      "Member": "start_time",
+      "Target": "AcTimerPattern.StartTime",
+      "Status": "Typed equivalent"
+    },
+    {
+      "Source": "models/weeklytimer.py",
+      "SourceClass": "WeeklyTimerPattern",
+      "Member": "power",
+      "Target": "AcTimerPattern.Power",
+      "Status": "Typed equivalent"
+    },
+    {
+      "Source": "models/weeklytimer.py",
+      "SourceClass": "WeeklyTimerPattern",
+      "Member": "mode",
+      "Target": "AcTimerPattern.Mode",
+      "Status": "Typed equivalent"
+    },
+    {
+      "Source": "models/weeklytimer.py",
+      "SourceClass": "WeeklyTimerPattern",
+      "Member": "mode_raw",
+      "Target": "AcTimerPattern.RawMode",
+      "Status": "Typed equivalent"
+    },
+    {
+      "Source": "models/weeklytimer.py",
+      "SourceClass": "WeeklyTimerPattern",
+      "Member": "temperature",
+      "Target": "AcTimerPattern.Temperature",
+      "Status": "Typed equivalent"
+    },
+    {
+      "Source": "models/weeklytimer.py",
+      "SourceClass": "WeeklyTimerPattern",
+      "Member": "fan_speed",
+      "Target": "AcTimerPattern.Fan",
+      "Status": "Typed equivalent"
+    },
+    {
+      "Source": "models/weeklytimer.py",
+      "SourceClass": "WeeklyTimerPattern",
+      "Member": "fan_auto_mode",
+      "Target": "AcTimerPattern.FanAutoMode",
+      "Status": "Typed equivalent"
+    },
+    {
+      "Source": "models/weeklytimer.py",
+      "SourceClass": "WeeklyTimerPattern",
+      "Member": "air_swing_ud",
+      "Target": "AcTimerPattern.VerticalSwing",
+      "Status": "Typed equivalent"
+    },
+    {
+      "Source": "models/weeklytimer.py",
+      "SourceClass": "WeeklyTimerPattern",
+      "Member": "air_swing_lr",
+      "Target": "AcTimerPattern.HorizontalSwing",
+      "Status": "Typed equivalent"
+    },
+    {
+      "Source": "models/weeklytimer.py",
+      "SourceClass": "WeeklyTimerPattern",
+      "Member": "eco_mode",
+      "Target": "AcTimerPattern.Eco",
+      "Status": "Typed equivalent"
+    },
+    {
+      "Source": "models/weeklytimer.py",
+      "SourceClass": "WeeklyTimerPattern",
+      "Member": "eco_navi",
+      "Target": "AcTimerPattern.EcoNavi",
+      "Status": "Typed equivalent"
+    },
+    {
+      "Source": "models/weeklytimer.py",
+      "SourceClass": "WeeklyTimerPattern",
+      "Member": "nanoe",
+      "Target": "AcTimerPattern.Nanoe",
+      "Status": "Typed equivalent"
+    },
+    {
+      "Source": "models/weeklytimer.py",
+      "SourceClass": "WeeklyTimerPattern",
+      "Member": "iauto",
+      "Target": "AcTimerPattern.IAuto",
+      "Status": "Typed equivalent"
+    },
+    {
+      "Source": "models/weeklytimer.py",
+      "SourceClass": "WeeklyTimerPattern",
+      "Member": "zones",
+      "Target": "AcTimerPattern.Zones",
+      "Status": "Typed equivalent"
+    },
+    {
+      "Source": "models/weeklytimer.py",
+      "SourceClass": "WeeklyTimerPattern",
+      "Member": "raw",
+      "Target": "Attribute-defined typed model + unknown-field round trips using ComfortCloudJson",
+      "Status": "Typed adaptation; no public raw JSON"
+    },
+    {
+      "Source": "models/weeklytimer.py",
+      "SourceClass": "WeeklyTimerDay",
+      "Member": "weekday",
+      "Target": "WeeklyTimerDay<T>.Weekday",
+      "Status": "Typed equivalent"
+    },
+    {
+      "Source": "models/weeklytimer.py",
+      "SourceClass": "WeeklyTimerDay",
+      "Member": "patterns",
+      "Target": "WeeklyTimerDay<T>.Patterns",
+      "Status": "Typed equivalent"
+    },
+    {
+      "Source": "models/weeklytimer.py",
+      "SourceClass": "WeeklyTimer",
+      "Member": "device_guid",
+      "Target": "AcSchedule.DeviceGuid",
+      "Status": "Typed equivalent"
+    },
+    {
+      "Source": "models/weeklytimer.py",
+      "SourceClass": "WeeklyTimer",
+      "Member": "enabled",
+      "Target": "AcSchedule.Enabled",
+      "Status": "Typed equivalent"
+    },
+    {
+      "Source": "models/weeklytimer.py",
+      "SourceClass": "WeeklyTimer",
+      "Member": "permission",
+      "Target": "AcSchedule.Permission",
+      "Status": "Typed equivalent"
+    },
+    {
+      "Source": "models/weeklytimer.py",
+      "SourceClass": "WeeklyTimer",
+      "Member": "can_edit",
+      "Target": "AcSchedule.CanEdit",
+      "Status": "Typed equivalent"
+    },
+    {
+      "Source": "models/weeklytimer.py",
+      "SourceClass": "WeeklyTimer",
+      "Member": "temperature_unit",
+      "Target": "AcSchedule.TemperatureUnit",
+      "Status": "Typed equivalent"
+    },
+    {
+      "Source": "models/weeklytimer.py",
+      "SourceClass": "WeeklyTimer",
+      "Member": "mode_availability",
+      "Target": "AcSchedule.ModeAvailability",
+      "Status": "Typed equivalent"
+    },
+    {
+      "Source": "models/weeklytimer.py",
+      "SourceClass": "WeeklyTimer",
+      "Member": "days",
+      "Target": "AcSchedule.Days",
+      "Status": "Typed equivalent"
+    },
+    {
+      "Source": "models/weeklytimer.py",
+      "SourceClass": "WeeklyTimer",
+      "Member": "raw",
+      "Target": "Attribute-defined typed model + unknown-field round trips using ComfortCloudJson",
+      "Status": "Typed adaptation; no public raw JSON"
+    },
+    {
+      "Source": "models/aquareaweeklytimer.py",
+      "SourceClass": "AquareaWeeklyTimerPattern",
+      "Member": "is_empty",
+      "Target": "TimerPattern.IsEmpty",
+      "Status": "Typed equivalent"
+    },
+    {
+      "Source": "models/aquareaweeklytimer.py",
+      "SourceClass": "AquareaWeeklyTimerPattern",
+      "Member": "start_time",
+      "Target": "AquareaTimerPattern.StartTime",
+      "Status": "Typed equivalent"
+    },
+    {
+      "Source": "models/aquareaweeklytimer.py",
+      "SourceClass": "AquareaWeeklyTimerPattern",
+      "Member": "mode",
+      "Target": "AquareaTimerPattern.Mode",
+      "Status": "Typed equivalent"
+    },
+    {
+      "Source": "models/aquareaweeklytimer.py",
+      "SourceClass": "AquareaWeeklyTimerPattern",
+      "Member": "mode_raw",
+      "Target": "AquareaTimerPattern.RawMode",
+      "Status": "Typed equivalent"
+    },
+    {
+      "Source": "models/aquareaweeklytimer.py",
+      "SourceClass": "AquareaWeeklyTimerPattern",
+      "Member": "tank_on_off",
+      "Target": "AquareaTimerPattern.TankPower",
+      "Status": "Typed equivalent"
+    },
+    {
+      "Source": "models/aquareaweeklytimer.py",
+      "SourceClass": "AquareaWeeklyTimerPattern",
+      "Member": "tank_temperature",
+      "Target": "AquareaTimerPattern.TankHeat",
+      "Status": "Typed equivalent"
+    },
+    {
+      "Source": "models/aquareaweeklytimer.py",
+      "SourceClass": "AquareaWeeklyTimerPattern",
+      "Member": "raw",
+      "Target": "Attribute-defined typed model + unknown-field round trips using ComfortCloudJson",
+      "Status": "Typed adaptation; no public raw JSON"
+    },
+    {
+      "Source": "models/aquareaweeklytimer.py",
+      "SourceClass": "AquareaWeeklyTimerDay",
+      "Member": "patterns",
+      "Target": "WeeklyTimerDay<AquareaTimerPattern>.Patterns",
+      "Status": "Typed equivalent"
+    },
+    {
+      "Source": "models/aquareaweeklytimer.py",
+      "SourceClass": "AquareaWeeklyTimer",
+      "Member": "gwid",
+      "Target": "AquareaSchedule.GatewayId",
+      "Status": "Typed equivalent"
+    },
+    {
+      "Source": "models/aquareaweeklytimer.py",
+      "SourceClass": "AquareaWeeklyTimer",
+      "Member": "_weekly_timer",
+      "Target": "AquareaSchedule.Timer",
+      "Status": "Typed equivalent"
+    },
+    {
+      "Source": "models/aquareaweeklytimer.py",
+      "SourceClass": "AquareaWeeklyTimer",
+      "Member": "enabled",
+      "Target": "AquareaSchedule.Enabled",
+      "Status": "Typed equivalent"
+    },
+    {
+      "Source": "models/aquareaweeklytimer.py",
+      "SourceClass": "AquareaWeeklyTimer",
+      "Member": "zone_status",
+      "Target": "AquareaSchedule.Limits.Zones",
+      "Status": "Typed equivalent"
+    },
+    {
+      "Source": "models/aquareaweeklytimer.py",
+      "SourceClass": "AquareaWeeklyTimer",
+      "Member": "tank_status",
+      "Target": "AquareaSchedule.TankLimits",
+      "Status": "Typed equivalent"
+    },
+    {
+      "Source": "models/aquareaweeklytimer.py",
+      "SourceClass": "AquareaWeeklyTimer",
+      "Member": "days",
+      "Target": "AquareaSchedule.Timer.Days",
+      "Status": "Typed equivalent"
+    },
+    {
+      "Source": "models/aquareaweeklytimer.py",
+      "SourceClass": "AquareaWeeklyTimer",
+      "Member": "raw",
+      "Target": "Attribute-defined typed model + unknown-field round trips using ComfortCloudJson",
+      "Status": "Typed adaptation; no public raw JSON"
+    },
+    {
+      "Source": "changerequestbuilder.py",
+      "SourceClass": "ChangeRequestBuilder",
+      "Member": "has_changes",
+      "Target": "AcCommandBuilder.HasChanges",
+      "Status": "Typed/application-owned equivalent"
+    },
+    {
+      "Source": "changerequestbuilder.py",
+      "SourceClass": "ChangeRequestBuilder",
+      "Member": "eco_mode",
+      "Target": "AcCommandBuilder.Build().Eco",
+      "Status": "Typed/application-owned equivalent"
+    },
+    {
+      "Source": "changerequestbuilder.py",
+      "SourceClass": "ChangeRequestBuilder",
+      "Member": "target_temperature",
+      "Target": "AcCommandBuilder.Build().TargetTemperature",
+      "Status": "Typed/application-owned equivalent"
+    },
+    {
+      "Source": "changerequestbuilder.py",
+      "SourceClass": "ChangeRequestBuilder",
+      "Member": "fan_speed",
+      "Target": "AcCommandBuilder.Build().Fan",
+      "Status": "Typed/application-owned equivalent"
+    },
+    {
+      "Source": "changerequestbuilder.py",
+      "SourceClass": "ChangeRequestBuilder",
+      "Member": "hvac_mode",
+      "Target": "AcCommandBuilder.Build().Mode",
+      "Status": "Typed/application-owned equivalent"
+    },
+    {
+      "Source": "changerequestbuilder.py",
+      "SourceClass": "ChangeRequestBuilder",
+      "Member": "horizontal_swing",
+      "Target": "AcCommandBuilder.Build().HorizontalSwing and FanAutoMode",
+      "Status": "Typed/application-owned equivalent"
+    },
+    {
+      "Source": "changerequestbuilder.py",
+      "SourceClass": "ChangeRequestBuilder",
+      "Member": "vertical_swing",
+      "Target": "AcCommandBuilder.Build().VerticalSwing and FanAutoMode",
+      "Status": "Typed/application-owned equivalent"
+    },
+    {
+      "Source": "changerequestbuilder.py",
+      "SourceClass": "ChangeRequestBuilder",
+      "Member": "nanoe_mode",
+      "Target": "AcCommandBuilder.Build().Nanoe",
+      "Status": "Typed/application-owned equivalent"
+    },
+    {
+      "Source": "changerequestbuilder.py",
+      "SourceClass": "ChangeRequestBuilder",
+      "Member": "eco_navi_mode",
+      "Target": "AcCommandBuilder.Build().EcoNavi",
+      "Status": "Typed/application-owned equivalent"
+    },
+    {
+      "Source": "changerequestbuilder.py",
+      "SourceClass": "ChangeRequestBuilder",
+      "Member": "eco_function_mode",
+      "Target": "AcCommandBuilder.Build().EcoFunction",
+      "Status": "Typed/application-owned equivalent"
+    },
+    {
+      "Source": "changerequestbuilder.py",
+      "SourceClass": "ChangeRequestBuilder",
+      "Member": "inside_cleaning_mode",
+      "Target": "AcCommandBuilder.Build().InsideCleaning",
+      "Status": "Typed/application-owned equivalent"
+    },
+    {
+      "Source": "changerequestbuilder.py",
+      "SourceClass": "ChangeRequestBuilder",
+      "Member": "power_mode",
+      "Target": "AcCommandBuilder.Build().Power",
+      "Status": "Typed/application-owned equivalent"
+    },
+    {
+      "Source": "changerequestbuilder.py",
+      "SourceClass": "ChangeRequestBuilder",
+      "Member": "iautox_mode",
+      "Target": "AcCommandBuilder.Build().IAutoX",
+      "Status": "Typed/application-owned equivalent"
+    },
+    {
+      "Source": "panasonicsession.py",
+      "SourceClass": "PanasonicSession",
+      "Member": "authentication",
+      "Target": "CreateAuthorizationRequest / AuthenticateWithPasswordAsync / CompletePasswordMfaAsync",
+      "Status": "Typed/application-owned equivalent"
+    },
+    {
+      "Source": "panasonicsession.py",
+      "SourceClass": "PanasonicSession",
+      "Member": "app_version",
+      "Target": "ComfortCloudClient.AppVersion",
+      "Status": "Typed/application-owned equivalent"
+    },
+    {
+      "Source": "panasonicsettings.py",
+      "SourceClass": "PanasonicSettings",
+      "Member": "version",
+      "Target": "AppVersionObservation.Version / ComfortCloudClient.AppVersion",
+      "Status": "Typed/application-owned equivalent"
+    },
+    {
+      "Source": "panasonicsettings.py",
+      "SourceClass": "PanasonicSettings",
+      "Member": "is_version_expired",
+      "Target": "AppVersionDiscovery.GetAsync two-day expiry",
+      "Status": "Typed/application-owned equivalent"
+    },
+    {
+      "Source": "panasonicsettings.py",
+      "SourceClass": "PanasonicSettings",
+      "Member": "is_access_token_valid",
+      "Target": "CurrentSession.ExpiresAt, checked by EnsureSessionAsync",
+      "Status": "Typed/application-owned equivalent"
+    },
+    {
+      "Source": "panasonicsettings.py",
+      "SourceClass": "PanasonicSettings",
+      "Member": "has_refresh_token",
+      "Target": "CurrentSession.RefreshToken presence",
+      "Status": "Typed/application-owned equivalent"
+    },
+    {
+      "Source": "panasonicsettings.py",
+      "SourceClass": "PanasonicSettings",
+      "Member": "access_token",
+      "Target": "CurrentSession.AccessToken",
+      "Status": "Typed/application-owned equivalent"
+    },
+    {
+      "Source": "panasonicsettings.py",
+      "SourceClass": "PanasonicSettings",
+      "Member": "refresh_token",
+      "Target": "CurrentSession.RefreshToken",
+      "Status": "Typed/application-owned equivalent"
+    },
+    {
+      "Source": "panasonicsettings.py",
+      "SourceClass": "PanasonicSettings",
+      "Member": "scope",
+      "Target": "CurrentSession.Scope",
+      "Status": "Typed/application-owned equivalent"
+    },
+    {
+      "Source": "panasonicsettings.py",
+      "SourceClass": "PanasonicSettings",
+      "Member": "clientId",
+      "Target": "CurrentSession.ClientId",
+      "Status": "Typed/application-owned equivalent"
+    },
+    {
+      "Source": "apiclient/__init__.py",
+      "SourceClass": "ApiClient",
+      "Member": "unknown_devices",
+      "Target": "GetDevicesAsync(DeviceFamily.Unknown)",
+      "Status": "Typed/application-owned equivalent"
+    },
+    {
+      "Source": "apiclient/__init__.py",
+      "SourceClass": "ApiClient",
+      "Member": "has_unknown_devices",
+      "Target": "GetDevicesAsync(Unknown) result.Any()",
+      "Status": "Typed/application-owned equivalent"
+    },
+    {
+      "Source": "apiclient/__init__.py",
+      "SourceClass": "ApiClient",
+      "Member": "aquarea_devices",
+      "Target": "GetDevicesAsync(DeviceFamily.Aquarea)",
+      "Status": "Typed/application-owned equivalent"
+    },
+    {
+      "Source": "apiclient/__init__.py",
+      "SourceClass": "ApiClient",
+      "Member": "has_aquarea_devices",
+      "Target": "GetDevicesAsync(Aquarea) result.Any()",
+      "Status": "Typed/application-owned equivalent"
+    },
+    {
+      "Source": "apiclient/__init__.py",
+      "SourceClass": "ApiClient",
+      "Member": "hws_devices",
+      "Target": "GetDevicesAsync(DeviceFamily.HotWater)",
+      "Status": "Typed/application-owned equivalent"
+    },
+    {
+      "Source": "apiclient/__init__.py",
+      "SourceClass": "ApiClient",
+      "Member": "has_hws_devices",
+      "Target": "GetDevicesAsync(HotWater) result.Any()",
+      "Status": "Typed/application-owned equivalent"
+    },
+    {
+      "Source": "apiclient/__init__.py",
+      "SourceClass": "ApiClient",
+      "Member": "has_devices",
+      "Target": "GetDevicesAsync() result.Any()",
+      "Status": "Typed/application-owned equivalent"
+    },
+    {
+      "Source": "apiclient/_protocol.py",
+      "SourceClass": "ApiClientCore",
+      "Member": "unknown_devices",
+      "Target": "GetDevicesAsync(DeviceFamily.Unknown)",
+      "Status": "Typed/application-owned equivalent"
+    },
+    {
+      "Source": "apiclient/_protocol.py",
+      "SourceClass": "ApiClientCore",
+      "Member": "has_unknown_devices",
+      "Target": "GetDevicesAsync(Unknown) result.Any()",
+      "Status": "Typed/application-owned equivalent"
+    }
+  ]
+}

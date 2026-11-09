@@ -1,0 +1,19 @@
+{
+  "repository": "https://github.com/sockless-coding/aio-panasonic-comfort-cloud",
+  "release": "2026.10.1",
+  "commit": "80d7784fa6b35d6f71a7b1f842062e2929d2d653",
+  "releaseCommit": "74f48da91754b3a0feab87c5c658e6909c4e1a13",
+  "license": "MIT",
+  "role": "Protocol and behavior reference; no Python code or runtime is required by the product",
+  "reviewed": "2026-11-09",
+  "coverageInventory": "docs/upstream-coverage.json",
+  "coverageReport": "docfx/guides/UPSTREAM-COVERAGE.md",
+  "sourceFiles": 30,
+  "modeledWireFields": 201,
+  "publicCallables": 166,
+  "propertyDefinitions": 300,
+  "additionalChanges": [
+    "Current-mode encoding when enabling Aquarea branches (PR 48)",
+    "Confirmed iAuto wire field spelling (PR 47)"
+  ]
+}

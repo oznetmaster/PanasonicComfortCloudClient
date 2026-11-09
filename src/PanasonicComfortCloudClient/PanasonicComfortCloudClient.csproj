@@ -1,0 +1,28 @@
+<Project Sdk="Microsoft.NET.Sdk">
+	<PropertyGroup>
+		<TargetFrameworks>net472;net10.0</TargetFrameworks>
+		<GenerateDocumentationFile>true</GenerateDocumentationFile>
+		<PackageId>PanasonicComfortCloudClient</PackageId>
+		<Description>Independent typed asynchronous C# client for Panasonic Comfort Cloud and Aquarea APIs. Not affiliated with or endorsed by Panasonic.</Description>
+		<PackageReadmeFile>README.md</PackageReadmeFile>
+		<PackageTags>panasonic;comfort-cloud;aquarea;heat-pump;hvac;async;api</PackageTags>
+		<PackageReleaseNotes>Initial public release: typed Comfort Cloud/Aquarea protocols, Windows console and portable .NET 10/net472 support. See https://github.com/oznetmaster/PanasonicComfortCloudClient/releases/tag/v1.0.0 for validation boundaries.</PackageReleaseNotes>
+		<PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
+		<Product>PanasonicComfortCloudClient</Product>
+		<AssemblyTitle>PanasonicComfortCloudClient</AssemblyTitle>
+	</PropertyGroup>
+	<ItemGroup>
+		<PackageReference Include="HtmlAgilityPack" Version="1.12.4" />
+		<PackageReference Include="System.Text.Json" Version="10.0.12" />
+		<PackageReference Include="Microsoft.Extensions.Logging.Abstractions" Version="10.0.12" />
+		<InternalsVisibleTo Include="PanasonicComfortCloudClient.Tests" />
+		<None Include="../../README.md" Pack="true" PackagePath="/" />
+		<None Include="../../THIRD-PARTY-NOTICES.txt" Pack="true" PackagePath="/" />
+		<None Include="../../LICENSE" Pack="true" PackagePath="/" />
+	</ItemGroup>
+	<ItemGroup Condition="'$(TargetFramework)' == 'net472'">
+		<PackageReference Include="Microsoft.NETFramework.ReferenceAssemblies" Version="1.0.3" PrivateAssets="all" />
+		<PackageReference Include="IsExternalInit" Version="1.0.3" PrivateAssets="all" />
+		<Reference Include="System.Net.Http" />
+	</ItemGroup>
+</Project>

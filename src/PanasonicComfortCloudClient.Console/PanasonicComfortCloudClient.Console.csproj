@@ -1,0 +1,21 @@
+<Project Sdk="Microsoft.NET.Sdk">
+	<PropertyGroup>
+		<OutputType>Exe</OutputType>
+		<TargetFramework>net10.0-windows</TargetFramework>
+		<UseWindowsForms>true</UseWindowsForms>
+		<IsPackable>false</IsPackable>
+		<AssemblyName>PanasonicComfortCloud</AssemblyName>
+		<Product>Panasonic Comfort Cloud Test Console</Product>
+		<AssemblyTitle>Panasonic Comfort Cloud Test Console</AssemblyTitle>
+		<Description>Windows interactive and command-line test console for the independent Panasonic Comfort Cloud client.</Description>
+	</PropertyGroup>
+	<ItemGroup>
+		<ProjectReference Include="../PanasonicComfortCloudClient/PanasonicComfortCloudClient.csproj" />
+		<PackageReference Include="Microsoft.Web.WebView2" Version="1.0.4022.49" />
+	</ItemGroup>
+	<Target Name="ExcludeUnusedWebViewWpfAssembly" BeforeTargets="ResolveAssemblyReferences">
+		<ItemGroup>
+			<Reference Remove="@(Reference)" Condition="'%(Reference.Filename)' == 'Microsoft.Web.WebView2.Wpf'" />
+		</ItemGroup>
+	</Target>
+</Project>

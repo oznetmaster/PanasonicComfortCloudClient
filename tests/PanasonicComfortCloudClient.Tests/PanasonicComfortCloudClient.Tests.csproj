@@ -1,0 +1,26 @@
+<Project Sdk="Microsoft.NET.Sdk">
+	<PropertyGroup>
+		<TargetFrameworks>net472;net10.0</TargetFrameworks>
+		<IsPackable>false</IsPackable>
+		<IsTestProject>true</IsTestProject>
+		<AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+		<GenerateBindingRedirectsOutputType>true</GenerateBindingRedirectsOutputType>
+		<Product>Panasonic Comfort Cloud Tests</Product>
+		<AssemblyTitle>Panasonic Comfort Cloud Tests</AssemblyTitle>
+		<Description>Portable protocol, compatibility and opt-in live tests for PanasonicComfortCloudClient.</Description>
+	</PropertyGroup>
+	<ItemGroup>
+		<EmbeddedResource Include="../../docs/upstream-coverage.json" LogicalName="PanasonicComfortCloudClient.Tests.UpstreamCoverage.data" />
+		<ProjectReference Include="../../src/PanasonicComfortCloudClient/PanasonicComfortCloudClient.csproj" />
+		<PackageReference Include="Microsoft.NET.Test.Sdk" Version="18.10.1" PrivateAssets="all" />
+		<PackageReference Include="NUnit" Version="5.0.0" />
+		<PackageReference Include="NUnit3TestAdapter" Version="6.3.0" PrivateAssets="all" />
+		<Compile Include="../../src/PanasonicComfortCloudClient.Console/CommandLine.cs" Link="Console/CommandLine.cs" />
+	</ItemGroup>
+	<ItemGroup Condition="'$(TargetFramework)' == 'net472'">
+		<PackageReference Include="Microsoft.NETFramework.ReferenceAssemblies" Version="1.0.3" PrivateAssets="all" />
+		<!-- Linked console parsing and test fixtures use System.Index/System.Range. -->
+		<PackageReference Include="Microsoft.Bcl.Memory" Version="10.0.12" />
+		<Reference Include="System.Net.Http" />
+	</ItemGroup>
+</Project>

@@ -1,0 +1,15 @@
+**/bin/
+**/obj/
+.vs/
+artifacts/
+TestResults/
+docfx/api/
+docfx-site/
+*.user
+*.suo
+*.credentials
+*.tokens
+*.session
+private/
+**/ComfortCloudLiveSettings.json
+*.log
