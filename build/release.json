@@ -1,0 +1,32 @@
+{
+  "schema": 1,
+  "name": "PanasonicComfortCloudClient",
+  "versionFile": "Directory.Build.props",
+  "versionXPath": "/Project/PropertyGroup/Version",
+  "notesFile": "release-notes/v{version}.md",
+  "packages": [
+    {
+      "id": "PanasonicComfortCloudClient",
+      "frameworks": [
+        "net472",
+        "net10.0"
+      ],
+      "project": "src/PanasonicComfortCloudClient/PanasonicComfortCloudClient.csproj"
+    }
+  ],
+  "applications": [
+    {
+      "name": "Windows-console",
+      "framework": "net10.0-windows",
+      "project": "src/PanasonicComfortCloudClient.Console/PanasonicComfortCloudClient.Console.csproj"
+    }
+  ],
+  "documents": [
+    "README.md",
+    "CHANGELOG.md",
+    "LICENSE",
+    "THIRD-PARTY-NOTICES.txt"
+  ],
+  "rawLibraries": false,
+  "libraryArchive": false
+}

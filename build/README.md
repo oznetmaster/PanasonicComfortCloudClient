@@ -11,3 +11,8 @@ $env:BUILD_FRAMEWORK = 'net10.0'
 ```
 
 Use Windows for the full solution, console and `net472` execution. `net10.0` library tests are portable. Every recipe task first applies the shared strict source XML policy to both frameworks in Debug and Release. Pages use the shared default/modern DocFX layout, search and API/property-value checks.
+
+
+## Public library publication
+
+The common Cake task `release-assets` runs the configured package and app preparation. See `build/release.json` and the [shared publication protocol](https://github.com/oznetmaster/BuildAutomation/blob/5d8006f140a59c8d1dd92ab70723fe8338650bd2/ReleasePublishing/README.md). Publication runs in a separate job from retained, hash-verified artifacts. Keep the original run when retrying; use Re-run failed jobs so existing NuGet payloads can be verified against the same bytes.

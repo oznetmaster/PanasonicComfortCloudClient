@@ -1,0 +1,53 @@
+{
+  "schema": 1,
+  "version": "1.0.1",
+  "completedUtc": "2026-11-09T23:12:44.6184403Z",
+  "workstation": [
+    {
+      "configurations": [
+        "Debug",
+        "Release"
+      ],
+      "passed": 392,
+      "suite": "Panasonic",
+      "failed": 0,
+      "framework": "net10.0",
+      "skipped": 0
+    },
+    {
+      "configurations": [
+        "Debug",
+        "Release"
+      ],
+      "passed": 395,
+      "suite": "Panasonic",
+      "failed": 0,
+      "framework": "net472",
+      "skipped": 0
+    }
+  ],
+  "processor": {
+    "selectedPassed": 24.0,
+    "aggregatePassed": 374,
+    "scope": "Merged offline host with recorded resolved dependencies; fake services and credentials only",
+    "runtime": "Mono 6.12.0.107, 32-bit",
+    "firmware": "4.013.0134",
+    "failed": 0,
+    "skipped": 0
+  },
+  "validatedSourceFiles": [
+    {
+      "Path": "src/PanasonicComfortCloudClient/ComfortCloudClient.cs",
+      "Sha256": "11707CA4EBB0BC55D6C918514F80EB7D5696BEE24E4C2838AE7640A1A3CB6FC1"
+    },
+    {
+      "Path": "tests/PanasonicComfortCloudClient.Tests/ConcurrencyTests.cs",
+      "Sha256": "7C45AC6CA600EA827C044B00E77DC58E9A1D43B01BA081D78E9F42C97908F728"
+    },
+    {
+      "Path": "tests/PanasonicComfortCloudClient.Tests/NotificationOrderingTests.cs",
+      "Sha256": "84789559EBD28EF646C615F18CE78695B5B3306849C903903DBEAE89C7886B88"
+    }
+  ],
+  "publicationChanges": "Version metadata, documentation and shared publication tooling added after validation; runtime source hashes retained."
+}

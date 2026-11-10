@@ -2,7 +2,7 @@
 
 A standalone, asynchronous **C# 14** client for Panasonic Comfort Cloud, including the Aquarea air-to-water heat-pump API. Targets **.NET 10** and **.NET Framework 4.7.2**. The Windows test console supports interactive use and command-line automation.
 
-Version **1.0.0** is the initial public release. [API documentation and guides](https://oznetmaster.github.io/PanasonicComfortCloudClient/). This is an independent implementation, not affiliated with or endorsed by Panasonic. Panasonic's mobile-app cloud interface is not a public compatibility contract.
+Version **1.0.1** fixes ordered session-change notification delivery. [API documentation and guides](https://oznetmaster.github.io/PanasonicComfortCloudClient/). This is an independent implementation, not affiliated with or endorsed by Panasonic. Panasonic's mobile-app cloud interface is not a public compatibility contract.
 
 ## Features
 
@@ -96,3 +96,9 @@ dotnet build PanasonicComfortCloudClient.slnx -c Debug
 ```
 
 See the [bounded live-control test protocol](docfx/guides/LIVE-CONTROL-TESTS.md) before selecting any physical setting test.
+
+## Changes in 1.0.1
+
+Session-change notifications are queued in commit order and delivered serially after the operation gate is released. Concurrent callers wait for their notifications. Reentrant session operations commit and queue their notification without waiting for the current callback, avoiding deadlocks. Persistence across separate clients or processes still needs application-owned coordination.
+
+Release packaging and publication use the [shared publication component](https://github.com/oznetmaster/BuildAutomation/tree/5d8006f140a59c8d1dd92ab70723fe8338650bd2/ReleasePublishing). Set `RELEASE_VERSION=1.0.1` and run `./build/Invoke.ps1 -Task release-assets` for local preparation; it publishes nothing. GitHub publication reuses retained, hash-verified artifacts and the repository's existing NuGet trust identity.

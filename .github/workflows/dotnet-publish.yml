@@ -1,134 +1,107 @@
-name: Publish .NET Package
+name: Publish public library release
 on:
   push:
     tags: ['v*']
   workflow_dispatch:
     inputs:
       version:
-        description: Three-part release version, for example 1.0.0
+        description: Three-part public version
         required: true
         type: string
-      skip_hardware_checks:
-        description: Reuse separately recorded processor results
-        type: boolean
-        default: false
-      hardware_skip_reason:
-        description: Tested source, completion time, counts and cleanup evidence
-        type: string
       skip_desktop_checks:
-        description: Reuse separately recorded workstation results
+        description: Reuse reviewed workstation validation
         type: boolean
         default: false
       desktop_skip_reason:
-        description: Tested source, frameworks, completion time and counts
+        description: Validated source, time, frameworks, counts and provenance
+        type: string
+      skip_hardware_checks:
+        description: Reuse reviewed processor validation
+        type: boolean
+        default: false
+      hardware_skip_reason:
+        description: Validated source, time, selected tests, limitations and cleanup
         type: string
       validation_commit:
-        description: Full ancestor SHA with recent CI; only release automation/docs may differ
+        description: Optional ancestor CI source permitted by the shared policy
         type: string
+
 permissions:
-  actions: read
-  checks: read
-  contents: write
+  contents: read
 concurrency:
   group: public-release
   cancel-in-progress: false
   queue: max
 jobs:
-  publish:
+  build:
+
     runs-on: windows-latest
+    timeout-minutes: 45
     permissions:
+      contents: read
       actions: read
       checks: read
+    outputs:
+      version: ${{ steps.version.outputs.version }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.sha }}
+          fetch-depth: 0
+      - uses: actions/setup-dotnet@v4
+        with:
+          dotnet-version: |
+            8.0.x
+            10.0.x
+
+      - name: Resolve public version
+        id: version
+        shell: pwsh
+        env:
+          REQUESTED_VERSION: ${{ inputs.version }}
+        run: |
+          $version = if ($env:GITHUB_EVENT_NAME -eq 'push') { $env:GITHUB_REF_NAME } else { $env:REQUESTED_VERSION }
+          $version = $version -creplace '^v', ''
+          if ($version -cnotmatch '^(0|[1-9][0-9]*)\.(0|[1-9][0-9]*)\.(0|[1-9][0-9]*)$') { throw 'Use a canonical three-part stable public version.' }
+          "version=$version" >> $env:GITHUB_OUTPUT
+      - uses: oznetmaster/BuildAutomation/.github/actions/release-prepare@5d8006f140a59c8d1dd92ab70723fe8338650bd2
+        with:
+          version: ${{ steps.version.outputs.version }}
+      - name: Verify shared validation policy
+        uses: oznetmaster/CrestronHomeNUnit/.github/actions/release-validation@2ae8197c6685099c2133e7bb962d1f3568aae9c3
+        with:
+          required-checks: ${{ vars.RELEASE_REQUIRED_CHECKS }}
+          hosted-workflows: '["ci.yml","documentation.yml"]'
+          skip-desktop-checks: ${{ inputs.skip_desktop_checks }}
+          desktop-skip-reason: ${{ inputs.desktop_skip_reason }}
+          skip-hardware-checks: ${{ inputs.skip_hardware_checks }}
+          hardware-skip-reason: ${{ inputs.hardware_skip_reason }}
+          validation-commit: ${{ inputs.validation_commit }}
+      - name: Stage packages and companion applications through Cake
+        uses: oznetmaster/BuildAutomation@5d8006f140a59c8d1dd92ab70723fe8338650bd2
+        env:
+          RELEASE_VERSION: ${{ steps.version.outputs.version }}
+        with:
+          task: release-assets
+      - uses: oznetmaster/BuildAutomation/.github/actions/release-freeze@5d8006f140a59c8d1dd92ab70723fe8338650bd2
+        with:
+          version: ${{ steps.version.outputs.version }}
+  publish:
+    needs: build
+    runs-on: windows-latest
+    timeout-minutes: 30
+
+    permissions:
       contents: write
       id-token: write
     steps:
       - uses: actions/checkout@v4
         with:
+          ref: ${{ github.sha }}
           fetch-depth: 0
-      - name: Verify completed validation
-        uses: oznetmaster/CrestronHomeNUnit/.github/actions/release-validation@2ae8197c6685099c2133e7bb962d1f3568aae9c3
-        with:
-          required-checks: ${{ vars.RELEASE_REQUIRED_CHECKS }}
-          hosted-workflows: '["ci.yml", "documentation.yml"]'
-          skip-hardware-checks: ${{ inputs.skip_hardware_checks }}
-          hardware-skip-reason: ${{ inputs.hardware_skip_reason }}
-          skip-desktop-checks: ${{ inputs.skip_desktop_checks }}
-          desktop-skip-reason: ${{ inputs.desktop_skip_reason }}
-          validation-commit: ${{ inputs.validation_commit }}
       - uses: actions/setup-dotnet@v4
         with:
           dotnet-version: 10.0.x
-      - name: Validate release version and publication state
-        id: version
-        shell: pwsh
-        env:
-          GH_TOKEN: ${{ github.token }}
-          RELEASE_INPUT_VERSION: ${{ inputs.version }}
-        run: |
-          $ErrorActionPreference = 'Stop'
-          $version = if ($env:GITHUB_EVENT_NAME -eq 'workflow_dispatch') { $env:RELEASE_INPUT_VERSION } else { $env:GITHUB_REF_NAME }
-          $version = $version -replace '^v', ''
-          if ($version -cnotmatch '^\d+\.\d+\.\d+$') { throw 'Use a three-part public version.' }
-          [xml]$props = Get-Content Directory.Build.props -Raw
-          if ($props.SelectSingleNode('/Project/PropertyGroup/Version').InnerText.Trim() -cne $version) { throw 'Release version differs from Directory.Build.props.' }
-          if (!(Test-Path "release-notes/v$version.md")) { throw 'Missing versioned release notes.' }
-          $releases = @(gh api "repos/$env:GITHUB_REPOSITORY/releases?per_page=100" --paginate --jq '.[].tag_name')
-          if ($LASTEXITCODE -ne 0) { throw 'Cannot inspect existing releases.' }
-          if ($releases -ccontains "v$version") { throw 'This release exists; inspect before retrying.' }
-          $remoteTags = git ls-remote --tags origin "refs/tags/v$version" "refs/tags/v$version^{}"
-          if ($LASTEXITCODE -ne 0) { throw 'Cannot inspect release tag.' }
-          if ($remoteTags) {
-            $commit = git rev-parse "v$version^{commit}"
-            if ($LASTEXITCODE -ne 0 -or $commit -cne $env:GITHUB_SHA) { throw 'Existing tag belongs to another source commit.' }
-          }
-          $index = $null
-          try { $index = Invoke-RestMethod 'https://api.nuget.org/v3-flatcontainer/panasoniccomfortcloudclient/index.json' }
-          catch { if ([int]$_.Exception.Response.StatusCode -ne 404) { throw } }
-          if ($index -and $index.versions -contains $version) { throw 'NuGet version exists; inspect provenance before retrying.' }
-          "version=$version" >> $env:GITHUB_OUTPUT
-      - name: Restore locked dependencies
-        run: dotnet restore PanasonicComfortCloudClient.slnx --locked-mode
-      - name: Verify strict XML and package using shared build
-        shell: pwsh
-        run: ./build/Invoke.ps1 -Task package
-      - name: Publish the Windows console
-        shell: pwsh
-        env:
-          RELEASE_VERSION: ${{ steps.version.outputs.version }}
-        run: |
-          dotnet publish src/PanasonicComfortCloudClient.Console/PanasonicComfortCloudClient.Console.csproj -c Release --no-restore -o artifacts/console --self-contained false
-          if ($LASTEXITCODE -ne 0) { throw 'Console publication failed.' }
-          Copy-Item LICENSE,THIRD-PARTY-NOTICES.txt,README.md artifacts/console/
-          New-Item -ItemType Directory -Force artifacts/release | Out-Null
-          Compress-Archive -Path artifacts/console/* -DestinationPath "artifacts/release/PanasonicComfortCloudConsole-$env:RELEASE_VERSION-Windows.zip"
-          Copy-Item artifacts/packages/*.nupkg artifacts/release/
-          Get-ChildItem artifacts/release -File | Sort-Object Name | ForEach-Object { '{0}  {1}' -f (Get-FileHash $_.FullName -Algorithm SHA256).Hash.ToLowerInvariant(), $_.Name } | Set-Content artifacts/release/SHA256SUMS.txt
-      - name: Retain exact publication bytes before authentication
-        uses: actions/upload-artifact@v4
+      - uses: oznetmaster/BuildAutomation/.github/actions/release-publish@5d8006f140a59c8d1dd92ab70723fe8338650bd2
         with:
-          name: public-release-${{ steps.version.outputs.version }}
-          path: artifacts/release/*
-          if-no-files-found: error
-      - name: Authenticate to NuGet with GitHub OIDC
-        id: nuget-login
-        uses: NuGet/login@8d196754b4036150537f80ac539e15c2f1028841
-        with:
-          user: oznetmaster
-      - name: Publish NuGet package
-        shell: pwsh
-        env:
-          NUGET_API_KEY: ${{ steps.nuget-login.outputs.NUGET_API_KEY }}
-          RELEASE_VERSION: ${{ steps.version.outputs.version }}
-        run: |
-          if ([string]::IsNullOrWhiteSpace($env:NUGET_API_KEY)) { throw 'No temporary NuGet credential.' }
-          dotnet nuget push "artifacts/release/PanasonicComfortCloudClient.$env:RELEASE_VERSION.nupkg" --api-key "$env:NUGET_API_KEY" --source https://api.nuget.org/v3/index.json
-          if ($LASTEXITCODE -ne 0) { throw 'NuGet publication failed.' }
-      - name: Create GitHub release from the same frozen assets
-        env:
-          GH_TOKEN: ${{ github.token }}
-          RELEASE_VERSION: ${{ steps.version.outputs.version }}
-        shell: pwsh
-        run: |
-          $assets = @(Get-ChildItem artifacts/release -File | ForEach-Object FullName)
-          gh release create "v$env:RELEASE_VERSION" @assets --repo $env:GITHUB_REPOSITORY --target $env:GITHUB_SHA --title "PanasonicComfortCloudClient $env:RELEASE_VERSION" --notes-file "release-notes/v$env:RELEASE_VERSION.md"
-          if ($LASTEXITCODE -ne 0) { throw 'GitHub release creation failed; preserve the already-published NuGet bytes.' }
+          version: ${{ needs.build.outputs.version }}

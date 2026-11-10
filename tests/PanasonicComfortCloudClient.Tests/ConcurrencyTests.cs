@@ -21,6 +21,16 @@ public sealed class ConcurrencyTests
 	{
 	private static readonly JsonSerializerOptions _json = ComfortCloudJson.CreateOptions ();
 	private static TaskCompletionSource<bool> Signal () => new (TaskCreationOptions.RunContinuationsAsynchronously);
+	private static async Task AwaitRequestStarted (Task started, Task operation)
+		{
+		Task first = await Task.WhenAny (started, operation).WaitAsync (TimeSpan.FromSeconds (10));
+		if (ReferenceEquals (first, operation) && !started.IsCompleted)
+			{
+			await operation;
+			Assert.Fail ("The operation completed without submitting the expected fake HTTP request.");
+			}
+		await started.WaitAsync (TimeSpan.FromSeconds (10));
+		}
 	private static async Task<Exception?> FailureOf (Task task)
 		{
 		try
@@ -172,7 +182,7 @@ public sealed class ConcurrencyTests
 		{
 		TaskCompletionSource<bool> started = Signal ();
 		TaskCompletionSource<bool> release = Signal ();
-		using var handler = new ConcurrentHandler (async (_, _) =>
+		using var handler = new ConcurrentHandler (async (ignoredRequest, ignoredToken) =>
 			{
 				_ = started.TrySetResult (true);
 				_ = await release.Task;
@@ -192,7 +202,7 @@ public sealed class ConcurrencyTests
 			});
 		try
 			{
-			_ = await started.Task.WaitAsync (TimeSpan.FromSeconds (10));
+			await AwaitRequestStarted (started.Task, on);
 			Task queued = controller.ApplyAsync (off, new ()
 				{
 				Eco = EcoMode.Quiet
@@ -518,7 +528,7 @@ public sealed class ConcurrencyTests
 		{
 		TaskCompletionSource<bool> started = Signal ();
 		TaskCompletionSource<bool> release = Signal ();
-		using var handler = new ConcurrentHandler (async (_, _) =>
+		using var handler = new ConcurrentHandler (async (ignoredRequest, ignoredToken) =>
 			{
 				_ = started.TrySetResult (true);
 				_ = await release.Task;
@@ -535,7 +545,7 @@ public sealed class ConcurrencyTests
 		Task refresh = client.RefreshAsync (observation);
 		try
 			{
-			_ = await started.Task.WaitAsync (TimeSpan.FromSeconds (10));
+			await AwaitRequestStarted (started.Task, refresh);
 			Task restore = client.RestoreSessionAsync (Fixture.Session ());
 			_ = release.TrySetResult (true);
 			await Task.WhenAll (refresh, restore).WaitAsync (TimeSpan.FromSeconds (10));

@@ -1,5 +1,9 @@
 # Changelog
 
+## [1.0.1](https://github.com/oznetmaster/PanasonicComfortCloudClient/releases/tag/v1.0.1) — 2026-11-10
+
+- Session-change notifications are queued in commit order and delivered serially after the operation gate is released. Concurrent callers wait for their notifications. Reentrant session operations commit and queue their notification without waiting for the current callback, avoiding deadlocks. Persistence across separate clients or processes still needs application-owned coordination.
+
 ## [1.0.0](https://github.com/oznetmaster/PanasonicComfortCloudClient/releases/tag/v1.0.0) — 9 November 2026
 
 - Audited thread safety for Mono and both .NET targets: coordinated operation admission/cancellation/disposal, prevented late snapshot publication and buffered-preference resurrection, synchronized tracker state, and retained a single client gate across schedule/policy transactions. Added 22 focused concurrency cases and timeout-wait compatibility coverage.

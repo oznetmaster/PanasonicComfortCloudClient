@@ -25,6 +25,12 @@ public sealed partial class ComfortCloudClient : IDisposable
 	private readonly HttpClient _http;
 	private readonly bool _ownsHttp;
 	private readonly AsyncOperationGate _operations;
+#pragma warning disable IDE0330 // Monitor semantics are shared with processor Mono.
+	private readonly object _notificationSync = new ();
+#pragma warning restore IDE0330
+	private readonly Queue<SessionNotification> _notifications = new ();
+	private readonly AsyncLocal<bool> _insideNotification = new ();
+	private bool _notifying;
 	private readonly System.Diagnostics.Stopwatch _clock = System.Diagnostics.Stopwatch.StartNew ();
 	private readonly JsonSerializerOptions _json = ComfortCloudJson.CreateOptions ();
 	private TimeSpan _nextRequest;
@@ -82,7 +88,7 @@ public sealed partial class ComfortCloudClient : IDisposable
 	public ComfortCloudSession? CurrentSession => Volatile.Read (ref _session);
 
 	/// <summary>Occurs after validated session credentials change and after the request gate is released.</summary>
-	/// <remarks>Subscribers may persist tokens. Subscriber exceptions are isolated from completed cloud operations.</remarks>
+	/// <remarks>Subscribers may persist tokens. Notifications are ordered and subscriber exceptions are isolated. A session operation initiated inside a subscriber commits its state without waiting for its own queued notification, so reentrant subscribers do not deadlock.</remarks>
 	public event EventHandler<SessionChangedEventArgs>? SessionChanged;
 
 	/// <summary>Restores application-owned credentials without validating them against the cloud.</summary>
@@ -116,26 +122,75 @@ public sealed partial class ComfortCloudClient : IDisposable
 		finally
 			{
 			ComfortCloudSession? current = CurrentSession;
-			operation.Dispose ();
+			SessionNotification? notification = null;
+			bool drain = false;
 			if (!_operations.IsDisposed && current is not null && !ReferenceEquals (old, current))
 				{
-				EventHandler<SessionChangedEventArgs>? handlers = SessionChanged;
-				if (handlers is not null)
+				// Queue while the operation still owns serialization: releasing first
+				// would allow a newer session to be queued ahead of this one.
+				lock (_notificationSync)
 					{
-					foreach (EventHandler<SessionChangedEventArgs> handler in handlers.GetInvocationList ().Cast<EventHandler<SessionChangedEventArgs>> ())
+					notification = new (current, SessionChanged);
+					_notifications.Enqueue (notification);
+					drain = !_notifying;
+					_notifying = true;
+					}
+				}
+			operation.Dispose ();
+			if (drain)
+				DrainNotifications ();
+			if (notification is not null && !_insideNotification.Value)
+				await notification.Completion.Task.ConfigureAwait (false);
+			}
+		}
+
+	private void DrainNotifications ()
+		{
+		bool previous = _insideNotification.Value;
+		_insideNotification.Value = true;
+		try
+			{
+			while (true)
+				{
+				SessionNotification next;
+				lock (_notificationSync)
+					{
+					if (_notifications.Count == 0)
+						{
+						_notifying = false;
+						return;
+						}
+					next = _notifications.Dequeue ();
+					}
+				try
+					{
+					if (_operations.IsDisposed || next.Handlers is null)
+						continue;
+					foreach (EventHandler<SessionChangedEventArgs> handler in next.Handlers.GetInvocationList ().Cast<EventHandler<SessionChangedEventArgs>> ())
 						{
 						try
 							{
-							handler (this, new SessionChangedEventArgs (current));
+							handler (this, new SessionChangedEventArgs (next.Session));
 							}
 						catch
 							{
-							_sessionSubscriberFailed (_options.Logger, null);
+							try
+								{
+								_sessionSubscriberFailed (_options.Logger, null);
+								}
+							catch { /* A faulty logger must not strand queued credential notifications. */ }
 							}
 						}
 					}
+				finally { _ = next.Completion.TrySetResult (true); }
 				}
 			}
+		finally { _insideNotification.Value = previous; }
+		}
+
+	private sealed record SessionNotification (ComfortCloudSession Session, EventHandler<SessionChangedEventArgs>? Handlers)
+		{
+		internal TaskCompletionSource<bool> Completion { get; } = new (TaskCreationOptions.RunContinuationsAsynchronously);
 		}
 
 	private async Task EnsureSessionAsync (CancellationToken token)
