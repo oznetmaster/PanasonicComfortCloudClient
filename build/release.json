@@ -11,7 +11,8 @@
         "net472",
         "net10.0"
       ],
-      "project": "src/PanasonicComfortCloudClient/PanasonicComfortCloudClient.csproj"
+      "project": "src/PanasonicComfortCloudClient/PanasonicComfortCloudClient.csproj",
+      "symbols": true
     }
   ],
   "applications": [

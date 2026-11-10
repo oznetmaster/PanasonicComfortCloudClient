@@ -1,5 +1,9 @@
 # Changelog
 
+## Unreleased
+
+- Future binary library releases include separate portable-PDB symbol packages on GitHub and NuGet, verified against the matching Release DLLs for each framework.
+
 ## [1.0.1](https://github.com/oznetmaster/PanasonicComfortCloudClient/releases/tag/v1.0.1) — 2026-11-10
 
 - Session-change notifications are queued in commit order and delivered serially after the operation gate is released. Concurrent callers wait for their notifications. Reentrant session operations commit and queue their notification without waiting for the current callback, avoiding deadlocks. Persistence across separate clients or processes still needs application-owned coordination.
